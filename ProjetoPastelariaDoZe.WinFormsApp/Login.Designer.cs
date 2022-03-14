@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelFundoLogin = new System.Windows.Forms.Panel();
+            this.ButtonCadastrar = new System.Windows.Forms.Button();
             this.buttonEntrar = new System.Windows.Forms.Button();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
@@ -40,6 +41,7 @@
             // 
             // panelFundoLogin
             // 
+            this.panelFundoLogin.Controls.Add(this.ButtonCadastrar);
             this.panelFundoLogin.Controls.Add(this.buttonEntrar);
             this.panelFundoLogin.Controls.Add(this.textBoxSenha);
             this.panelFundoLogin.Controls.Add(this.textBoxUsuario);
@@ -51,32 +53,51 @@
             this.panelFundoLogin.Size = new System.Drawing.Size(475, 352);
             this.panelFundoLogin.TabIndex = 0;
             // 
+            // ButtonCadastrar
+            // 
+            this.ButtonCadastrar.BackColor = System.Drawing.Color.White;
+            this.ButtonCadastrar.Location = new System.Drawing.Point(397, 327);
+            this.ButtonCadastrar.Name = "ButtonCadastrar";
+            this.ButtonCadastrar.Size = new System.Drawing.Size(75, 25);
+            this.ButtonCadastrar.TabIndex = 6;
+            this.ButtonCadastrar.Text = "Cadastrar";
+            this.ButtonCadastrar.UseVisualStyleBackColor = false;
+            // 
             // buttonEntrar
             // 
-            this.buttonEntrar.Location = new System.Drawing.Point(155, 255);
+            this.buttonEntrar.BackColor = System.Drawing.Color.White;
+            this.buttonEntrar.FlatAppearance.BorderSize = 0;
+            this.buttonEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.buttonEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEntrar.Location = new System.Drawing.Point(116, 252);
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.Size = new System.Drawing.Size(150, 30);
             this.buttonEntrar.TabIndex = 5;
             this.buttonEntrar.Text = "Entrar";
-            this.buttonEntrar.UseVisualStyleBackColor = true;
+            this.buttonEntrar.UseVisualStyleBackColor = false;
             // 
             // textBoxSenha
             // 
+            this.textBoxSenha.BackColor = System.Drawing.Color.White;
             this.textBoxSenha.Location = new System.Drawing.Point(116, 196);
             this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.PlaceholderText = "********";
             this.textBoxSenha.Size = new System.Drawing.Size(220, 23);
             this.textBoxSenha.TabIndex = 4;
             // 
             // textBoxUsuario
             // 
+            this.textBoxUsuario.BackColor = System.Drawing.Color.White;
             this.textBoxUsuario.Location = new System.Drawing.Point(116, 110);
             this.textBoxUsuario.Name = "textBoxUsuario";
+            this.textBoxUsuario.PlaceholderText = "Seu usuário";
             this.textBoxUsuario.Size = new System.Drawing.Size(220, 23);
             this.textBoxUsuario.TabIndex = 3;
             // 
             // labelSenha
             // 
             this.labelSenha.AutoSize = true;
+            this.labelSenha.ForeColor = System.Drawing.Color.White;
             this.labelSenha.Location = new System.Drawing.Point(116, 167);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(39, 15);
@@ -86,6 +107,7 @@
             // labelUsuario
             // 
             this.labelUsuario.AutoSize = true;
+            this.labelUsuario.ForeColor = System.Drawing.Color.White;
             this.labelUsuario.Location = new System.Drawing.Point(116, 79);
             this.labelUsuario.Name = "labelUsuario";
             this.labelUsuario.Size = new System.Drawing.Size(47, 15);
@@ -96,6 +118,7 @@
             // 
             this.labelLogin.AutoSize = true;
             this.labelLogin.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelLogin.ForeColor = System.Drawing.Color.White;
             this.labelLogin.Location = new System.Drawing.Point(188, 15);
             this.labelLogin.Name = "labelLogin";
             this.labelLogin.Size = new System.Drawing.Size(99, 45);
@@ -106,6 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(499, 376);
             this.Controls.Add(this.panelFundoLogin);
             this.Name = "Login";
@@ -125,5 +149,6 @@
         private Label labelSenha;
         private Label labelUsuario;
         private Label labelLogin;
+        private Button ButtonCadastrar;
     }
 }

@@ -39,7 +39,11 @@
             this.ButtonInicio = new System.Windows.Forms.Button();
             this.panelMenuSuperior = new System.Windows.Forms.Panel();
             this.panelMenuGeral = new System.Windows.Forms.Panel();
+            this.LabelCabecalho = new System.Windows.Forms.Label();
+            this.LabelCorpo = new System.Windows.Forms.Label();
             this.panelMenuLateral.SuspendLayout();
+            this.panelMenuSuperior.SuspendLayout();
+            this.panelMenuGeral.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenuLateral
@@ -188,6 +192,7 @@
             // panelMenuSuperior
             // 
             this.panelMenuSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelMenuSuperior.Controls.Add(this.LabelCabecalho);
             this.panelMenuSuperior.Location = new System.Drawing.Point(209, 0);
             this.panelMenuSuperior.Name = "panelMenuSuperior";
             this.panelMenuSuperior.Size = new System.Drawing.Size(1098, 103);
@@ -196,10 +201,31 @@
             // panelMenuGeral
             // 
             this.panelMenuGeral.BackColor = System.Drawing.Color.Gray;
+            this.panelMenuGeral.Controls.Add(this.LabelCorpo);
             this.panelMenuGeral.Location = new System.Drawing.Point(209, 103);
             this.panelMenuGeral.Name = "panelMenuGeral";
             this.panelMenuGeral.Size = new System.Drawing.Size(1098, 576);
             this.panelMenuGeral.TabIndex = 2;
+            // 
+            // LabelCabecalho
+            // 
+            this.LabelCabecalho.AutoSize = true;
+            this.LabelCabecalho.ForeColor = System.Drawing.Color.White;
+            this.LabelCabecalho.Location = new System.Drawing.Point(370, 45);
+            this.LabelCabecalho.Name = "LabelCabecalho";
+            this.LabelCabecalho.Size = new System.Drawing.Size(134, 15);
+            this.LabelCabecalho.TabIndex = 0;
+            this.LabelCabecalho.Text = "Aqui vai ter o cabeçalho";
+            // 
+            // LabelCorpo
+            // 
+            this.LabelCorpo.AutoSize = true;
+            this.LabelCorpo.ForeColor = System.Drawing.Color.White;
+            this.LabelCorpo.Location = new System.Drawing.Point(427, 261);
+            this.LabelCorpo.Name = "LabelCorpo";
+            this.LabelCorpo.Size = new System.Drawing.Size(185, 15);
+            this.LabelCorpo.TabIndex = 0;
+            this.LabelCorpo.Text = "Aqui vai ter o corpo de cada parte";
             // 
             // Inicio
             // 
@@ -213,6 +239,10 @@
             this.Name = "Inicio";
             this.Text = "Fiados do Zé";
             this.panelMenuLateral.ResumeLayout(false);
+            this.panelMenuSuperior.ResumeLayout(false);
+            this.panelMenuSuperior.PerformLayout();
+            this.panelMenuGeral.ResumeLayout(false);
+            this.panelMenuGeral.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -230,5 +260,7 @@
         private Button ButtonLogin;
         private Button ButtonSobre;
         private Button ButtonConfiguracoes;
+        private Label LabelCabecalho;
+        private Label LabelCorpo;
     }
 }

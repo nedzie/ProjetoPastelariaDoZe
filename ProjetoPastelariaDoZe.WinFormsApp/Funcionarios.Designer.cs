@@ -30,6 +30,10 @@
         {
             this.labelNome = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonCadastrar = new System.Windows.Forms.Button();
+            this.textBoxSenha = new System.Windows.Forms.TextBox();
+            this.textBoxTelefone = new System.Windows.Forms.TextBox();
+            this.textBoxMatrícula = new System.Windows.Forms.TextBox();
             this.radioButtonBalcao = new System.Windows.Forms.RadioButton();
             this.radioButtonAdmin = new System.Windows.Forms.RadioButton();
             this.textBoxCPF = new System.Windows.Forms.TextBox();
@@ -39,16 +43,13 @@
             this.labelTelefone = new System.Windows.Forms.Label();
             this.labelMatricula = new System.Windows.Forms.Label();
             this.labelCPF = new System.Windows.Forms.Label();
-            this.textBoxMatrícula = new System.Windows.Forms.TextBox();
-            this.textBoxTelefone = new System.Windows.Forms.TextBox();
-            this.textBoxSenha = new System.Windows.Forms.TextBox();
-            this.buttonCadastrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelNome
             // 
             this.labelNome.AutoSize = true;
+            this.labelNome.ForeColor = System.Drawing.Color.White;
             this.labelNome.Location = new System.Drawing.Point(52, 14);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(43, 15);
@@ -76,9 +77,43 @@
             this.panel1.Size = new System.Drawing.Size(776, 426);
             this.panel1.TabIndex = 1;
             // 
+            // buttonCadastrar
+            // 
+            this.buttonCadastrar.BackColor = System.Drawing.Color.White;
+            this.buttonCadastrar.Location = new System.Drawing.Point(52, 369);
+            this.buttonCadastrar.Name = "buttonCadastrar";
+            this.buttonCadastrar.Size = new System.Drawing.Size(100, 30);
+            this.buttonCadastrar.TabIndex = 13;
+            this.buttonCadastrar.Text = "Cadastrar";
+            this.buttonCadastrar.UseVisualStyleBackColor = false;
+            // 
+            // textBoxSenha
+            // 
+            this.textBoxSenha.Location = new System.Drawing.Point(52, 238);
+            this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.PlaceholderText = "********";
+            this.textBoxSenha.Size = new System.Drawing.Size(196, 23);
+            this.textBoxSenha.TabIndex = 12;
+            // 
+            // textBoxTelefone
+            // 
+            this.textBoxTelefone.Location = new System.Drawing.Point(52, 194);
+            this.textBoxTelefone.Name = "textBoxTelefone";
+            this.textBoxTelefone.PlaceholderText = "(00) 0 0000 0000";
+            this.textBoxTelefone.Size = new System.Drawing.Size(196, 23);
+            this.textBoxTelefone.TabIndex = 11;
+            // 
+            // textBoxMatrícula
+            // 
+            this.textBoxMatrícula.Location = new System.Drawing.Point(52, 137);
+            this.textBoxMatrícula.Name = "textBoxMatrícula";
+            this.textBoxMatrícula.Size = new System.Drawing.Size(196, 23);
+            this.textBoxMatrícula.TabIndex = 10;
+            // 
             // radioButtonBalcao
             // 
             this.radioButtonBalcao.AutoSize = true;
+            this.radioButtonBalcao.ForeColor = System.Drawing.Color.White;
             this.radioButtonBalcao.Location = new System.Drawing.Point(52, 333);
             this.radioButtonBalcao.Name = "radioButtonBalcao";
             this.radioButtonBalcao.Size = new System.Drawing.Size(60, 19);
@@ -90,6 +125,7 @@
             // radioButtonAdmin
             // 
             this.radioButtonAdmin.AutoSize = true;
+            this.radioButtonAdmin.ForeColor = System.Drawing.Color.White;
             this.radioButtonAdmin.Location = new System.Drawing.Point(52, 308);
             this.radioButtonAdmin.Name = "radioButtonAdmin";
             this.radioButtonAdmin.Size = new System.Drawing.Size(61, 19);
@@ -102,6 +138,7 @@
             // 
             this.textBoxCPF.Location = new System.Drawing.Point(52, 82);
             this.textBoxCPF.Name = "textBoxCPF";
+            this.textBoxCPF.PlaceholderText = "000.000.000-00";
             this.textBoxCPF.Size = new System.Drawing.Size(196, 23);
             this.textBoxCPF.TabIndex = 7;
             // 
@@ -109,12 +146,14 @@
             // 
             this.textBoxNome.Location = new System.Drawing.Point(52, 32);
             this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.PlaceholderText = "Nome do funcionário";
             this.textBoxNome.Size = new System.Drawing.Size(196, 23);
             this.textBoxNome.TabIndex = 6;
             // 
             // labelGrupo
             // 
             this.labelGrupo.AutoSize = true;
+            this.labelGrupo.ForeColor = System.Drawing.Color.White;
             this.labelGrupo.Location = new System.Drawing.Point(52, 277);
             this.labelGrupo.Name = "labelGrupo";
             this.labelGrupo.Size = new System.Drawing.Size(43, 15);
@@ -124,6 +163,7 @@
             // labelSenha
             // 
             this.labelSenha.AutoSize = true;
+            this.labelSenha.ForeColor = System.Drawing.Color.White;
             this.labelSenha.Location = new System.Drawing.Point(52, 220);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(42, 15);
@@ -133,6 +173,7 @@
             // labelTelefone
             // 
             this.labelTelefone.AutoSize = true;
+            this.labelTelefone.ForeColor = System.Drawing.Color.White;
             this.labelTelefone.Location = new System.Drawing.Point(52, 176);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(54, 15);
@@ -142,6 +183,7 @@
             // labelMatricula
             // 
             this.labelMatricula.AutoSize = true;
+            this.labelMatricula.ForeColor = System.Drawing.Color.White;
             this.labelMatricula.Location = new System.Drawing.Point(52, 119);
             this.labelMatricula.Name = "labelMatricula";
             this.labelMatricula.Size = new System.Drawing.Size(60, 15);
@@ -151,46 +193,18 @@
             // labelCPF
             // 
             this.labelCPF.AutoSize = true;
+            this.labelCPF.ForeColor = System.Drawing.Color.White;
             this.labelCPF.Location = new System.Drawing.Point(52, 61);
             this.labelCPF.Name = "labelCPF";
             this.labelCPF.Size = new System.Drawing.Size(31, 15);
             this.labelCPF.TabIndex = 1;
             this.labelCPF.Text = "CPF:";
             // 
-            // textBoxMatrícula
-            // 
-            this.textBoxMatrícula.Location = new System.Drawing.Point(52, 137);
-            this.textBoxMatrícula.Name = "textBoxMatrícula";
-            this.textBoxMatrícula.Size = new System.Drawing.Size(196, 23);
-            this.textBoxMatrícula.TabIndex = 10;
-            // 
-            // textBoxTelefone
-            // 
-            this.textBoxTelefone.Location = new System.Drawing.Point(52, 194);
-            this.textBoxTelefone.Name = "textBoxTelefone";
-            this.textBoxTelefone.Size = new System.Drawing.Size(196, 23);
-            this.textBoxTelefone.TabIndex = 11;
-            // 
-            // textBoxSenha
-            // 
-            this.textBoxSenha.Location = new System.Drawing.Point(52, 238);
-            this.textBoxSenha.Name = "textBoxSenha";
-            this.textBoxSenha.Size = new System.Drawing.Size(196, 23);
-            this.textBoxSenha.TabIndex = 12;
-            // 
-            // buttonCadastrar
-            // 
-            this.buttonCadastrar.Location = new System.Drawing.Point(52, 369);
-            this.buttonCadastrar.Name = "buttonCadastrar";
-            this.buttonCadastrar.Size = new System.Drawing.Size(100, 30);
-            this.buttonCadastrar.TabIndex = 13;
-            this.buttonCadastrar.Text = "Cadastrar";
-            this.buttonCadastrar.UseVisualStyleBackColor = true;
-            // 
             // Funcionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.OliveDrab;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "Funcionarios";

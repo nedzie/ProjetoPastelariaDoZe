@@ -72,6 +72,7 @@
             // 
             this.buttonCadastrar.FlatAppearance.BorderSize = 0;
             this.buttonCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCadastrar.ForeColor = System.Drawing.Color.White;
             this.buttonCadastrar.Location = new System.Drawing.Point(215, 268);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(312, 43);
@@ -82,6 +83,7 @@
             // labelDiaDoFiado
             // 
             this.labelDiaDoFiado.AutoSize = true;
+            this.labelDiaDoFiado.ForeColor = System.Drawing.Color.White;
             this.labelDiaDoFiado.Location = new System.Drawing.Point(533, 93);
             this.labelDiaDoFiado.Name = "labelDiaDoFiado";
             this.labelDiaDoFiado.Size = new System.Drawing.Size(166, 15);
@@ -98,6 +100,7 @@
             // radioButtonFiadoNao
             // 
             this.radioButtonFiadoNao.AutoSize = true;
+            this.radioButtonFiadoNao.ForeColor = System.Drawing.Color.White;
             this.radioButtonFiadoNao.Location = new System.Drawing.Point(533, 65);
             this.radioButtonFiadoNao.Name = "radioButtonFiadoNao";
             this.radioButtonFiadoNao.Size = new System.Drawing.Size(47, 19);
@@ -109,6 +112,7 @@
             // radioButtonFiadoSim
             // 
             this.radioButtonFiadoSim.AutoSize = true;
+            this.radioButtonFiadoSim.ForeColor = System.Drawing.Color.White;
             this.radioButtonFiadoSim.Location = new System.Drawing.Point(533, 40);
             this.radioButtonFiadoSim.Name = "radioButtonFiadoSim";
             this.radioButtonFiadoSim.Size = new System.Drawing.Size(45, 19);
@@ -120,6 +124,7 @@
             // labelMarcaFiado
             // 
             this.labelMarcaFiado.AutoSize = true;
+            this.labelMarcaFiado.ForeColor = System.Drawing.Color.White;
             this.labelMarcaFiado.Location = new System.Drawing.Point(533, 18);
             this.labelMarcaFiado.Name = "labelMarcaFiado";
             this.labelMarcaFiado.Size = new System.Drawing.Size(75, 15);
@@ -130,6 +135,7 @@
             // 
             this.textBoxSenha.Location = new System.Drawing.Point(28, 228);
             this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.PlaceholderText = "********";
             this.textBoxSenha.Size = new System.Drawing.Size(100, 23);
             this.textBoxSenha.TabIndex = 7;
             // 
@@ -137,6 +143,7 @@
             // 
             this.textBoxTelefone.Location = new System.Drawing.Point(28, 171);
             this.textBoxTelefone.Name = "textBoxTelefone";
+            this.textBoxTelefone.PlaceholderText = "(00) 0 0000 0000";
             this.textBoxTelefone.Size = new System.Drawing.Size(144, 23);
             this.textBoxTelefone.TabIndex = 6;
             // 
@@ -144,6 +151,7 @@
             // 
             this.textBoxCPF.Location = new System.Drawing.Point(28, 104);
             this.textBoxCPF.Name = "textBoxCPF";
+            this.textBoxCPF.PlaceholderText = "000.000.000-00";
             this.textBoxCPF.Size = new System.Drawing.Size(144, 23);
             this.textBoxCPF.TabIndex = 5;
             // 
@@ -151,12 +159,14 @@
             // 
             this.textBoxNome.Location = new System.Drawing.Point(28, 36);
             this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.PlaceholderText = "Nome do cliente";
             this.textBoxNome.Size = new System.Drawing.Size(257, 23);
             this.textBoxNome.TabIndex = 4;
             // 
             // labelSenha
             // 
             this.labelSenha.AutoSize = true;
+            this.labelSenha.ForeColor = System.Drawing.Color.White;
             this.labelSenha.Location = new System.Drawing.Point(28, 210);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(42, 15);
@@ -166,6 +176,7 @@
             // labelTelefone
             // 
             this.labelTelefone.AutoSize = true;
+            this.labelTelefone.ForeColor = System.Drawing.Color.White;
             this.labelTelefone.Location = new System.Drawing.Point(28, 143);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(54, 15);
@@ -175,6 +186,7 @@
             // labelCPF
             // 
             this.labelCPF.AutoSize = true;
+            this.labelCPF.ForeColor = System.Drawing.Color.White;
             this.labelCPF.Location = new System.Drawing.Point(28, 73);
             this.labelCPF.Name = "labelCPF";
             this.labelCPF.Size = new System.Drawing.Size(31, 15);
@@ -184,6 +196,7 @@
             // labelNome
             // 
             this.labelNome.AutoSize = true;
+            this.labelNome.ForeColor = System.Drawing.Color.White;
             this.labelNome.Location = new System.Drawing.Point(28, 18);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(43, 15);
@@ -194,6 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(175)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelClientes);
             this.Name = "Clientes";
