@@ -1,0 +1,10 @@
+﻿Cores (MouseHover) padrão:
+
+Login: Web > DarkRed
+Início: Web > SteelBlue
+Funcionários: Web > OliveDrab
+Comandas: Web > Plum
+Clientes: 128; 128; 175
+Produtos: Web > DarkGoldenrod
+Configurações: Web > DarkSkateBlue
+Sobre: 32; 32; 32
