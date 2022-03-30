@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.panelClientes = new System.Windows.Forms.Panel();
+            this.ButtonFechar = new System.Windows.Forms.Button();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.labelDiaDoFiado = new System.Windows.Forms.Label();
             this.numericUpDownDiaDoFiado = new System.Windows.Forms.NumericUpDown();
@@ -49,6 +51,7 @@
             // 
             // panelClientes
             // 
+            this.panelClientes.Controls.Add(this.ButtonFechar);
             this.panelClientes.Controls.Add(this.buttonCadastrar);
             this.panelClientes.Controls.Add(this.labelDiaDoFiado);
             this.panelClientes.Controls.Add(this.numericUpDownDiaDoFiado);
@@ -67,6 +70,17 @@
             this.panelClientes.Name = "panelClientes";
             this.panelClientes.Size = new System.Drawing.Size(776, 426);
             this.panelClientes.TabIndex = 0;
+            // 
+            // ButtonFechar
+            // 
+            this.ButtonFechar.BackColor = System.Drawing.Color.White;
+            this.ButtonFechar.Location = new System.Drawing.Point(701, 400);
+            this.ButtonFechar.Name = "ButtonFechar";
+            this.ButtonFechar.Size = new System.Drawing.Size(75, 23);
+            this.ButtonFechar.TabIndex = 14;
+            this.ButtonFechar.Text = "Fechar";
+            this.ButtonFechar.UseVisualStyleBackColor = false;
+            this.ButtonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
             // 
             // buttonCadastrar
             // 
@@ -208,8 +222,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(175)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 523);
             this.Controls.Add(this.panelClientes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Clientes";
             this.Text = "Clientes";
             this.panelClientes.ResumeLayout(false);
@@ -236,5 +251,6 @@
         private Label labelDiaDoFiado;
         private NumericUpDown numericUpDownDiaDoFiado;
         private Button buttonCadastrar;
+        private Button ButtonFechar;
     }
 }

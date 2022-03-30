@@ -24,7 +24,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         #region Assembly Attribute Accessors
 
-        public string AssemblyTitle
+        public static string AssemblyTitle
         {
             get
             {
@@ -37,11 +37,11 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
                         return titleAttribute.Title;
                     }
                 }
-                return System.IO.Path.GetFileNameWithoutExtension(Assembly.GetExecutingAssembly().CodeBase);
+                return Path.GetFileNameWithoutExtension(Assembly.GetExecutingAssembly().Location);
             }
         }
 
-        public string AssemblyVersion
+        public static string AssemblyVersion
         {
             get
             {
@@ -49,7 +49,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             }
         }
 
-        public string AssemblyDescription
+        public static string AssemblyDescription
         {
             get
             {
@@ -62,7 +62,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             }
         }
 
-        public string AssemblyProduct
+        public static string AssemblyProduct
         {
             get
             {
@@ -75,7 +75,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             }
         }
 
-        public string AssemblyCopyright
+        public static string AssemblyCopyright
         {
             get
             {
@@ -88,7 +88,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             }
         }
 
-        public string AssemblyCompany
+        public static string AssemblyCompany
         {
             get
             {

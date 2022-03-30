@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuracoes));
             this.labelTaxaJuroDiaria = new System.Windows.Forms.Label();
             this.panelFundoConfiguracoes = new System.Windows.Forms.Panel();
+            this.ButtonFechar = new System.Windows.Forms.Button();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.labelMultaPorAtraso = new System.Windows.Forms.Label();
             this.textBoxMultaPorAtraso = new System.Windows.Forms.TextBox();
@@ -51,6 +53,7 @@
             // panelFundoConfiguracoes
             // 
             this.panelFundoConfiguracoes.BackColor = System.Drawing.Color.Transparent;
+            this.panelFundoConfiguracoes.Controls.Add(this.ButtonFechar);
             this.panelFundoConfiguracoes.Controls.Add(this.buttonSalvar);
             this.panelFundoConfiguracoes.Controls.Add(this.labelMultaPorAtraso);
             this.panelFundoConfiguracoes.Controls.Add(this.textBoxMultaPorAtraso);
@@ -60,6 +63,17 @@
             this.panelFundoConfiguracoes.Name = "panelFundoConfiguracoes";
             this.panelFundoConfiguracoes.Size = new System.Drawing.Size(476, 295);
             this.panelFundoConfiguracoes.TabIndex = 1;
+            // 
+            // ButtonFechar
+            // 
+            this.ButtonFechar.BackColor = System.Drawing.Color.White;
+            this.ButtonFechar.Location = new System.Drawing.Point(401, 272);
+            this.ButtonFechar.Name = "ButtonFechar";
+            this.ButtonFechar.Size = new System.Drawing.Size(75, 23);
+            this.ButtonFechar.TabIndex = 5;
+            this.ButtonFechar.Text = "Fechar";
+            this.ButtonFechar.UseVisualStyleBackColor = false;
+            this.ButtonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
             // 
             // buttonSalvar
             // 
@@ -104,6 +118,7 @@
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(500, 319);
             this.Controls.Add(this.panelFundoConfiguracoes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Configuracoes";
             this.Text = "Configurações";
             this.panelFundoConfiguracoes.ResumeLayout(false);
@@ -120,5 +135,6 @@
         private Label labelMultaPorAtraso;
         private TextBox textBoxMultaPorAtraso;
         private TextBox textBoxTaxaJurosDiaria;
+        private Button ButtonFechar;
     }
 }

@@ -10,6 +10,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         private void ButtonLogin_MouseClick(object sender, MouseEventArgs e)
         {
             Login login = new();
+            login.StartPosition = FormStartPosition.CenterParent;
             login.ShowDialog(); // Modal
         }
 
@@ -40,7 +41,8 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         private void ButtonSobre_MouseClick(object sender, MouseEventArgs e)
         {
             Sobre sobre = new();
-            sobre.Show();
+            sobre.StartPosition = FormStartPosition.CenterParent;
+            sobre.ShowDialog();
         }
 
         private void ButtonComanda_MouseClick(object sender, MouseEventArgs e)

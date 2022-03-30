@@ -16,5 +16,10 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         {
             InitializeComponent();
         }
+
+        private void ButtonFechar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

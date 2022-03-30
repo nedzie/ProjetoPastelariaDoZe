@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Produtos));
             this.labelNome = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.labelDescricao = new System.Windows.Forms.Label();
@@ -38,6 +39,8 @@
             this.ButtonImportarFoto = new System.Windows.Forms.Button();
             this.PictureBoxFotoDoProduto = new System.Windows.Forms.PictureBox();
             this.ButtonCadastrar = new System.Windows.Forms.Button();
+            this.ButtonFechar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxFotoDoProduto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +77,7 @@
             this.textBoxDescricao.Location = new System.Drawing.Point(118, 121);
             this.textBoxDescricao.Name = "textBoxDescricao";
             this.textBoxDescricao.PlaceholderText = "Descrição do produto";
-            this.textBoxDescricao.Size = new System.Drawing.Size(444, 23);
+            this.textBoxDescricao.Size = new System.Drawing.Size(298, 23);
             this.textBoxDescricao.TabIndex = 3;
             // 
             // labelValorUnitario
@@ -99,7 +102,7 @@
             // 
             this.labelFoto.AutoSize = true;
             this.labelFoto.ForeColor = System.Drawing.Color.White;
-            this.labelFoto.Location = new System.Drawing.Point(118, 247);
+            this.labelFoto.Location = new System.Drawing.Point(535, 24);
             this.labelFoto.Name = "labelFoto";
             this.labelFoto.Size = new System.Drawing.Size(34, 15);
             this.labelFoto.TabIndex = 6;
@@ -108,7 +111,7 @@
             // ButtonImportarFoto
             // 
             this.ButtonImportarFoto.BackColor = System.Drawing.Color.White;
-            this.ButtonImportarFoto.Location = new System.Drawing.Point(122, 378);
+            this.ButtonImportarFoto.Location = new System.Drawing.Point(539, 155);
             this.ButtonImportarFoto.Name = "ButtonImportarFoto";
             this.ButtonImportarFoto.Size = new System.Drawing.Size(104, 40);
             this.ButtonImportarFoto.TabIndex = 7;
@@ -117,7 +120,7 @@
             // 
             // PictureBoxFotoDoProduto
             // 
-            this.PictureBoxFotoDoProduto.Location = new System.Drawing.Point(122, 265);
+            this.PictureBoxFotoDoProduto.Location = new System.Drawing.Point(539, 42);
             this.PictureBoxFotoDoProduto.Name = "PictureBoxFotoDoProduto";
             this.PictureBoxFotoDoProduto.Size = new System.Drawing.Size(138, 107);
             this.PictureBoxFotoDoProduto.TabIndex = 8;
@@ -126,19 +129,39 @@
             // ButtonCadastrar
             // 
             this.ButtonCadastrar.BackColor = System.Drawing.Color.White;
-            this.ButtonCadastrar.Location = new System.Drawing.Point(568, 372);
+            this.ButtonCadastrar.Location = new System.Drawing.Point(539, 235);
             this.ButtonCadastrar.Name = "ButtonCadastrar";
             this.ButtonCadastrar.Size = new System.Drawing.Size(144, 53);
             this.ButtonCadastrar.TabIndex = 9;
             this.ButtonCadastrar.Text = "Cadastrar";
             this.ButtonCadastrar.UseVisualStyleBackColor = false;
             // 
+            // ButtonFechar
+            // 
+            this.ButtonFechar.BackColor = System.Drawing.Color.White;
+            this.ButtonFechar.Location = new System.Drawing.Point(713, 397);
+            this.ButtonFechar.Name = "ButtonFechar";
+            this.ButtonFechar.Size = new System.Drawing.Size(75, 23);
+            this.ButtonFechar.TabIndex = 10;
+            this.ButtonFechar.Text = "Fechar";
+            this.ButtonFechar.UseVisualStyleBackColor = false;
+            this.ButtonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(776, 408);
+            this.panel1.TabIndex = 11;
+            // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 506);
+            this.Controls.Add(this.ButtonFechar);
             this.Controls.Add(this.ButtonCadastrar);
             this.Controls.Add(this.PictureBoxFotoDoProduto);
             this.Controls.Add(this.ButtonImportarFoto);
@@ -149,6 +172,8 @@
             this.Controls.Add(this.labelDescricao);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.labelNome);
+            this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Produtos";
             this.Text = "Produtos";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxFotoDoProduto)).EndInit();
@@ -169,5 +194,7 @@
         private Button ButtonImportarFoto;
         private PictureBox PictureBoxFotoDoProduto;
         private Button ButtonCadastrar;
+        private Button ButtonFechar;
+        private Panel panel1;
     }
 }

@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panelFundoLogin = new System.Windows.Forms.Panel();
+            this.ButtonFechar = new System.Windows.Forms.Button();
+            this.LabelNovoUsuario = new System.Windows.Forms.Label();
             this.ButtonCadastrar = new System.Windows.Forms.Button();
             this.buttonEntrar = new System.Windows.Forms.Button();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
@@ -41,6 +44,9 @@
             // 
             // panelFundoLogin
             // 
+            resources.ApplyResources(this.panelFundoLogin, "panelFundoLogin");
+            this.panelFundoLogin.Controls.Add(this.ButtonFechar);
+            this.panelFundoLogin.Controls.Add(this.LabelNovoUsuario);
             this.panelFundoLogin.Controls.Add(this.ButtonCadastrar);
             this.panelFundoLogin.Controls.Add(this.buttonEntrar);
             this.panelFundoLogin.Controls.Add(this.textBoxSenha);
@@ -48,92 +54,77 @@
             this.panelFundoLogin.Controls.Add(this.labelSenha);
             this.panelFundoLogin.Controls.Add(this.labelUsuario);
             this.panelFundoLogin.Controls.Add(this.labelLogin);
-            this.panelFundoLogin.Location = new System.Drawing.Point(12, 12);
             this.panelFundoLogin.Name = "panelFundoLogin";
-            this.panelFundoLogin.Size = new System.Drawing.Size(475, 352);
-            this.panelFundoLogin.TabIndex = 0;
+            // 
+            // ButtonFechar
+            // 
+            resources.ApplyResources(this.ButtonFechar, "ButtonFechar");
+            this.ButtonFechar.BackColor = System.Drawing.Color.White;
+            this.ButtonFechar.Name = "ButtonFechar";
+            this.ButtonFechar.UseVisualStyleBackColor = false;
+            this.ButtonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
+            // 
+            // LabelNovoUsuario
+            // 
+            resources.ApplyResources(this.LabelNovoUsuario, "LabelNovoUsuario");
+            this.LabelNovoUsuario.ForeColor = System.Drawing.Color.White;
+            this.LabelNovoUsuario.Name = "LabelNovoUsuario";
             // 
             // ButtonCadastrar
             // 
+            resources.ApplyResources(this.ButtonCadastrar, "ButtonCadastrar");
             this.ButtonCadastrar.BackColor = System.Drawing.Color.White;
-            this.ButtonCadastrar.Location = new System.Drawing.Point(397, 327);
+            this.ButtonCadastrar.FlatAppearance.BorderSize = 0;
             this.ButtonCadastrar.Name = "ButtonCadastrar";
-            this.ButtonCadastrar.Size = new System.Drawing.Size(75, 25);
-            this.ButtonCadastrar.TabIndex = 6;
-            this.ButtonCadastrar.Text = "Cadastrar";
             this.ButtonCadastrar.UseVisualStyleBackColor = false;
             // 
             // buttonEntrar
             // 
+            resources.ApplyResources(this.buttonEntrar, "buttonEntrar");
             this.buttonEntrar.BackColor = System.Drawing.Color.White;
             this.buttonEntrar.FlatAppearance.BorderSize = 0;
-            this.buttonEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
-            this.buttonEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEntrar.Location = new System.Drawing.Point(116, 252);
+            this.buttonEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.buttonEntrar.Image = global::ProjetoPastelariaDoZe.WinFormsApp.Properties.Resources.arrow_right_solid_1_;
             this.buttonEntrar.Name = "buttonEntrar";
-            this.buttonEntrar.Size = new System.Drawing.Size(150, 30);
-            this.buttonEntrar.TabIndex = 5;
-            this.buttonEntrar.Text = "Entrar";
             this.buttonEntrar.UseVisualStyleBackColor = false;
             // 
             // textBoxSenha
             // 
+            resources.ApplyResources(this.textBoxSenha, "textBoxSenha");
             this.textBoxSenha.BackColor = System.Drawing.Color.White;
-            this.textBoxSenha.Location = new System.Drawing.Point(116, 196);
             this.textBoxSenha.Name = "textBoxSenha";
-            this.textBoxSenha.PlaceholderText = "********";
-            this.textBoxSenha.Size = new System.Drawing.Size(220, 23);
-            this.textBoxSenha.TabIndex = 4;
             // 
             // textBoxUsuario
             // 
+            resources.ApplyResources(this.textBoxUsuario, "textBoxUsuario");
             this.textBoxUsuario.BackColor = System.Drawing.Color.White;
-            this.textBoxUsuario.Location = new System.Drawing.Point(116, 110);
             this.textBoxUsuario.Name = "textBoxUsuario";
-            this.textBoxUsuario.PlaceholderText = "Seu usuário";
-            this.textBoxUsuario.Size = new System.Drawing.Size(220, 23);
-            this.textBoxUsuario.TabIndex = 3;
             // 
             // labelSenha
             // 
-            this.labelSenha.AutoSize = true;
+            resources.ApplyResources(this.labelSenha, "labelSenha");
             this.labelSenha.ForeColor = System.Drawing.Color.White;
-            this.labelSenha.Location = new System.Drawing.Point(116, 167);
             this.labelSenha.Name = "labelSenha";
-            this.labelSenha.Size = new System.Drawing.Size(39, 15);
-            this.labelSenha.TabIndex = 2;
-            this.labelSenha.Text = "Senha";
             // 
             // labelUsuario
             // 
-            this.labelUsuario.AutoSize = true;
+            resources.ApplyResources(this.labelUsuario, "labelUsuario");
             this.labelUsuario.ForeColor = System.Drawing.Color.White;
-            this.labelUsuario.Location = new System.Drawing.Point(116, 79);
             this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(47, 15);
-            this.labelUsuario.TabIndex = 1;
-            this.labelUsuario.Text = "Usuário";
             // 
             // labelLogin
             // 
-            this.labelLogin.AutoSize = true;
-            this.labelLogin.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.labelLogin, "labelLogin");
             this.labelLogin.ForeColor = System.Drawing.Color.White;
-            this.labelLogin.Location = new System.Drawing.Point(188, 15);
             this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(99, 45);
-            this.labelLogin.TabIndex = 0;
-            this.labelLogin.Text = "Login";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(499, 376);
             this.Controls.Add(this.panelFundoLogin);
             this.Name = "Login";
-            this.Text = "Login";
             this.panelFundoLogin.ResumeLayout(false);
             this.panelFundoLogin.PerformLayout();
             this.ResumeLayout(false);
@@ -150,5 +141,7 @@
         private Label labelUsuario;
         private Label labelLogin;
         private Button ButtonCadastrar;
+        private Button ButtonFechar;
+        private Label LabelNovoUsuario;
     }
 }

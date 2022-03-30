@@ -15,6 +15,17 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         public Clientes()
         {
             InitializeComponent();
+            UserControlControleUsuarioGeral opcoes = new();
+            opcoes.Dock = DockStyle.Bottom;
+
+            Controls.Add(opcoes);
+
+            Size size = new Size(Size.Width, Size.Height + opcoes.Size.Height);
+        }
+
+        private void ButtonFechar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

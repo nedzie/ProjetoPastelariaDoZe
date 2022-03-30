@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.panelMenuLateral = new System.Windows.Forms.Panel();
+            this.ButtonCaixa = new System.Windows.Forms.Button();
             this.ButtonLogin = new System.Windows.Forms.Button();
             this.ButtonSobre = new System.Windows.Forms.Button();
             this.ButtonConfiguracoes = new System.Windows.Forms.Button();
@@ -38,8 +40,8 @@
             this.ButtonComanda = new System.Windows.Forms.Button();
             this.ButtonInicio = new System.Windows.Forms.Button();
             this.panelMenuSuperior = new System.Windows.Forms.Panel();
-            this.panelMenuGeral = new System.Windows.Forms.Panel();
             this.LabelCabecalho = new System.Windows.Forms.Label();
+            this.panelMenuGeral = new System.Windows.Forms.Panel();
             this.LabelCorpo = new System.Windows.Forms.Label();
             this.panelMenuLateral.SuspendLayout();
             this.panelMenuSuperior.SuspendLayout();
@@ -49,6 +51,7 @@
             // panelMenuLateral
             // 
             this.panelMenuLateral.BackColor = System.Drawing.Color.Black;
+            this.panelMenuLateral.Controls.Add(this.ButtonCaixa);
             this.panelMenuLateral.Controls.Add(this.ButtonLogin);
             this.panelMenuLateral.Controls.Add(this.ButtonSobre);
             this.panelMenuLateral.Controls.Add(this.ButtonConfiguracoes);
@@ -62,14 +65,34 @@
             this.panelMenuLateral.Size = new System.Drawing.Size(211, 679);
             this.panelMenuLateral.TabIndex = 0;
             // 
+            // ButtonCaixa
+            // 
+            this.ButtonCaixa.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonCaixa.FlatAppearance.BorderSize = 0;
+            this.ButtonCaixa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
+            this.ButtonCaixa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonCaixa.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ButtonCaixa.ForeColor = System.Drawing.Color.White;
+            this.ButtonCaixa.Image = global::ProjetoPastelariaDoZe.WinFormsApp.Properties.Resources.caixa_solido_branco;
+            this.ButtonCaixa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonCaixa.Location = new System.Drawing.Point(0, 240);
+            this.ButtonCaixa.Name = "ButtonCaixa";
+            this.ButtonCaixa.Size = new System.Drawing.Size(213, 44);
+            this.ButtonCaixa.TabIndex = 1;
+            this.ButtonCaixa.Text = "Caixa";
+            this.ButtonCaixa.UseVisualStyleBackColor = false;
+            // 
             // ButtonLogin
             // 
             this.ButtonLogin.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ButtonLogin.FlatAppearance.BorderSize = 0;
             this.ButtonLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonLogin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ButtonLogin.ForeColor = System.Drawing.Color.White;
+            this.ButtonLogin.Image = global::ProjetoPastelariaDoZe.WinFormsApp.Properties.Resources.user_friends_solid;
+            this.ButtonLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtonLogin.Location = new System.Drawing.Point(1, 0);
             this.ButtonLogin.Name = "ButtonLogin";
             this.ButtonLogin.Size = new System.Drawing.Size(210, 103);
@@ -86,7 +109,9 @@
             this.ButtonSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonSobre.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ButtonSobre.ForeColor = System.Drawing.Color.White;
-            this.ButtonSobre.Location = new System.Drawing.Point(3, 496);
+            this.ButtonSobre.Image = global::ProjetoPastelariaDoZe.WinFormsApp.Properties.Resources.sobre_solido_branco;
+            this.ButtonSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonSobre.Location = new System.Drawing.Point(1, 504);
             this.ButtonSobre.Name = "ButtonSobre";
             this.ButtonSobre.Size = new System.Drawing.Size(210, 44);
             this.ButtonSobre.TabIndex = 6;
@@ -102,7 +127,9 @@
             this.ButtonConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonConfiguracoes.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ButtonConfiguracoes.ForeColor = System.Drawing.Color.White;
-            this.ButtonConfiguracoes.Location = new System.Drawing.Point(3, 446);
+            this.ButtonConfiguracoes.Image = global::ProjetoPastelariaDoZe.WinFormsApp.Properties.Resources.barras_configuracoes_solido_branco;
+            this.ButtonConfiguracoes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonConfiguracoes.Location = new System.Drawing.Point(1, 460);
             this.ButtonConfiguracoes.Name = "ButtonConfiguracoes";
             this.ButtonConfiguracoes.Size = new System.Drawing.Size(210, 44);
             this.ButtonConfiguracoes.TabIndex = 5;
@@ -118,7 +145,9 @@
             this.ButtonFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonFuncionarios.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ButtonFuncionarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtonFuncionarios.Location = new System.Drawing.Point(0, 246);
+            this.ButtonFuncionarios.Image = global::ProjetoPastelariaDoZe.WinFormsApp.Properties.Resources.funcionarios_solido_branco;
+            this.ButtonFuncionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonFuncionarios.Location = new System.Drawing.Point(0, 284);
             this.ButtonFuncionarios.Name = "ButtonFuncionarios";
             this.ButtonFuncionarios.Size = new System.Drawing.Size(213, 44);
             this.ButtonFuncionarios.TabIndex = 4;
@@ -134,7 +163,9 @@
             this.ButtonProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonProdutos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ButtonProdutos.ForeColor = System.Drawing.Color.White;
-            this.ButtonProdutos.Location = new System.Drawing.Point(0, 396);
+            this.ButtonProdutos.Image = global::ProjetoPastelariaDoZe.WinFormsApp.Properties.Resources.produtos_solido_branco;
+            this.ButtonProdutos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonProdutos.Location = new System.Drawing.Point(0, 416);
             this.ButtonProdutos.Name = "ButtonProdutos";
             this.ButtonProdutos.Size = new System.Drawing.Size(213, 44);
             this.ButtonProdutos.TabIndex = 3;
@@ -150,7 +181,9 @@
             this.ButtonClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonClientes.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ButtonClientes.ForeColor = System.Drawing.Color.White;
-            this.ButtonClientes.Location = new System.Drawing.Point(0, 346);
+            this.ButtonClientes.Image = global::ProjetoPastelariaDoZe.WinFormsApp.Properties.Resources.clientes_solido_branco;
+            this.ButtonClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonClientes.Location = new System.Drawing.Point(0, 372);
             this.ButtonClientes.Name = "ButtonClientes";
             this.ButtonClientes.Size = new System.Drawing.Size(213, 44);
             this.ButtonClientes.TabIndex = 2;
@@ -166,7 +199,9 @@
             this.ButtonComanda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonComanda.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ButtonComanda.ForeColor = System.Drawing.Color.White;
-            this.ButtonComanda.Location = new System.Drawing.Point(0, 296);
+            this.ButtonComanda.Image = global::ProjetoPastelariaDoZe.WinFormsApp.Properties.Resources.comanda_solido_branco;
+            this.ButtonComanda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonComanda.Location = new System.Drawing.Point(1, 328);
             this.ButtonComanda.Name = "ButtonComanda";
             this.ButtonComanda.Size = new System.Drawing.Size(213, 44);
             this.ButtonComanda.TabIndex = 1;
@@ -182,6 +217,8 @@
             this.ButtonInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonInicio.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ButtonInicio.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ButtonInicio.Image = global::ProjetoPastelariaDoZe.WinFormsApp.Properties.Resources.inicio_solido_branco;
+            this.ButtonInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtonInicio.Location = new System.Drawing.Point(0, 196);
             this.ButtonInicio.Name = "ButtonInicio";
             this.ButtonInicio.Size = new System.Drawing.Size(213, 44);
@@ -198,15 +235,6 @@
             this.panelMenuSuperior.Size = new System.Drawing.Size(1098, 103);
             this.panelMenuSuperior.TabIndex = 1;
             // 
-            // panelMenuGeral
-            // 
-            this.panelMenuGeral.BackColor = System.Drawing.Color.Gray;
-            this.panelMenuGeral.Controls.Add(this.LabelCorpo);
-            this.panelMenuGeral.Location = new System.Drawing.Point(209, 103);
-            this.panelMenuGeral.Name = "panelMenuGeral";
-            this.panelMenuGeral.Size = new System.Drawing.Size(1098, 576);
-            this.panelMenuGeral.TabIndex = 2;
-            // 
             // LabelCabecalho
             // 
             this.LabelCabecalho.AutoSize = true;
@@ -217,11 +245,20 @@
             this.LabelCabecalho.TabIndex = 0;
             this.LabelCabecalho.Text = "Aqui vai ter o cabeçalho";
             // 
+            // panelMenuGeral
+            // 
+            this.panelMenuGeral.BackColor = System.Drawing.Color.Gray;
+            this.panelMenuGeral.Controls.Add(this.LabelCorpo);
+            this.panelMenuGeral.Location = new System.Drawing.Point(209, 103);
+            this.panelMenuGeral.Name = "panelMenuGeral";
+            this.panelMenuGeral.Size = new System.Drawing.Size(1098, 576);
+            this.panelMenuGeral.TabIndex = 2;
+            // 
             // LabelCorpo
             // 
             this.LabelCorpo.AutoSize = true;
             this.LabelCorpo.ForeColor = System.Drawing.Color.White;
-            this.LabelCorpo.Location = new System.Drawing.Point(427, 261);
+            this.LabelCorpo.Location = new System.Drawing.Point(393, 225);
             this.LabelCorpo.Name = "LabelCorpo";
             this.LabelCorpo.Size = new System.Drawing.Size(185, 15);
             this.LabelCorpo.TabIndex = 0;
@@ -236,6 +273,7 @@
             this.Controls.Add(this.panelMenuGeral);
             this.Controls.Add(this.panelMenuSuperior);
             this.Controls.Add(this.panelMenuLateral);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Inicio";
             this.Text = "Fiados do Zé";
             this.panelMenuLateral.ResumeLayout(false);
@@ -262,5 +300,6 @@
         private Button ButtonConfiguracoes;
         private Label LabelCabecalho;
         private Label LabelCorpo;
+        private Button ButtonCaixa;
     }
 }
