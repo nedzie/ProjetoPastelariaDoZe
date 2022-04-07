@@ -68,13 +68,15 @@
             this.panelClientes.Controls.Add(this.labelNome);
             this.panelClientes.Location = new System.Drawing.Point(12, 12);
             this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(776, 426);
+            this.panelClientes.Size = new System.Drawing.Size(701, 349);
             this.panelClientes.TabIndex = 0;
             // 
             // ButtonFechar
             // 
             this.ButtonFechar.BackColor = System.Drawing.Color.White;
-            this.ButtonFechar.Location = new System.Drawing.Point(701, 400);
+            this.ButtonFechar.FlatAppearance.BorderSize = 0;
+            this.ButtonFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonFechar.Location = new System.Drawing.Point(626, 323);
             this.ButtonFechar.Name = "ButtonFechar";
             this.ButtonFechar.Size = new System.Drawing.Size(75, 23);
             this.ButtonFechar.TabIndex = 14;
@@ -84,15 +86,16 @@
             // 
             // buttonCadastrar
             // 
+            this.buttonCadastrar.BackColor = System.Drawing.Color.White;
             this.buttonCadastrar.FlatAppearance.BorderSize = 0;
             this.buttonCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCadastrar.ForeColor = System.Drawing.Color.White;
-            this.buttonCadastrar.Location = new System.Drawing.Point(215, 268);
+            this.buttonCadastrar.ForeColor = System.Drawing.Color.Black;
+            this.buttonCadastrar.Location = new System.Drawing.Point(212, 260);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(312, 43);
             this.buttonCadastrar.TabIndex = 13;
             this.buttonCadastrar.Text = "Cadastrar";
-            this.buttonCadastrar.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.UseVisualStyleBackColor = false;
             // 
             // labelDiaDoFiado
             // 
@@ -221,8 +224,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(175)))));
-            this.ClientSize = new System.Drawing.Size(800, 523);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(730, 449);
             this.Controls.Add(this.panelClientes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Clientes";

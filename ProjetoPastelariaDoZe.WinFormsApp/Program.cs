@@ -1,3 +1,6 @@
+using System.Configuration;
+using System.Globalization;
+
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
     internal static class Program
@@ -8,8 +11,12 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+
+            string? aux = (ConfigurationManager.AppSettings.Get("IdiomaRegiao") is not null) ? ConfigurationManager.AppSettings.Get("IdiomaRegiao") : ""; // ? > Pode ser null |
+
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(aux!); // var! > Pode ser null
+            Thread.CurrentThread.CurrentCulture = new CultureInfo(aux!);
+
             ApplicationConfiguration.Initialize();
             Application.Run(new Inicio());
         }

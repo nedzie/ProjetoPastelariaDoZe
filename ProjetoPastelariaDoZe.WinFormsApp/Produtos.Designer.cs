@@ -42,129 +42,95 @@
             this.ButtonFechar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxFotoDoProduto)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelNome
             // 
-            this.labelNome.AutoSize = true;
+            resources.ApplyResources(this.labelNome, "labelNome");
             this.labelNome.ForeColor = System.Drawing.Color.White;
-            this.labelNome.Location = new System.Drawing.Point(118, 24);
             this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(43, 15);
-            this.labelNome.TabIndex = 0;
-            this.labelNome.Text = "Nome:";
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(118, 42);
+            this.textBoxNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.textBoxNome, "textBoxNome");
             this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.PlaceholderText = "Nome do produto";
-            this.textBoxNome.Size = new System.Drawing.Size(235, 23);
-            this.textBoxNome.TabIndex = 1;
             // 
             // labelDescricao
             // 
-            this.labelDescricao.AutoSize = true;
+            resources.ApplyResources(this.labelDescricao, "labelDescricao");
             this.labelDescricao.ForeColor = System.Drawing.Color.White;
-            this.labelDescricao.Location = new System.Drawing.Point(118, 82);
             this.labelDescricao.Name = "labelDescricao";
-            this.labelDescricao.Size = new System.Drawing.Size(61, 15);
-            this.labelDescricao.TabIndex = 2;
-            this.labelDescricao.Text = "Descrição:";
             // 
             // textBoxDescricao
             // 
-            this.textBoxDescricao.Location = new System.Drawing.Point(118, 121);
+            resources.ApplyResources(this.textBoxDescricao, "textBoxDescricao");
             this.textBoxDescricao.Name = "textBoxDescricao";
-            this.textBoxDescricao.PlaceholderText = "Descrição do produto";
-            this.textBoxDescricao.Size = new System.Drawing.Size(298, 23);
-            this.textBoxDescricao.TabIndex = 3;
             // 
             // labelValorUnitario
             // 
-            this.labelValorUnitario.AutoSize = true;
+            resources.ApplyResources(this.labelValorUnitario, "labelValorUnitario");
             this.labelValorUnitario.ForeColor = System.Drawing.Color.White;
-            this.labelValorUnitario.Location = new System.Drawing.Point(118, 170);
             this.labelValorUnitario.Name = "labelValorUnitario";
-            this.labelValorUnitario.Size = new System.Drawing.Size(104, 15);
-            this.labelValorUnitario.TabIndex = 4;
-            this.labelValorUnitario.Text = "Valor unitário (R$):";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 199);
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "R$";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 5;
             // 
             // labelFoto
             // 
-            this.labelFoto.AutoSize = true;
+            resources.ApplyResources(this.labelFoto, "labelFoto");
             this.labelFoto.ForeColor = System.Drawing.Color.White;
-            this.labelFoto.Location = new System.Drawing.Point(535, 24);
             this.labelFoto.Name = "labelFoto";
-            this.labelFoto.Size = new System.Drawing.Size(34, 15);
-            this.labelFoto.TabIndex = 6;
-            this.labelFoto.Text = "Foto:";
             // 
             // ButtonImportarFoto
             // 
             this.ButtonImportarFoto.BackColor = System.Drawing.Color.White;
-            this.ButtonImportarFoto.Location = new System.Drawing.Point(539, 155);
+            this.ButtonImportarFoto.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.ButtonImportarFoto, "ButtonImportarFoto");
             this.ButtonImportarFoto.Name = "ButtonImportarFoto";
-            this.ButtonImportarFoto.Size = new System.Drawing.Size(104, 40);
-            this.ButtonImportarFoto.TabIndex = 7;
-            this.ButtonImportarFoto.Text = "Importar...";
             this.ButtonImportarFoto.UseVisualStyleBackColor = false;
             // 
             // PictureBoxFotoDoProduto
             // 
-            this.PictureBoxFotoDoProduto.Location = new System.Drawing.Point(539, 42);
+            resources.ApplyResources(this.PictureBoxFotoDoProduto, "PictureBoxFotoDoProduto");
             this.PictureBoxFotoDoProduto.Name = "PictureBoxFotoDoProduto";
-            this.PictureBoxFotoDoProduto.Size = new System.Drawing.Size(138, 107);
-            this.PictureBoxFotoDoProduto.TabIndex = 8;
             this.PictureBoxFotoDoProduto.TabStop = false;
             // 
             // ButtonCadastrar
             // 
             this.ButtonCadastrar.BackColor = System.Drawing.Color.White;
-            this.ButtonCadastrar.Location = new System.Drawing.Point(539, 235);
+            this.ButtonCadastrar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.ButtonCadastrar, "ButtonCadastrar");
             this.ButtonCadastrar.Name = "ButtonCadastrar";
-            this.ButtonCadastrar.Size = new System.Drawing.Size(144, 53);
-            this.ButtonCadastrar.TabIndex = 9;
-            this.ButtonCadastrar.Text = "Cadastrar";
             this.ButtonCadastrar.UseVisualStyleBackColor = false;
             // 
             // ButtonFechar
             // 
             this.ButtonFechar.BackColor = System.Drawing.Color.White;
-            this.ButtonFechar.Location = new System.Drawing.Point(713, 397);
+            this.ButtonFechar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.ButtonFechar, "ButtonFechar");
             this.ButtonFechar.Name = "ButtonFechar";
-            this.ButtonFechar.Size = new System.Drawing.Size(75, 23);
-            this.ButtonFechar.TabIndex = 10;
-            this.ButtonFechar.Text = "Fechar";
             this.ButtonFechar.UseVisualStyleBackColor = false;
             this.ButtonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Controls.Add(this.ButtonImportarFoto);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 408);
-            this.panel1.TabIndex = 11;
             // 
             // Produtos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.ClientSize = new System.Drawing.Size(800, 506);
+            this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.ButtonFechar);
             this.Controls.Add(this.ButtonCadastrar);
             this.Controls.Add(this.PictureBoxFotoDoProduto);
-            this.Controls.Add(this.ButtonImportarFoto);
             this.Controls.Add(this.labelFoto);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelValorUnitario);
@@ -173,10 +139,9 @@
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Produtos";
-            this.Text = "Produtos";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxFotoDoProduto)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

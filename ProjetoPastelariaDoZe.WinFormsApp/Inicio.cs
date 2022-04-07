@@ -5,6 +5,8 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         public Inicio()
         {
             InitializeComponent();
+            this.Text = Properties.Resources.ResourceManager.GetString("form.Text");
+            ButtonCaixa.Text = Properties.Resources.ResourceManager.GetString("buttonCaixa.Text");
         }
 
         private void ButtonLogin_MouseClick(object sender, MouseEventArgs e)

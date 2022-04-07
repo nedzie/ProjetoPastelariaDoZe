@@ -57,149 +57,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;textBoxSenha.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="buttonEntrar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="textBoxUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 23</value>
-  </data>
-  <data name="&gt;&gt;textBoxUsuario.Parent" xml:space="preserve">
-    <value>panelFundoLogin</value>
-  </data>
-  <data name="&gt;&gt;panelFundoLogin.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelLogin.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;ButtonFechar.Name" xml:space="preserve">
-    <value>ButtonFechar</value>
-  </data>
-  <data name="&gt;&gt;ButtonCadastrar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ButtonCadastrar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="ButtonFechar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="labelSenha.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="buttonEntrar.Text" xml:space="preserve">
-    <value>Entrar</value>
-  </data>
-  <data name="LabelNovoUsuario.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;ButtonCadastrar.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelUsuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="LabelNovoUsuario.Text" xml:space="preserve">
-    <value>Novo usuário?</value>
-  </data>
-  <data name="&gt;&gt;textBoxSenha.Name" xml:space="preserve">
-    <value>textBoxSenha</value>
-  </data>
-  <data name="&gt;&gt;textBoxUsuario.Name" xml:space="preserve">
-    <value>textBoxUsuario</value>
-  </data>
-  <data name="&gt;&gt;ButtonFechar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ButtonCadastrar.Name" xml:space="preserve">
-    <value>ButtonCadastrar</value>
-  </data>
-  <data name="ButtonCadastrar.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="ButtonCadastrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 25</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ButtonFechar.Location" type="System.Drawing.Point, System.Drawing">
     <value>397, 326</value>
-  </data>
-  <data name="textBoxSenha.PlaceholderText" xml:space="preserve">
-    <value>********</value>
-  </data>
-  <data name="textBoxUsuario.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panelFundoLogin.Name" xml:space="preserve">
-    <value>panelFundoLogin</value>
-  </data>
-  <data name="textBoxSenha.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="textBoxUsuario.PlaceholderText" xml:space="preserve">
-    <value>Seu usuário</value>
-  </data>
-  <data name="&gt;&gt;buttonEntrar.Name" xml:space="preserve">
-    <value>buttonEntrar</value>
-  </data>
-  <data name="ButtonCadastrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 221</value>
-  </data>
-  <data name="&gt;&gt;textBoxSenha.Parent" xml:space="preserve">
-    <value>panelFundoLogin</value>
-  </data>
-  <data name="&gt;&gt;labelSenha.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="ButtonFechar.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;LabelNovoUsuario.Parent" xml:space="preserve">
-    <value>panelFundoLogin</value>
-  </data>
-  <data name="&gt;&gt;textBoxUsuario.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="ButtonFechar.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="&gt;&gt;textBoxUsuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ButtonFechar.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="labelUsuario.Text" xml:space="preserve">
-    <value>Usuário</value>
+  <data name="ButtonFechar.Text" xml:space="preserve">
+    <value>Fechar</value>
   </data>
-  <data name="LabelNovoUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 15</value>
-  </data>
-  <data name="labelSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panelFundoLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;ButtonFechar.Name" xml:space="preserve">
+    <value>ButtonFechar</value>
   </data>
   <data name="&gt;&gt;ButtonFechar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="labelLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="labelUsuario.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="panelFundoLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>475, 352</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="&gt;&gt;labelSenha.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ButtonFechar.Parent" xml:space="preserve">
     <value>panelFundoLogin</value>
+  </data>
+  <data name="&gt;&gt;ButtonFechar.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="LabelNovoUsuario.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -207,107 +93,245 @@
   <data name="LabelNovoUsuario.Location" type="System.Drawing.Point, System.Drawing">
     <value>365, 198</value>
   </data>
-  <data name="&gt;&gt;panelFundoLogin.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="LabelNovoUsuario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 15</value>
   </data>
-  <data name="buttonEntrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 216</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>499, 376</value>
-  </data>
-  <data name="&gt;&gt;ButtonCadastrar.Parent" xml:space="preserve">
-    <value>panelFundoLogin</value>
-  </data>
-  <data name="labelLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 15</value>
-  </data>
-  <data name="buttonEntrar.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;textBoxSenha.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 155</value>
-  </data>
-  <data name="&gt;&gt;ButtonFechar.Parent" xml:space="preserve">
-    <value>panelFundoLogin</value>
-  </data>
-  <data name="labelLogin.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelSenha.Text" xml:space="preserve">
-    <value>Senha</value>
-  </data>
-  <data name="textBoxSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 23</value>
-  </data>
-  <data name="buttonEntrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 30</value>
-  </data>
-  <data name="&gt;&gt;labelLogin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelLogin.Name" xml:space="preserve">
-    <value>labelLogin</value>
-  </data>
-  <data name="&gt;&gt;LabelNovoUsuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelUsuario.ZOrder" xml:space="preserve">
+  <data name="LabelNovoUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;labelUsuario.Name" xml:space="preserve">
-    <value>labelUsuario</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Login</value>
+  <data name="LabelNovoUsuario.Text" xml:space="preserve">
+    <value>Novo usuário?</value>
   </data>
   <data name="&gt;&gt;LabelNovoUsuario.Name" xml:space="preserve">
     <value>LabelNovoUsuario</value>
   </data>
-  <data name="buttonEntrar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="labelLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 45</value>
-  </data>
-  <data name="&gt;&gt;buttonEntrar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 137</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="labelSenha.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;labelSenha.Name" xml:space="preserve">
-    <value>labelSenha</value>
-  </data>
-  <data name="&gt;&gt;buttonEntrar.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelLogin.Parent" xml:space="preserve">
-    <value>panelFundoLogin</value>
-  </data>
-  <data name="ButtonFechar.Text" xml:space="preserve">
-    <value>Fechar</value>
-  </data>
-  <data name="&gt;&gt;labelSenha.Type" xml:space="preserve">
+  <data name="&gt;&gt;LabelNovoUsuario.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="labelLogin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 24pt</value>
+  <data name="&gt;&gt;LabelNovoUsuario.Parent" xml:space="preserve">
+    <value>panelFundoLogin</value>
   </data>
   <data name="&gt;&gt;LabelNovoUsuario.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="labelUsuario.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ButtonCadastrar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ButtonCadastrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 221</value>
+  </data>
+  <data name="ButtonCadastrar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="ButtonCadastrar.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ButtonCadastrar.Text" xml:space="preserve">
+    <value>Cadastrar</value>
+  </data>
+  <data name="&gt;&gt;ButtonCadastrar.Name" xml:space="preserve">
+    <value>ButtonCadastrar</value>
+  </data>
+  <data name="&gt;&gt;ButtonCadastrar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonCadastrar.Parent" xml:space="preserve">
+    <value>panelFundoLogin</value>
+  </data>
+  <data name="&gt;&gt;ButtonCadastrar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonEntrar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonEntrar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="buttonEntrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 216</value>
+  </data>
+  <data name="buttonEntrar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 30</value>
+  </data>
+  <data name="buttonEntrar.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="buttonEntrar.Text" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="&gt;&gt;buttonEntrar.Name" xml:space="preserve">
+    <value>buttonEntrar</value>
+  </data>
+  <data name="&gt;&gt;buttonEntrar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonEntrar.Parent" xml:space="preserve">
+    <value>panelFundoLogin</value>
+  </data>
+  <data name="&gt;&gt;buttonEntrar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 155</value>
+  </data>
+  <data name="textBoxSenha.PlaceholderText" xml:space="preserve">
+    <value>********</value>
+  </data>
+  <data name="textBoxSenha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 23</value>
+  </data>
+  <data name="textBoxSenha.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.Name" xml:space="preserve">
+    <value>textBoxSenha</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.Parent" xml:space="preserve">
+    <value>panelFundoLogin</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBoxNome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 101</value>
+  </data>
+  <data name="textBoxNome.PlaceholderText" xml:space="preserve">
+    <value>Seu nome</value>
+  </data>
+  <data name="textBoxNome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 23</value>
+  </data>
+  <data name="textBoxNome.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxNome.Name" xml:space="preserve">
+    <value>textBoxNome</value>
+  </data>
+  <data name="&gt;&gt;textBoxNome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxNome.Parent" xml:space="preserve">
+    <value>panelFundoLogin</value>
+  </data>
+  <data name="&gt;&gt;textBoxNome.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelSenha.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 137</value>
+  </data>
+  <data name="labelSenha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 15</value>
+  </data>
+  <data name="labelSenha.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelSenha.Text" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Name" xml:space="preserve">
+    <value>labelSenha</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Parent" xml:space="preserve">
+    <value>panelFundoLogin</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelNome.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelNome.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 79</value>
+  </data>
+  <data name="labelNome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 15</value>
+  </data>
+  <data name="labelNome.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelNome.Text" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="&gt;&gt;labelNome.Name" xml:space="preserve">
+    <value>labelNome</value>
+  </data>
+  <data name="&gt;&gt;labelNome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelNome.Parent" xml:space="preserve">
+    <value>panelFundoLogin</value>
+  </data>
+  <data name="&gt;&gt;labelNome.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelLogin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="labelLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 16</value>
+  </data>
+  <data name="labelLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 45</value>
+  </data>
+  <data name="labelLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelLogin.Text" xml:space="preserve">
+    <value>Conectar-se</value>
+  </data>
+  <data name="&gt;&gt;labelLogin.Name" xml:space="preserve">
+    <value>labelLogin</value>
+  </data>
+  <data name="&gt;&gt;labelLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLogin.Parent" xml:space="preserve">
+    <value>panelFundoLogin</value>
+  </data>
+  <data name="&gt;&gt;labelLogin.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="panelFundoLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="panelFundoLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>475, 352</value>
+  </data>
+  <data name="panelFundoLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelFundoLogin.Name" xml:space="preserve">
+    <value>panelFundoLogin</value>
+  </data>
+  <data name="&gt;&gt;panelFundoLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelFundoLogin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelFundoLogin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>499, 376</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -385,34 +409,13 @@
         /D/8B////7////////////////////////8=
 </value>
   </data>
-  <data name="labelUsuario.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Conectar-se</value>
   </data>
-  <data name="labelUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 15</value>
-  </data>
-  <data name="textBoxUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 101</value>
-  </data>
-  <data name="&gt;&gt;labelUsuario.Parent" xml:space="preserve">
-    <value>panelFundoLogin</value>
-  </data>
-  <data name="labelLogin.Text" xml:space="preserve">
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Login</value>
   </data>
-  <data name="ButtonCadastrar.Text" xml:space="preserve">
-    <value>Cadastrar</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panelFundoLogin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panelFundoLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;buttonEntrar.Parent" xml:space="preserve">
-    <value>panelFundoLogin</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

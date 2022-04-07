@@ -163,4 +163,89 @@
   <data name="fechar-solido-branco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fechar-solido-branco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="buttonCadastrar.Text" xml:space="preserve">
+    <value>Cadastrar</value>
+    <comment>Início</comment>
+  </data>
+  <data name="buttonCaixa.Text" xml:space="preserve">
+    <value>Caixa</value>
+  </data>
+  <data name="buttonCliente.Text" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="buttonComanda.Text" xml:space="preserve">
+    <value>Comanda</value>
+  </data>
+  <data name="buttonConfiguracoes.Text" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="buttonEntrar.Text" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="buttonFechar.Text" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="buttonFuncionario.Text" xml:space="preserve">
+    <value>Funcionário</value>
+  </data>
+  <data name="buttonInicio.Text" xml:space="preserve">
+    <value>Início</value>
+  </data>
+  <data name="buttonLogin.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="buttonProduto.Text" xml:space="preserve">
+    <value>Produto</value>
+  </data>
+  <data name="buttonSobre.Text" xml:space="preserve">
+    <value>Sobre</value>
+    <comment>Início</comment>
+  </data>
+  <data name="form.Text" xml:space="preserve">
+    <value>Fiados do Zé</value>
+    <comment>Login</comment>
+  </data>
+  <data name="labelNovoUsuario.Text" xml:space="preserve">
+    <value>Novo usuário?</value>
+    <comment>|</comment>
+  </data>
+  <data name="labelSenha.Text" xml:space="preserve">
+    <value>Senha</value>
+    <comment>|</comment>
+  </data>
+  <data name="labelTituloCadastro.Text" xml:space="preserve">
+    <value>Cadastrar-se</value>
+    <comment>|</comment>
+  </data>
+  <data name="labelNome.Text" xml:space="preserve">
+    <value>Nome</value>
+    <comment>|</comment>
+  </data>
+  <data name="textBoxSeuNome.Placeholder" xml:space="preserve">
+    <value>Nome</value>
+    <comment>|</comment>
+  </data>
+  <data name="txtJanelaLogin" xml:space="preserve">
+    <value>Conectar-se</value>
+    <comment>Login</comment>
+  </data>
+  <data name="button" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonImportar" xml:space="preserve">
+    <value>Importar</value>
+  </data>
+  <data name="labelDescricao.Text" xml:space="preserve">
+    <value>Descrição</value>
+    <comment>Produtos</comment>
+  </data>
+  <data name="labelFoto" xml:space="preserve">
+    <value>Foto</value>
+  </data>
+  <data name="labelValorUnitario.Text" xml:space="preserve">
+    <value>Valor unitário (R$)</value>
+  </data>
+  <data name="textBoxValorUnitario.Placeholder" xml:space="preserve">
+    <value>R$</value>
+  </data>
 </root>

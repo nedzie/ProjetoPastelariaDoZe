@@ -21,7 +21,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             Controls.Add(opcoes);
 
             
-            Size size = new(Size.Width, Size.Height + opcoes.Size.Height);
+            //Size size = new(Size.Width, Size.Height + opcoes.Size.Height);
         }
 
         private void ButtonFechar_Click(object sender, EventArgs e)
