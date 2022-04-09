@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Funcionarios));
             this.labelNome = new System.Windows.Forms.Label();
             this.PanelFuncionarios = new System.Windows.Forms.Panel();
-            this.ButtonFechar = new System.Windows.Forms.Button();
+            this.buttonFechar = new System.Windows.Forms.Button();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.textBoxTelefone = new System.Windows.Forms.TextBox();
-            this.textBoxMatrícula = new System.Windows.Forms.TextBox();
+            this.textBoxMatricula = new System.Windows.Forms.TextBox();
             this.radioButtonBalcao = new System.Windows.Forms.RadioButton();
             this.radioButtonAdmin = new System.Windows.Forms.RadioButton();
             this.textBoxCPF = new System.Windows.Forms.TextBox();
@@ -57,11 +57,11 @@
             // PanelFuncionarios
             // 
             this.PanelFuncionarios.BackColor = System.Drawing.Color.Transparent;
-            this.PanelFuncionarios.Controls.Add(this.ButtonFechar);
+            this.PanelFuncionarios.Controls.Add(this.buttonFechar);
             this.PanelFuncionarios.Controls.Add(this.buttonCadastrar);
             this.PanelFuncionarios.Controls.Add(this.textBoxSenha);
             this.PanelFuncionarios.Controls.Add(this.textBoxTelefone);
-            this.PanelFuncionarios.Controls.Add(this.textBoxMatrícula);
+            this.PanelFuncionarios.Controls.Add(this.textBoxMatricula);
             this.PanelFuncionarios.Controls.Add(this.radioButtonBalcao);
             this.PanelFuncionarios.Controls.Add(this.radioButtonAdmin);
             this.PanelFuncionarios.Controls.Add(this.textBoxCPF);
@@ -75,14 +75,14 @@
             resources.ApplyResources(this.PanelFuncionarios, "PanelFuncionarios");
             this.PanelFuncionarios.Name = "PanelFuncionarios";
             // 
-            // ButtonFechar
+            // buttonFechar
             // 
-            this.ButtonFechar.BackColor = System.Drawing.Color.White;
-            this.ButtonFechar.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.ButtonFechar, "ButtonFechar");
-            this.ButtonFechar.Name = "ButtonFechar";
-            this.ButtonFechar.UseVisualStyleBackColor = false;
-            this.ButtonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
+            this.buttonFechar.BackColor = System.Drawing.Color.White;
+            this.buttonFechar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.buttonFechar, "buttonFechar");
+            this.buttonFechar.Name = "buttonFechar";
+            this.buttonFechar.UseVisualStyleBackColor = false;
+            this.buttonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
             // 
             // buttonCadastrar
             // 
@@ -103,10 +103,10 @@
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.ReadOnly = true;
             // 
-            // textBoxMatrícula
+            // textBoxMatricula
             // 
-            resources.ApplyResources(this.textBoxMatrícula, "textBoxMatrícula");
-            this.textBoxMatrícula.Name = "textBoxMatrícula";
+            resources.ApplyResources(this.textBoxMatricula, "textBoxMatricula");
+            this.textBoxMatricula.Name = "textBoxMatricula";
             // 
             // radioButtonBalcao
             // 
@@ -193,7 +193,7 @@
         private Button buttonCadastrar;
         private TextBox textBoxSenha;
         private TextBox textBoxTelefone;
-        private TextBox textBoxMatrícula;
-        private Button ButtonFechar;
+        private TextBox textBoxMatricula;
+        private Button buttonFechar;
     }
 }

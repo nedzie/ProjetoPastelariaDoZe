@@ -86,32 +86,221 @@
   <data name="&gt;&gt;labelNome.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ButtonFechar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;buttonFechar.Name" xml:space="preserve">
+    <value>buttonFechar</value>
   </data>
-  <data name="ButtonFechar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>698, 296</value>
-  </data>
-  <data name="ButtonFechar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="ButtonFechar.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="ButtonFechar.Text" xml:space="preserve">
-    <value>Fechar</value>
-  </data>
-  <data name="&gt;&gt;ButtonFechar.Name" xml:space="preserve">
-    <value>ButtonFechar</value>
-  </data>
-  <data name="&gt;&gt;ButtonFechar.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonFechar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonFechar.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonFechar.Parent" xml:space="preserve">
     <value>PanelFuncionarios</value>
   </data>
-  <data name="&gt;&gt;ButtonFechar.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonFechar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonCadastrar.Name" xml:space="preserve">
+    <value>buttonCadastrar</value>
+  </data>
+  <data name="&gt;&gt;buttonCadastrar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCadastrar.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;buttonCadastrar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.Name" xml:space="preserve">
+    <value>textBoxSenha</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxTelefone.Name" xml:space="preserve">
+    <value>textBoxTelefone</value>
+  </data>
+  <data name="&gt;&gt;textBoxTelefone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxTelefone.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;textBoxTelefone.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxMatricula.Name" xml:space="preserve">
+    <value>textBoxMatricula</value>
+  </data>
+  <data name="&gt;&gt;textBoxMatricula.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxMatricula.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;textBoxMatricula.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;radioButtonBalcao.Name" xml:space="preserve">
+    <value>radioButtonBalcao</value>
+  </data>
+  <data name="&gt;&gt;radioButtonBalcao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonBalcao.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;radioButtonBalcao.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAdmin.Name" xml:space="preserve">
+    <value>radioButtonAdmin</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAdmin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAdmin.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAdmin.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBoxCPF.Name" xml:space="preserve">
+    <value>textBoxCPF</value>
+  </data>
+  <data name="&gt;&gt;textBoxCPF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxCPF.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;textBoxCPF.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;textBoxNome.Name" xml:space="preserve">
+    <value>textBoxNome</value>
+  </data>
+  <data name="&gt;&gt;textBoxNome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxNome.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;textBoxNome.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;labelGrupo.Name" xml:space="preserve">
+    <value>labelGrupo</value>
+  </data>
+  <data name="&gt;&gt;labelGrupo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelGrupo.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;labelGrupo.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Name" xml:space="preserve">
+    <value>labelSenha</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;labelTelefone.Name" xml:space="preserve">
+    <value>labelTelefone</value>
+  </data>
+  <data name="&gt;&gt;labelTelefone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTelefone.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;labelTelefone.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;labelMatricula.Name" xml:space="preserve">
+    <value>labelMatricula</value>
+  </data>
+  <data name="&gt;&gt;labelMatricula.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMatricula.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;labelMatricula.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;labelCPF.Name" xml:space="preserve">
+    <value>labelCPF</value>
+  </data>
+  <data name="&gt;&gt;labelCPF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCPF.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;labelCPF.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="PanelFuncionarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="PanelFuncionarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>441, 282</value>
+  </data>
+  <data name="PanelFuncionarios.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PanelFuncionarios.Name" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;PanelFuncionarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelFuncionarios.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PanelFuncionarios.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonFechar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonFechar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 238</value>
+  </data>
+  <data name="buttonFechar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonFechar.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="buttonFechar.Text" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="&gt;&gt;buttonFechar.Name" xml:space="preserve">
+    <value>buttonFechar</value>
+  </data>
+  <data name="&gt;&gt;buttonFechar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonFechar.Parent" xml:space="preserve">
+    <value>PanelFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;buttonFechar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="buttonCadastrar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -127,7 +316,7 @@
     <value>13</value>
   </data>
   <data name="buttonCadastrar.Text" xml:space="preserve">
-    <value>Registrar</value>
+    <value>Cadastrar</value>
   </data>
   <data name="&gt;&gt;buttonCadastrar.Name" xml:space="preserve">
     <value>buttonCadastrar</value>
@@ -189,28 +378,28 @@
   <data name="&gt;&gt;textBoxTelefone.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="textBoxMatrícula.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="textBoxMatricula.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 137</value>
   </data>
-  <data name="textBoxMatrícula.PlaceholderText" xml:space="preserve">
+  <data name="textBoxMatricula.PlaceholderText" xml:space="preserve">
     <value>000000</value>
   </data>
-  <data name="textBoxMatrícula.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="textBoxMatricula.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 23</value>
   </data>
-  <data name="textBoxMatrícula.TabIndex" type="System.Int32, mscorlib">
+  <data name="textBoxMatricula.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;textBoxMatrícula.Name" xml:space="preserve">
-    <value>textBoxMatrícula</value>
+  <data name="&gt;&gt;textBoxMatricula.Name" xml:space="preserve">
+    <value>textBoxMatricula</value>
   </data>
-  <data name="&gt;&gt;textBoxMatrícula.Type" xml:space="preserve">
+  <data name="&gt;&gt;textBoxMatricula.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBoxMatrícula.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textBoxMatricula.Parent" xml:space="preserve">
     <value>PanelFuncionarios</value>
   </data>
-  <data name="&gt;&gt;textBoxMatrícula.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBoxMatricula.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="radioButtonBalcao.AutoSize" type="System.Boolean, mscorlib">
@@ -450,27 +639,6 @@
   <data name="&gt;&gt;labelCPF.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="PanelFuncionarios.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="PanelFuncionarios.Size" type="System.Drawing.Size, System.Drawing">
-    <value>776, 323</value>
-  </data>
-  <data name="PanelFuncionarios.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;PanelFuncionarios.Name" xml:space="preserve">
-    <value>PanelFuncionarios</value>
-  </data>
-  <data name="&gt;&gt;PanelFuncionarios.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelFuncionarios.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PanelFuncionarios.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -478,7 +646,7 @@
     <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 420</value>
+    <value>482, 319</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

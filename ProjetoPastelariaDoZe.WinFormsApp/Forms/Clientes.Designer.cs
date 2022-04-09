@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.panelClientes = new System.Windows.Forms.Panel();
-            this.ButtonFechar = new System.Windows.Forms.Button();
+            this.buttonFechar = new System.Windows.Forms.Button();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.labelDiaDoFiado = new System.Windows.Forms.Label();
             this.numericUpDownDiaDoFiado = new System.Windows.Forms.NumericUpDown();
@@ -51,7 +51,7 @@
             // 
             // panelClientes
             // 
-            this.panelClientes.Controls.Add(this.ButtonFechar);
+            this.panelClientes.Controls.Add(this.buttonFechar);
             this.panelClientes.Controls.Add(this.buttonCadastrar);
             this.panelClientes.Controls.Add(this.labelDiaDoFiado);
             this.panelClientes.Controls.Add(this.numericUpDownDiaDoFiado);
@@ -68,21 +68,21 @@
             this.panelClientes.Controls.Add(this.labelNome);
             this.panelClientes.Location = new System.Drawing.Point(12, 12);
             this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(701, 349);
+            this.panelClientes.Size = new System.Drawing.Size(701, 312);
             this.panelClientes.TabIndex = 0;
             // 
-            // ButtonFechar
+            // buttonFechar
             // 
-            this.ButtonFechar.BackColor = System.Drawing.Color.White;
-            this.ButtonFechar.FlatAppearance.BorderSize = 0;
-            this.ButtonFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonFechar.Location = new System.Drawing.Point(626, 323);
-            this.ButtonFechar.Name = "ButtonFechar";
-            this.ButtonFechar.Size = new System.Drawing.Size(75, 23);
-            this.ButtonFechar.TabIndex = 14;
-            this.ButtonFechar.Text = "Fechar";
-            this.ButtonFechar.UseVisualStyleBackColor = false;
-            this.ButtonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
+            this.buttonFechar.BackColor = System.Drawing.Color.White;
+            this.buttonFechar.FlatAppearance.BorderSize = 0;
+            this.buttonFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFechar.Location = new System.Drawing.Point(623, 280);
+            this.buttonFechar.Name = "buttonFechar";
+            this.buttonFechar.Size = new System.Drawing.Size(75, 23);
+            this.buttonFechar.TabIndex = 14;
+            this.buttonFechar.Text = "Fechar";
+            this.buttonFechar.UseVisualStyleBackColor = false;
+            this.buttonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
             // 
             // buttonCadastrar
             // 
@@ -225,7 +225,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(730, 449);
+            this.ClientSize = new System.Drawing.Size(730, 331);
             this.Controls.Add(this.panelClientes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Clientes";
@@ -254,6 +254,6 @@
         private Label labelDiaDoFiado;
         private NumericUpDown numericUpDownDiaDoFiado;
         private Button buttonCadastrar;
-        private Button ButtonFechar;
+        private Button buttonFechar;
     }
 }

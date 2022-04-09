@@ -57,315 +57,122 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ButtonCaixa.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;buttonCaixa.Name" xml:space="preserve">
+    <value>buttonCaixa</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ButtonCaixa.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt</value>
-  </data>
-  <data name="ButtonCaixa.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ButtonCaixa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 240</value>
-  </data>
-  <data name="ButtonCaixa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 44</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ButtonCaixa.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="ButtonCaixa.Text" xml:space="preserve">
-    <value>Caixa</value>
-  </data>
-  <data name="&gt;&gt;ButtonCaixa.Name" xml:space="preserve">
-    <value>ButtonCaixa</value>
-  </data>
-  <data name="&gt;&gt;ButtonCaixa.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonCaixa.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonCaixa.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonCaixa.Parent" xml:space="preserve">
     <value>panelMenuLateral</value>
   </data>
-  <data name="&gt;&gt;ButtonCaixa.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonCaixa.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="ButtonLogin.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
+  <data name="&gt;&gt;buttonLogin.Name" xml:space="preserve">
+    <value>buttonLogin</value>
   </data>
-  <data name="ButtonLogin.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="ButtonLogin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt</value>
-  </data>
-  <data name="ButtonLogin.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ButtonLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 0</value>
-  </data>
-  <data name="ButtonLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 103</value>
-  </data>
-  <data name="ButtonLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="ButtonLogin.Text" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="&gt;&gt;ButtonLogin.Name" xml:space="preserve">
-    <value>ButtonLogin</value>
-  </data>
-  <data name="&gt;&gt;ButtonLogin.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonLogin.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonLogin.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonLogin.Parent" xml:space="preserve">
     <value>panelMenuLateral</value>
   </data>
-  <data name="&gt;&gt;ButtonLogin.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonLogin.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="ButtonSobre.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;buttonSobre.Name" xml:space="preserve">
+    <value>buttonSobre</value>
   </data>
-  <data name="ButtonSobre.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt</value>
-  </data>
-  <data name="ButtonSobre.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ButtonSobre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 504</value>
-  </data>
-  <data name="ButtonSobre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 44</value>
-  </data>
-  <data name="ButtonSobre.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="ButtonSobre.Text" xml:space="preserve">
-    <value>Sobre</value>
-  </data>
-  <data name="&gt;&gt;ButtonSobre.Name" xml:space="preserve">
-    <value>ButtonSobre</value>
-  </data>
-  <data name="&gt;&gt;ButtonSobre.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonSobre.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonSobre.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonSobre.Parent" xml:space="preserve">
     <value>panelMenuLateral</value>
   </data>
-  <data name="&gt;&gt;ButtonSobre.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonSobre.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="ButtonConfiguracoes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;buttonConfiguracoes.Name" xml:space="preserve">
+    <value>buttonConfiguracoes</value>
   </data>
-  <data name="ButtonConfiguracoes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt</value>
-  </data>
-  <data name="ButtonConfiguracoes.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ButtonConfiguracoes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 460</value>
-  </data>
-  <data name="ButtonConfiguracoes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 44</value>
-  </data>
-  <data name="ButtonConfiguracoes.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="ButtonConfiguracoes.Text" xml:space="preserve">
-    <value>Configurações</value>
-  </data>
-  <data name="&gt;&gt;ButtonConfiguracoes.Name" xml:space="preserve">
-    <value>ButtonConfiguracoes</value>
-  </data>
-  <data name="&gt;&gt;ButtonConfiguracoes.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonConfiguracoes.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonConfiguracoes.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonConfiguracoes.Parent" xml:space="preserve">
     <value>panelMenuLateral</value>
   </data>
-  <data name="&gt;&gt;ButtonConfiguracoes.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonConfiguracoes.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="ButtonFuncionarios.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;buttonFuncionarios.Name" xml:space="preserve">
+    <value>buttonFuncionarios</value>
   </data>
-  <data name="ButtonFuncionarios.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt</value>
-  </data>
-  <data name="ButtonFuncionarios.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ButtonFuncionarios.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 284</value>
-  </data>
-  <data name="ButtonFuncionarios.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 44</value>
-  </data>
-  <data name="ButtonFuncionarios.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="ButtonFuncionarios.Text" xml:space="preserve">
-    <value>Funcionários</value>
-  </data>
-  <data name="&gt;&gt;ButtonFuncionarios.Name" xml:space="preserve">
-    <value>ButtonFuncionarios</value>
-  </data>
-  <data name="&gt;&gt;ButtonFuncionarios.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonFuncionarios.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonFuncionarios.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonFuncionarios.Parent" xml:space="preserve">
     <value>panelMenuLateral</value>
   </data>
-  <data name="&gt;&gt;ButtonFuncionarios.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonFuncionarios.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="ButtonProdutos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;buttonProdutos.Name" xml:space="preserve">
+    <value>buttonProdutos</value>
   </data>
-  <data name="ButtonProdutos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt</value>
-  </data>
-  <data name="ButtonProdutos.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ButtonProdutos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 416</value>
-  </data>
-  <data name="ButtonProdutos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 44</value>
-  </data>
-  <data name="ButtonProdutos.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="ButtonProdutos.Text" xml:space="preserve">
-    <value>Produtos</value>
-  </data>
-  <data name="&gt;&gt;ButtonProdutos.Name" xml:space="preserve">
-    <value>ButtonProdutos</value>
-  </data>
-  <data name="&gt;&gt;ButtonProdutos.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonProdutos.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonProdutos.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonProdutos.Parent" xml:space="preserve">
     <value>panelMenuLateral</value>
   </data>
-  <data name="&gt;&gt;ButtonProdutos.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonProdutos.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="ButtonClientes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;buttonClientes.Name" xml:space="preserve">
+    <value>buttonClientes</value>
   </data>
-  <data name="ButtonClientes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt</value>
-  </data>
-  <data name="ButtonClientes.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ButtonClientes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 372</value>
-  </data>
-  <data name="ButtonClientes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 44</value>
-  </data>
-  <data name="ButtonClientes.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="ButtonClientes.Text" xml:space="preserve">
-    <value>Clientes</value>
-  </data>
-  <data name="&gt;&gt;ButtonClientes.Name" xml:space="preserve">
-    <value>ButtonClientes</value>
-  </data>
-  <data name="&gt;&gt;ButtonClientes.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonClientes.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonClientes.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonClientes.Parent" xml:space="preserve">
     <value>panelMenuLateral</value>
   </data>
-  <data name="&gt;&gt;ButtonClientes.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonClientes.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="ButtonComanda.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;buttonComandas.Name" xml:space="preserve">
+    <value>buttonComandas</value>
   </data>
-  <data name="ButtonComanda.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt</value>
-  </data>
-  <data name="ButtonComanda.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ButtonComanda.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 328</value>
-  </data>
-  <data name="ButtonComanda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 44</value>
-  </data>
-  <data name="ButtonComanda.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="ButtonComanda.Text" xml:space="preserve">
-    <value>Comandas</value>
-  </data>
-  <data name="&gt;&gt;ButtonComanda.Name" xml:space="preserve">
-    <value>ButtonComanda</value>
-  </data>
-  <data name="&gt;&gt;ButtonComanda.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonComandas.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonComanda.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonComandas.Parent" xml:space="preserve">
     <value>panelMenuLateral</value>
   </data>
-  <data name="&gt;&gt;ButtonComanda.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonComandas.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="ButtonInicio.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;buttonInicio.Name" xml:space="preserve">
+    <value>buttonInicio</value>
   </data>
-  <data name="ButtonInicio.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt</value>
-  </data>
-  <data name="ButtonInicio.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ButtonInicio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 196</value>
-  </data>
-  <data name="ButtonInicio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 44</value>
-  </data>
-  <data name="ButtonInicio.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ButtonInicio.Text" xml:space="preserve">
-    <value>Início</value>
-  </data>
-  <data name="&gt;&gt;ButtonInicio.Name" xml:space="preserve">
-    <value>ButtonInicio</value>
-  </data>
-  <data name="&gt;&gt;ButtonInicio.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonInicio.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonInicio.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonInicio.Parent" xml:space="preserve">
     <value>panelMenuLateral</value>
   </data>
-  <data name="&gt;&gt;ButtonInicio.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonInicio.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panelMenuLateral.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 0</value>
   </data>
   <data name="panelMenuLateral.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 679</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panelMenuLateral.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -381,20 +188,306 @@
   <data name="&gt;&gt;panelMenuLateral.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="LabelCabecalho.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonCaixa.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="LabelCabecalho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>370, 45</value>
+  <data name="buttonCaixa.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
   </data>
-  <data name="LabelCabecalho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 15</value>
+  <data name="buttonCaixa.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="LabelCabecalho.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonCaixa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 240</value>
+  </data>
+  <data name="buttonCaixa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 44</value>
+  </data>
+  <data name="buttonCaixa.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonCaixa.Text" xml:space="preserve">
+    <value>Caixa</value>
+  </data>
+  <data name="&gt;&gt;buttonCaixa.Name" xml:space="preserve">
+    <value>buttonCaixa</value>
+  </data>
+  <data name="&gt;&gt;buttonCaixa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCaixa.Parent" xml:space="preserve">
+    <value>panelMenuLateral</value>
+  </data>
+  <data name="&gt;&gt;buttonCaixa.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="LabelCabecalho.Text" xml:space="preserve">
-    <value>Aqui vai ter o cabeçalho</value>
+  <data name="buttonLogin.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="buttonLogin.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="buttonLogin.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="buttonLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 0</value>
+  </data>
+  <data name="buttonLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 103</value>
+  </data>
+  <data name="buttonLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="buttonLogin.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="&gt;&gt;buttonLogin.Name" xml:space="preserve">
+    <value>buttonLogin</value>
+  </data>
+  <data name="&gt;&gt;buttonLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonLogin.Parent" xml:space="preserve">
+    <value>panelMenuLateral</value>
+  </data>
+  <data name="&gt;&gt;buttonLogin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonSobre.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonSobre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="buttonSobre.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="buttonSobre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 504</value>
+  </data>
+  <data name="buttonSobre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 44</value>
+  </data>
+  <data name="buttonSobre.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonSobre.Text" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="&gt;&gt;buttonSobre.Name" xml:space="preserve">
+    <value>buttonSobre</value>
+  </data>
+  <data name="&gt;&gt;buttonSobre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSobre.Parent" xml:space="preserve">
+    <value>panelMenuLateral</value>
+  </data>
+  <data name="&gt;&gt;buttonSobre.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonConfiguracoes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonConfiguracoes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="buttonConfiguracoes.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="buttonConfiguracoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 460</value>
+  </data>
+  <data name="buttonConfiguracoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 44</value>
+  </data>
+  <data name="buttonConfiguracoes.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="buttonConfiguracoes.Text" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="&gt;&gt;buttonConfiguracoes.Name" xml:space="preserve">
+    <value>buttonConfiguracoes</value>
+  </data>
+  <data name="&gt;&gt;buttonConfiguracoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonConfiguracoes.Parent" xml:space="preserve">
+    <value>panelMenuLateral</value>
+  </data>
+  <data name="&gt;&gt;buttonConfiguracoes.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonFuncionarios.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonFuncionarios.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="buttonFuncionarios.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="buttonFuncionarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 284</value>
+  </data>
+  <data name="buttonFuncionarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 44</value>
+  </data>
+  <data name="buttonFuncionarios.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="buttonFuncionarios.Text" xml:space="preserve">
+    <value>Funcionários</value>
+  </data>
+  <data name="&gt;&gt;buttonFuncionarios.Name" xml:space="preserve">
+    <value>buttonFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;buttonFuncionarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonFuncionarios.Parent" xml:space="preserve">
+    <value>panelMenuLateral</value>
+  </data>
+  <data name="&gt;&gt;buttonFuncionarios.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonProdutos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonProdutos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="buttonProdutos.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="buttonProdutos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 416</value>
+  </data>
+  <data name="buttonProdutos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 44</value>
+  </data>
+  <data name="buttonProdutos.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="buttonProdutos.Text" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="&gt;&gt;buttonProdutos.Name" xml:space="preserve">
+    <value>buttonProdutos</value>
+  </data>
+  <data name="&gt;&gt;buttonProdutos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonProdutos.Parent" xml:space="preserve">
+    <value>panelMenuLateral</value>
+  </data>
+  <data name="&gt;&gt;buttonProdutos.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="buttonClientes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonClientes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="buttonClientes.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="buttonClientes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 372</value>
+  </data>
+  <data name="buttonClientes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 44</value>
+  </data>
+  <data name="buttonClientes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonClientes.Text" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="&gt;&gt;buttonClientes.Name" xml:space="preserve">
+    <value>buttonClientes</value>
+  </data>
+  <data name="&gt;&gt;buttonClientes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonClientes.Parent" xml:space="preserve">
+    <value>panelMenuLateral</value>
+  </data>
+  <data name="&gt;&gt;buttonClientes.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="buttonComandas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonComandas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="buttonComandas.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="buttonComandas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 328</value>
+  </data>
+  <data name="buttonComandas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 44</value>
+  </data>
+  <data name="buttonComandas.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonComandas.Text" xml:space="preserve">
+    <value>Comandas</value>
+  </data>
+  <data name="&gt;&gt;buttonComandas.Name" xml:space="preserve">
+    <value>buttonComandas</value>
+  </data>
+  <data name="&gt;&gt;buttonComandas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonComandas.Parent" xml:space="preserve">
+    <value>panelMenuLateral</value>
+  </data>
+  <data name="&gt;&gt;buttonComandas.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="buttonInicio.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonInicio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="buttonInicio.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="buttonInicio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 196</value>
+  </data>
+  <data name="buttonInicio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 44</value>
+  </data>
+  <data name="buttonInicio.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonInicio.Text" xml:space="preserve">
+    <value>Início</value>
+  </data>
+  <data name="&gt;&gt;buttonInicio.Name" xml:space="preserve">
+    <value>buttonInicio</value>
+  </data>
+  <data name="&gt;&gt;buttonInicio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonInicio.Parent" xml:space="preserve">
+    <value>panelMenuLateral</value>
+  </data>
+  <data name="&gt;&gt;buttonInicio.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;LabelCabecalho.Name" xml:space="preserve">
     <value>LabelCabecalho</value>
@@ -429,20 +522,32 @@
   <data name="&gt;&gt;panelMenuSuperior.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="LabelCorpo.AutoSize" type="System.Boolean, mscorlib">
+  <data name="LabelCabecalho.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LabelCorpo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 225</value>
+  <data name="LabelCabecalho.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 45</value>
   </data>
-  <data name="LabelCorpo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 15</value>
+  <data name="LabelCabecalho.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 15</value>
   </data>
-  <data name="LabelCorpo.TabIndex" type="System.Int32, mscorlib">
+  <data name="LabelCabecalho.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="LabelCorpo.Text" xml:space="preserve">
-    <value>Aqui vai ter o corpo de cada parte</value>
+  <data name="LabelCabecalho.Text" xml:space="preserve">
+    <value>Aqui vai ter o cabeçalho</value>
+  </data>
+  <data name="&gt;&gt;LabelCabecalho.Name" xml:space="preserve">
+    <value>LabelCabecalho</value>
+  </data>
+  <data name="&gt;&gt;LabelCabecalho.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelCabecalho.Parent" xml:space="preserve">
+    <value>panelMenuSuperior</value>
+  </data>
+  <data name="&gt;&gt;LabelCabecalho.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;LabelCorpo.Name" xml:space="preserve">
     <value>LabelCorpo</value>
@@ -475,6 +580,33 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelMenuGeral.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LabelCorpo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelCorpo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 225</value>
+  </data>
+  <data name="LabelCorpo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 15</value>
+  </data>
+  <data name="LabelCorpo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LabelCorpo.Text" xml:space="preserve">
+    <value>Aqui vai ter o corpo de cada parte</value>
+  </data>
+  <data name="&gt;&gt;LabelCorpo.Name" xml:space="preserve">
+    <value>LabelCorpo</value>
+  </data>
+  <data name="&gt;&gt;LabelCorpo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelCorpo.Parent" xml:space="preserve">
+    <value>panelMenuGeral</value>
+  </data>
+  <data name="&gt;&gt;LabelCorpo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

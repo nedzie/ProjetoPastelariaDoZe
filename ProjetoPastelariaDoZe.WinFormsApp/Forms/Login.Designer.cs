@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panelFundoLogin = new System.Windows.Forms.Panel();
-            this.ButtonFechar = new System.Windows.Forms.Button();
-            this.LabelNovoUsuario = new System.Windows.Forms.Label();
-            this.ButtonCadastrar = new System.Windows.Forms.Button();
+            this.buttonFechar = new System.Windows.Forms.Button();
+            this.labelNovoUsuario = new System.Windows.Forms.Label();
+            this.buttonCadastrar = new System.Windows.Forms.Button();
             this.buttonEntrar = new System.Windows.Forms.Button();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.textBoxNome = new System.Windows.Forms.TextBox();
@@ -44,9 +44,9 @@
             // 
             // panelFundoLogin
             // 
-            this.panelFundoLogin.Controls.Add(this.ButtonFechar);
-            this.panelFundoLogin.Controls.Add(this.LabelNovoUsuario);
-            this.panelFundoLogin.Controls.Add(this.ButtonCadastrar);
+            this.panelFundoLogin.Controls.Add(this.buttonFechar);
+            this.panelFundoLogin.Controls.Add(this.labelNovoUsuario);
+            this.panelFundoLogin.Controls.Add(this.buttonCadastrar);
             this.panelFundoLogin.Controls.Add(this.buttonEntrar);
             this.panelFundoLogin.Controls.Add(this.textBoxSenha);
             this.panelFundoLogin.Controls.Add(this.textBoxNome);
@@ -56,28 +56,28 @@
             resources.ApplyResources(this.panelFundoLogin, "panelFundoLogin");
             this.panelFundoLogin.Name = "panelFundoLogin";
             // 
-            // ButtonFechar
+            // buttonFechar
             // 
-            this.ButtonFechar.BackColor = System.Drawing.Color.White;
-            this.ButtonFechar.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.ButtonFechar, "ButtonFechar");
-            this.ButtonFechar.Name = "ButtonFechar";
-            this.ButtonFechar.UseVisualStyleBackColor = false;
-            this.ButtonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
+            this.buttonFechar.BackColor = System.Drawing.Color.White;
+            this.buttonFechar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.buttonFechar, "buttonFechar");
+            this.buttonFechar.Name = "buttonFechar";
+            this.buttonFechar.UseVisualStyleBackColor = false;
+            this.buttonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
             // 
-            // LabelNovoUsuario
+            // labelNovoUsuario
             // 
-            resources.ApplyResources(this.LabelNovoUsuario, "LabelNovoUsuario");
-            this.LabelNovoUsuario.ForeColor = System.Drawing.Color.White;
-            this.LabelNovoUsuario.Name = "LabelNovoUsuario";
+            resources.ApplyResources(this.labelNovoUsuario, "labelNovoUsuario");
+            this.labelNovoUsuario.ForeColor = System.Drawing.Color.White;
+            this.labelNovoUsuario.Name = "labelNovoUsuario";
             // 
-            // ButtonCadastrar
+            // buttonCadastrar
             // 
-            this.ButtonCadastrar.BackColor = System.Drawing.Color.White;
-            this.ButtonCadastrar.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.ButtonCadastrar, "ButtonCadastrar");
-            this.ButtonCadastrar.Name = "ButtonCadastrar";
-            this.ButtonCadastrar.UseVisualStyleBackColor = false;
+            this.buttonCadastrar.BackColor = System.Drawing.Color.White;
+            this.buttonCadastrar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.buttonCadastrar, "buttonCadastrar");
+            this.buttonCadastrar.Name = "buttonCadastrar";
+            this.buttonCadastrar.UseVisualStyleBackColor = false;
             // 
             // buttonEntrar
             // 
@@ -141,8 +141,8 @@
         private Label labelSenha;
         private Label labelNome;
         private Label labelLogin;
-        private Button ButtonCadastrar;
-        private Button ButtonFechar;
-        private Label LabelNovoUsuario;
+        private Button buttonCadastrar;
+        private Button buttonFechar;
+        private Label labelNovoUsuario;
     }
 }

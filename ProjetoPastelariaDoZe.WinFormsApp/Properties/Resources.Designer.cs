@@ -91,15 +91,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string button {
-            get {
-                return ResourceManager.GetString("button", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Cadastrar.
         /// </summary>
         internal static string buttonCadastrar_Text {
@@ -118,20 +109,20 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cliente.
+        ///   Looks up a localized string similar to Clientes.
         /// </summary>
-        internal static string buttonCliente_Text {
+        internal static string buttonClientes_Text {
             get {
-                return ResourceManager.GetString("buttonCliente.Text", resourceCulture);
+                return ResourceManager.GetString("buttonClientes.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Comanda.
+        ///   Looks up a localized string similar to Comandas.
         /// </summary>
-        internal static string buttonComanda_Text {
+        internal static string buttonComandas_Text {
             get {
-                return ResourceManager.GetString("buttonComanda.Text", resourceCulture);
+                return ResourceManager.GetString("buttonComandas.Text", resourceCulture);
             }
         }
         
@@ -163,20 +154,20 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Funcionário.
+        ///   Looks up a localized string similar to Funcionários.
         /// </summary>
-        internal static string buttonFuncionario_Text {
+        internal static string buttonFuncionarios_Text {
             get {
-                return ResourceManager.GetString("buttonFuncionario.Text", resourceCulture);
+                return ResourceManager.GetString("buttonFuncionarios.Text", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Importar.
         /// </summary>
-        internal static string buttonImportar {
+        internal static string buttonImportar_Text {
             get {
-                return ResourceManager.GetString("buttonImportar", resourceCulture);
+                return ResourceManager.GetString("buttonImportar.Text", resourceCulture);
             }
         }
         
@@ -199,11 +190,20 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Produto.
+        ///   Looks up a localized string similar to Produtos.
         /// </summary>
-        internal static string buttonProduto_Text {
+        internal static string buttonProdutos_Text {
             get {
-                return ResourceManager.GetString("buttonProduto.Text", resourceCulture);
+                return ResourceManager.GetString("buttonProdutos.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salvar.
+        /// </summary>
+        internal static string buttonSalvar_Text {
+            get {
+                return ResourceManager.GetString("buttonSalvar.Text", resourceCulture);
             }
         }
         
@@ -267,11 +267,74 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clientes.
+        /// </summary>
+        internal static string formClientes_Text {
+            get {
+                return ResourceManager.GetString("formClientes.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comandas.
+        /// </summary>
+        internal static string formComandas_Text {
+            get {
+                return ResourceManager.GetString("formComandas.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configurações.
+        /// </summary>
+        internal static string formConfiguracoes_Text {
+            get {
+                return ResourceManager.GetString("formConfiguracoes.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Funcionários.
+        /// </summary>
+        internal static string formFuncionarios_Text {
+            get {
+                return ResourceManager.GetString("formFuncionarios.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fiados do Zé.
         /// </summary>
-        internal static string form_Text {
+        internal static string formInicio_Text {
             get {
-                return ResourceManager.GetString("form.Text", resourceCulture);
+                return ResourceManager.GetString("formInicio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        internal static string formLogin_Text {
+            get {
+                return ResourceManager.GetString("formLogin.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Produtos.
+        /// </summary>
+        internal static string formProdutos_Text {
+            get {
+                return ResourceManager.GetString("formProdutos.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sobre.
+        /// </summary>
+        internal static string formSobre_Text {
+            get {
+                return ResourceManager.GetString("formSobre.Text", resourceCulture);
             }
         }
         
@@ -296,6 +359,15 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CPF.
+        /// </summary>
+        internal static string labelCPF_Text {
+            get {
+                return ResourceManager.GetString("labelCPF.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Descrição.
         /// </summary>
         internal static string labelDescricao_Text {
@@ -305,11 +377,65 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dia do fiado (0 - dias corridos).
+        /// </summary>
+        internal static string labelDiaDoFiado_Text {
+            get {
+                return ResourceManager.GetString("labelDiaDoFiado.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Foto.
         /// </summary>
-        internal static string labelFoto {
+        internal static string labelFoto_Text {
             get {
-                return ResourceManager.GetString("labelFoto", resourceCulture);
+                return ResourceManager.GetString("labelFoto.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grupo.
+        /// </summary>
+        internal static string labelGrupo_Text {
+            get {
+                return ResourceManager.GetString("labelGrupo.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        internal static string labelLogin_Text {
+            get {
+                return ResourceManager.GetString("labelLogin.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Marca fiado?.
+        /// </summary>
+        internal static string labelMarcaFiado_Text {
+            get {
+                return ResourceManager.GetString("labelMarcaFiado.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Matrícula.
+        /// </summary>
+        internal static string labelMatricula_Text {
+            get {
+                return ResourceManager.GetString("labelMatricula.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Multa por atraso (R$).
+        /// </summary>
+        internal static string labelMultaPorAtraso_Text {
+            get {
+                return ResourceManager.GetString("labelMultaPorAtraso.Text", resourceCulture);
             }
         }
         
@@ -341,11 +467,29 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cadastrar-se.
+        ///   Looks up a localized string similar to Taxa de juros diária (%).
         /// </summary>
-        internal static string labelTituloCadastro_Text {
+        internal static string labelTaxaJurosDiaria_Text {
             get {
-                return ResourceManager.GetString("labelTituloCadastro.Text", resourceCulture);
+                return ResourceManager.GetString("labelTaxaJurosDiaria.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Telefone.
+        /// </summary>
+        internal static string labelTelefone_Text {
+            get {
+                return ResourceManager.GetString("labelTelefone.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Em desenvolvimento....
+        /// </summary>
+        internal static string labelTextoTemporario_Text {
+            get {
+                return ResourceManager.GetString("labelTextoTemporario.Text", resourceCulture);
             }
         }
         
@@ -365,6 +509,42 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
             get {
                 object obj = ResourceManager.GetObject("produtos-solido-branco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Admin.
+        /// </summary>
+        internal static string radioButtonAdmin_Text {
+            get {
+                return ResourceManager.GetString("radioButtonAdmin.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Balcão.
+        /// </summary>
+        internal static string radioButtonBalcao_Text {
+            get {
+                return ResourceManager.GetString("radioButtonBalcao.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Não.
+        /// </summary>
+        internal static string radioButtonFiadoNao_Text {
+            get {
+                return ResourceManager.GetString("radioButtonFiadoNao.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sim.
+        /// </summary>
+        internal static string radioButtonFiadoSim_Text {
+            get {
+                return ResourceManager.GetString("radioButtonFiadoSim.Text", resourceCulture);
             }
         }
         
@@ -399,29 +579,101 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nome.
+        ///   Looks up a localized string similar to 000.000.000-00.
         /// </summary>
-        internal static string textBoxSeuNome_Placeholder {
+        internal static string textBoxCPF_PlaceholderText {
             get {
-                return ResourceManager.GetString("textBoxSeuNome.Placeholder", resourceCulture);
+                return ResourceManager.GetString("textBoxCPF.PlaceholderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Descrição do produto.
+        /// </summary>
+        internal static string textBoxDescricaoProduto_PlaceholderText {
+            get {
+                return ResourceManager.GetString("textBoxDescricaoProduto.PlaceholderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 00000000.
+        /// </summary>
+        internal static string textBoxMatricula_PlaceholderText {
+            get {
+                return ResourceManager.GetString("textBoxMatricula.PlaceholderText", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to R$.
         /// </summary>
-        internal static string textBoxValorUnitario_Placeholder {
+        internal static string textBoxMultaPorAtraso_PlaceholderText {
             get {
-                return ResourceManager.GetString("textBoxValorUnitario.Placeholder", resourceCulture);
+                return ResourceManager.GetString("textBoxMultaPorAtraso.PlaceholderText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Conectar-se.
+        ///   Looks up a localized string similar to Nome.
         /// </summary>
-        internal static string txtJanelaLogin {
+        internal static string textBoxNome_PlaceholderText {
             get {
-                return ResourceManager.GetString("txtJanelaLogin", resourceCulture);
+                return ResourceManager.GetString("textBoxNome.PlaceholderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nome do funcionário.
+        /// </summary>
+        internal static string textBoxNomeFuncionario_PlaceholderText {
+            get {
+                return ResourceManager.GetString("textBoxNomeFuncionario.PlaceholderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nome do produto.
+        /// </summary>
+        internal static string textBoxNomeProduto_PlaceholderText {
+            get {
+                return ResourceManager.GetString("textBoxNomeProduto.PlaceholderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ******.
+        /// </summary>
+        internal static string textBoxSenha_PlaceholderText {
+            get {
+                return ResourceManager.GetString("textBoxSenha.PlaceholderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to %.
+        /// </summary>
+        internal static string textBoxTaxaJurosDiaria_PlaceholderText {
+            get {
+                return ResourceManager.GetString("textBoxTaxaJurosDiaria.PlaceholderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (00) 0 0000 0000.
+        /// </summary>
+        internal static string textBoxTelefone_PlaceholderText {
+            get {
+                return ResourceManager.GetString("textBoxTelefone.PlaceholderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to R$.
+        /// </summary>
+        internal static string textBoxValorUnitario_PlaceholderText {
+            get {
+                return ResourceManager.GetString("textBoxValorUnitario.PlaceholderText", resourceCulture);
             }
         }
         

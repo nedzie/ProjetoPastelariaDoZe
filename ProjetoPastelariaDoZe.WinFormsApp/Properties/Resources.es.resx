@@ -117,4 +117,163 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="buttonCadastrar.Text" xml:space="preserve">
+    <value>Registrar</value>
+  </data>
+  <data name="buttonCaixa.Text" xml:space="preserve">
+    <value>Cajero</value>
+  </data>
+  <data name="buttonClientes.Text" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="buttonComandas.Text" xml:space="preserve">
+    <value>Comandos</value>
+  </data>
+  <data name="buttonConfiguracoes.Text" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="buttonEntrar.Text" xml:space="preserve">
+    <value>Entra</value>
+  </data>
+  <data name="buttonFechar.Text" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="buttonFuncionarios.Text" xml:space="preserve">
+    <value>Empleados</value>
+  </data>
+  <data name="buttonImportar.Text" xml:space="preserve">
+    <value>Importar</value>
+  </data>
+  <data name="buttonInicio.Text" xml:space="preserve">
+    <value>Comienzo</value>
+  </data>
+  <data name="buttonLogin.Text" xml:space="preserve">
+    <value>Acesso</value>
+  </data>
+  <data name="buttonProdutos.Text" xml:space="preserve">
+    <value>Productos</value>
+  </data>
+  <data name="buttonSalvar.Text" xml:space="preserve">
+    <value>Ahorrar</value>
+  </data>
+  <data name="buttonSobre.Text" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="formClientes.Text" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="formComandas.Text" xml:space="preserve">
+    <value>Comandos</value>
+  </data>
+  <data name="formConfiguracoes.Text" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="formFuncionarios.Text" xml:space="preserve">
+    <value>Empleados</value>
+  </data>
+  <data name="formInicio.Text" xml:space="preserve">
+    <value>Fiados do Zé em espanhol</value>
+  </data>
+  <data name="formLogin.Text" xml:space="preserve">
+    <value>Acesso</value>
+  </data>
+  <data name="formProdutos.Text" xml:space="preserve">
+    <value>Productos</value>
+  </data>
+  <data name="formSobre.Text" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="labelCPF.Text" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="labelDescricao.Text" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="labelDiaDoFiado.Text" xml:space="preserve">
+    <value>Dia do fiado (0 - dias corridos) em espanhol</value>
+  </data>
+  <data name="labelFoto.Text" xml:space="preserve">
+    <value>Fotografía</value>
+  </data>
+  <data name="labelGrupo.Text" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="labelLogin.Text" xml:space="preserve">
+    <value>Acesso</value>
+  </data>
+  <data name="labelMarcaFiado.Text" xml:space="preserve">
+    <value>¿Marca hilada?</value>
+  </data>
+  <data name="labelMatricula.Text" xml:space="preserve">
+    <value>Registro</value>
+  </data>
+  <data name="labelMultaPorAtraso.Text" xml:space="preserve">
+    <value>Multa por retraso (£)</value>
+  </data>
+  <data name="labelNome.Text" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="labelNovoUsuario.Text" xml:space="preserve">
+    <value>¿Nuevo Usuario?</value>
+  </data>
+  <data name="labelSenha.Text" xml:space="preserve">
+    <value>Clave</value>
+  </data>
+  <data name="labelTaxaJurosDiaria.Text" xml:space="preserve">
+    <value>Tasa de interés diaria (%)</value>
+  </data>
+  <data name="labelTelefone.Text" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="labelTextoTemporario.Text" xml:space="preserve">
+    <value>En desarrollo...</value>
+  </data>
+  <data name="labelValorUnitario.Text" xml:space="preserve">
+    <value>Valor unitario (£)</value>
+  </data>
+  <data name="radioButtonAdmin.Text" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="radioButtonBalcao.Text" xml:space="preserve">
+    <value>Encimera</value>
+  </data>
+  <data name="radioButtonFiadoNao.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="radioButtonFiadoSim.Text" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="textBoxCPF.PlaceholderText" xml:space="preserve">
+    <value>000.000.000-00</value>
+  </data>
+  <data name="textBoxDescricaoProduto.PlaceholderText" xml:space="preserve">
+    <value>Descripción del producto</value>
+  </data>
+  <data name="textBoxMatricula.PlaceholderText" xml:space="preserve">
+    <value>00000000</value>
+  </data>
+  <data name="textBoxMultaPorAtraso.PlaceholderText" xml:space="preserve">
+    <value>£</value>
+  </data>
+  <data name="textBoxNome.PlaceholderText" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="textBoxNomeFuncionario.PlaceholderText" xml:space="preserve">
+    <value>Nombre del empleado</value>
+  </data>
+  <data name="textBoxNomeProduto.PlaceholderText" xml:space="preserve">
+    <value>Nombre del producto</value>
+  </data>
+  <data name="textBoxSenha.PlaceholderText" xml:space="preserve">
+    <value>******</value>
+  </data>
+  <data name="textBoxTaxaJurosDiaria.PlaceholderText" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="textBoxTelefone.PlaceholderText" xml:space="preserve">
+    <value>(00) 0 0000 0000</value>
+  </data>
+  <data name="textBoxValorUnitario.PlaceholderText" xml:space="preserve">
+    <value>£</value>
+  </data>
 </root>

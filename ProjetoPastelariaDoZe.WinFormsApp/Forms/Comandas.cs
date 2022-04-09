@@ -15,11 +15,14 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         public Comandas()
         {
             InitializeComponent();
+            this.Text = Properties.Resources.ResourceManager.GetString("formComandas.Text");
+            buttonFechar.Text = Properties.Resources.ResourceManager.GetString("buttonFechar.Text");
             UserControlControleUsuarioGeral opcoes = new();
             opcoes.Dock = DockStyle.Bottom;
-            Controls.Add(opcoes);
+            Size = new(Size.Width, Size.Height + opcoes.Size.Height);
+            this.Controls.Add(opcoes);
 
-            Size size = new(Size.Width, Size.Height + opcoes.Size.Height);
+            
         }
 
         private void ButtonFechar_Click(object sender, EventArgs e)

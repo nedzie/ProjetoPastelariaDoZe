@@ -29,25 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Comandas));
-            this.ButtonFechar = new System.Windows.Forms.Button();
+            this.buttonFechar = new System.Windows.Forms.Button();
             this.PanelComandas = new System.Windows.Forms.Panel();
             this.PanelComandas.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ButtonFechar
+            // buttonFechar
             // 
-            this.ButtonFechar.BackColor = System.Drawing.Color.White;
-            this.ButtonFechar.Location = new System.Drawing.Point(698, 403);
-            this.ButtonFechar.Name = "ButtonFechar";
-            this.ButtonFechar.Size = new System.Drawing.Size(75, 23);
-            this.ButtonFechar.TabIndex = 0;
-            this.ButtonFechar.Text = "Fechar";
-            this.ButtonFechar.UseVisualStyleBackColor = false;
-            this.ButtonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
+            this.buttonFechar.BackColor = System.Drawing.Color.White;
+            this.buttonFechar.FlatAppearance.BorderSize = 0;
+            this.buttonFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFechar.Location = new System.Drawing.Point(698, 403);
+            this.buttonFechar.Name = "buttonFechar";
+            this.buttonFechar.Size = new System.Drawing.Size(75, 23);
+            this.buttonFechar.TabIndex = 0;
+            this.buttonFechar.Text = "Fechar";
+            this.buttonFechar.UseVisualStyleBackColor = false;
+            this.buttonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
             // 
             // PanelComandas
             // 
-            this.PanelComandas.Controls.Add(this.ButtonFechar);
+            this.PanelComandas.Controls.Add(this.buttonFechar);
             this.PanelComandas.Location = new System.Drawing.Point(12, 12);
             this.PanelComandas.Name = "PanelComandas";
             this.PanelComandas.Size = new System.Drawing.Size(776, 426);
@@ -57,8 +59,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Plum;
-            this.ClientSize = new System.Drawing.Size(800, 525);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(800, 451);
             this.Controls.Add(this.PanelComandas);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Comandas";
@@ -70,7 +72,7 @@
 
         #endregion
 
-        private Button ButtonFechar;
+        private Button buttonFechar;
         private Panel PanelComandas;
     }
 }

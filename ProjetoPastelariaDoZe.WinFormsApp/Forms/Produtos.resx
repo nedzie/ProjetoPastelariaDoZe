@@ -84,7 +84,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelNome.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="textBoxNome.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 42</value>
@@ -108,7 +108,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxNome.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="labelDescricao.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -135,7 +135,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelDescricao.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="textBoxDescricao.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 121</value>
@@ -159,7 +159,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxDescricao.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="labelValorUnitario.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -186,31 +186,31 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelValorUnitario.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="textBoxValorUnitario.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 199</value>
   </data>
-  <data name="textBox1.PlaceholderText" xml:space="preserve">
+  <data name="textBoxValorUnitario.PlaceholderText" xml:space="preserve">
     <value>R$</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="textBoxValorUnitario.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="textBoxValorUnitario.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;textBoxValorUnitario.Name" xml:space="preserve">
+    <value>textBoxValorUnitario</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;textBoxValorUnitario.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textBoxValorUnitario.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;textBoxValorUnitario.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="labelFoto.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -237,35 +237,35 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelFoto.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ButtonImportarFoto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="buttonImportar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="ButtonImportarFoto.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonImportar.Location" type="System.Drawing.Point, System.Drawing">
     <value>527, 158</value>
   </data>
-  <data name="ButtonImportarFoto.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonImportar.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 40</value>
   </data>
-  <data name="ButtonImportarFoto.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonImportar.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="ButtonImportarFoto.Text" xml:space="preserve">
+  <data name="buttonImportar.Text" xml:space="preserve">
     <value>Importar...</value>
   </data>
-  <data name="&gt;&gt;ButtonImportarFoto.Name" xml:space="preserve">
-    <value>ButtonImportarFoto</value>
+  <data name="&gt;&gt;buttonImportar.Name" xml:space="preserve">
+    <value>buttonImportar</value>
   </data>
-  <data name="&gt;&gt;ButtonImportarFoto.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonImportar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonImportarFoto.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonImportar.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;ButtonImportarFoto.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;buttonImportar.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="PictureBoxFotoDoProduto.Location" type="System.Drawing.Point, System.Drawing">
     <value>539, 42</value>
@@ -286,7 +286,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PictureBoxFotoDoProduto.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="ButtonCadastrar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -313,13 +313,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonCadastrar.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="ButtonFechar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="ButtonFechar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>713, 397</value>
+    <value>698, 253</value>
   </data>
   <data name="ButtonFechar.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -337,7 +337,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ButtonFechar.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;ButtonFechar.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -346,7 +346,7 @@
     <value>12, 12</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>776, 408</value>
+    <value>776, 295</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -361,7 +361,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -370,7 +370,7 @@
     <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 506</value>
+    <value>800, 324</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

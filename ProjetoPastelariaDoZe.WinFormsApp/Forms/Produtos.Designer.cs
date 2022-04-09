@@ -34,9 +34,9 @@
             this.labelDescricao = new System.Windows.Forms.Label();
             this.textBoxDescricao = new System.Windows.Forms.TextBox();
             this.labelValorUnitario = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxValorUnitario = new System.Windows.Forms.TextBox();
             this.labelFoto = new System.Windows.Forms.Label();
-            this.ButtonImportarFoto = new System.Windows.Forms.Button();
+            this.buttonImportar = new System.Windows.Forms.Button();
             this.PictureBoxFotoDoProduto = new System.Windows.Forms.PictureBox();
             this.ButtonCadastrar = new System.Windows.Forms.Button();
             this.ButtonFechar = new System.Windows.Forms.Button();
@@ -74,10 +74,10 @@
             this.labelValorUnitario.ForeColor = System.Drawing.Color.White;
             this.labelValorUnitario.Name = "labelValorUnitario";
             // 
-            // textBox1
+            // textBoxValorUnitario
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.textBoxValorUnitario, "textBoxValorUnitario");
+            this.textBoxValorUnitario.Name = "textBoxValorUnitario";
             // 
             // labelFoto
             // 
@@ -85,16 +85,17 @@
             this.labelFoto.ForeColor = System.Drawing.Color.White;
             this.labelFoto.Name = "labelFoto";
             // 
-            // ButtonImportarFoto
+            // buttonImportar
             // 
-            this.ButtonImportarFoto.BackColor = System.Drawing.Color.White;
-            this.ButtonImportarFoto.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.ButtonImportarFoto, "ButtonImportarFoto");
-            this.ButtonImportarFoto.Name = "ButtonImportarFoto";
-            this.ButtonImportarFoto.UseVisualStyleBackColor = false;
+            this.buttonImportar.BackColor = System.Drawing.Color.White;
+            this.buttonImportar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.buttonImportar, "buttonImportar");
+            this.buttonImportar.Name = "buttonImportar";
+            this.buttonImportar.UseVisualStyleBackColor = false;
             // 
             // PictureBoxFotoDoProduto
             // 
+            this.PictureBoxFotoDoProduto.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.PictureBoxFotoDoProduto, "PictureBoxFotoDoProduto");
             this.PictureBoxFotoDoProduto.Name = "PictureBoxFotoDoProduto";
             this.PictureBoxFotoDoProduto.TabStop = false;
@@ -119,7 +120,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.ButtonImportarFoto);
+            this.panel1.Controls.Add(this.ButtonFechar);
+            this.panel1.Controls.Add(this.buttonImportar);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
@@ -128,11 +130,10 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.ButtonFechar);
             this.Controls.Add(this.ButtonCadastrar);
             this.Controls.Add(this.PictureBoxFotoDoProduto);
             this.Controls.Add(this.labelFoto);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxValorUnitario);
             this.Controls.Add(this.labelValorUnitario);
             this.Controls.Add(this.textBoxDescricao);
             this.Controls.Add(this.labelDescricao);
@@ -154,9 +155,9 @@
         private Label labelDescricao;
         private TextBox textBoxDescricao;
         private Label labelValorUnitario;
-        private TextBox textBox1;
+        private TextBox textBoxValorUnitario;
         private Label labelFoto;
-        private Button ButtonImportarFoto;
+        private Button buttonImportar;
         private PictureBox PictureBoxFotoDoProduto;
         private Button ButtonCadastrar;
         private Button ButtonFechar;

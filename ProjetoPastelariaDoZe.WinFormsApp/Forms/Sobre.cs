@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoPastelariaDoZe.WinFormsApp.Compartilhado;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,16 +11,13 @@ using System.Windows.Forms;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
-    public partial class Configuracoes : Form
+    public partial class Sobre : Form
     {
-        public Configuracoes()
+        public Sobre()
         {
             InitializeComponent();
-        }
-
-        private void ButtonFechar_Click(object sender, EventArgs e)
-        {
-            Close();
+            Funcoes.AjustaResourcesForm(this);
+            this.Text = Properties.Resources.ResourceManager.GetString("formSobre.Text");
         }
     }
 }
