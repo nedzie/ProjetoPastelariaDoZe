@@ -208,6 +208,15 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Salvar.
+        /// </summary>
+        internal static string buttonSalvarIdioma_Text {
+            get {
+                return ResourceManager.GetString("buttonSalvarIdioma.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sobre.
         /// </summary>
         internal static string buttonSobre_Text {
@@ -223,6 +232,15 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
             get {
                 object obj = ResourceManager.GetObject("caixa-solido-branco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reiniciar para aplicar o novo idioma imediatamente.
+        /// </summary>
+        internal static string checkBoxReiniciar_Text {
+            get {
+                return ResourceManager.GetString("checkBoxReiniciar.Text", resourceCulture);
             }
         }
         
@@ -503,6 +521,15 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Português.
+        /// </summary>
+        internal static string MessageBox_Text {
+            get {
+                return ResourceManager.GetString("MessageBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap produtos_solido_branco {
@@ -575,6 +602,24 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
             get {
                 object obj = ResourceManager.GetObject("sobre-solido-branco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Idioma/Região.
+        /// </summary>
+        internal static string tabPageIdiomaRegiao_Text {
+            get {
+                return ResourceManager.GetString("tabPageIdiomaRegiao.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parâmetros para cobrança.
+        /// </summary>
+        internal static string tabPageParametros_Text {
+            get {
+                return ResourceManager.GetString("tabPageParametros.Text", resourceCulture);
             }
         }
         

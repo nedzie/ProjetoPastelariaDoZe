@@ -156,8 +156,14 @@
   <data name="buttonSalvar.Text" xml:space="preserve">
     <value>Ahorrar</value>
   </data>
+  <data name="buttonSalvarIdioma.Text" xml:space="preserve">
+    <value>Ahorrar</value>
+  </data>
   <data name="buttonSobre.Text" xml:space="preserve">
     <value>Sobre</value>
+  </data>
+  <data name="checkBoxReiniciar.Text" xml:space="preserve">
+    <value>Reinicie para aplicar el nuevo idioma inmediatamente</value>
   </data>
   <data name="formClientes.Text" xml:space="preserve">
     <value>Clientes</value>
@@ -231,6 +237,9 @@
   <data name="labelValorUnitario.Text" xml:space="preserve">
     <value>Valor unitario (£)</value>
   </data>
+  <data name="MessageBox.Text" xml:space="preserve">
+    <value>Espanhol</value>
+  </data>
   <data name="radioButtonAdmin.Text" xml:space="preserve">
     <value>Admin</value>
   </data>
@@ -242,6 +251,12 @@
   </data>
   <data name="radioButtonFiadoSim.Text" xml:space="preserve">
     <value>Sí</value>
+  </data>
+  <data name="tabPageIdiomaRegiao.Text" xml:space="preserve">
+    <value>Idioma/Región</value>
+  </data>
+  <data name="tabPageParametros.Text" xml:space="preserve">
+    <value>Parámetros para la facturación</value>
   </data>
   <data name="textBoxCPF.PlaceholderText" xml:space="preserve">
     <value>000.000.000-00</value>

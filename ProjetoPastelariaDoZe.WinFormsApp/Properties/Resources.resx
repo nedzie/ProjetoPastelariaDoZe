@@ -322,4 +322,19 @@
   <data name="textBoxValorUnitario.PlaceholderText" xml:space="preserve">
     <value>R$</value>
   </data>
+  <data name="buttonSalvarIdioma.Text" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="checkBoxReiniciar.Text" xml:space="preserve">
+    <value>Reiniciar para aplicar o novo idioma imediatamente</value>
+  </data>
+  <data name="MessageBox.Text" xml:space="preserve">
+    <value>Português</value>
+  </data>
+  <data name="tabPageIdiomaRegiao.Text" xml:space="preserve">
+    <value>Idioma/Região</value>
+  </data>
+  <data name="tabPageParametros.Text" xml:space="preserve">
+    <value>Parâmetros para cobrança</value>
+  </data>
 </root>

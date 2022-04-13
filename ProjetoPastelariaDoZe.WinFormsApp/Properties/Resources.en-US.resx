@@ -156,8 +156,14 @@
   <data name="buttonSalvar.Text" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="buttonSalvarIdioma.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
   <data name="buttonSobre.Text" xml:space="preserve">
     <value>About</value>
+  </data>
+  <data name="checkBoxReiniciar.Text" xml:space="preserve">
+    <value>Restart to apply the new language immediately</value>
   </data>
   <data name="formClientes.Text" xml:space="preserve">
     <value>Customers</value>
@@ -231,6 +237,9 @@
   <data name="labelValorUnitario.Text" xml:space="preserve">
     <value>Unit value ($)</value>
   </data>
+  <data name="MessageBox.Text" xml:space="preserve">
+    <value>Inglês</value>
+  </data>
   <data name="radioButtonAdmin.Text" xml:space="preserve">
     <value>Admin</value>
   </data>
@@ -242,6 +251,12 @@
   </data>
   <data name="radioButtonFiadoSim.Text" xml:space="preserve">
     <value>Yea</value>
+  </data>
+  <data name="tabPageIdiomaRegiao.Text" xml:space="preserve">
+    <value>Language/Region</value>
+  </data>
+  <data name="tabPageParametros.Text" xml:space="preserve">
+    <value>Parameters for billing</value>
   </data>
   <data name="textBoxCPF.PlaceholderText" xml:space="preserve">
     <value>000-0.00-000</value>
