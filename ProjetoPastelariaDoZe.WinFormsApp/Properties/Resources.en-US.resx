@@ -238,7 +238,7 @@
     <value>Unit value ($)</value>
   </data>
   <data name="MessageBox.Text" xml:space="preserve">
-    <value>Inglês</value>
+    <value>Restarting application to change language</value>
   </data>
   <data name="radioButtonAdmin.Text" xml:space="preserve">
     <value>Admin</value>

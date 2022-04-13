@@ -2,22 +2,19 @@ using ProjetoPastelariaDoZe.WinFormsApp.Compartilhado;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
+    /// <summary>
+    /// Classe auxiliar Inicio
+    /// </summary>
     public partial class Inicio : Form
     {
+        /// <summary>
+        /// Construtor da classe Inicio
+        /// </summary>
         public Inicio()
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);
             this.Text = Properties.Resources.ResourceManager.GetString("formInicio.Text");
-            //buttonLogin.Text = Properties.Resources.ResourceManager.GetString("buttonLogin.Text");
-            //buttonInicio.Text = Properties.Resources.ResourceManager.GetString("buttonInicio.Text");
-            //buttonCaixa.Text = Properties.Resources.ResourceManager.GetString("buttonCaixa.Text");
-            //buttonFuncionarios.Text = Properties.Resources.ResourceManager.GetString("buttonFuncionarios.Text");
-            //buttonComanda.Text = Properties.Resources.ResourceManager.GetString("buttonComandas.Text");
-            //buttonClientes.Text = Properties.Resources.ResourceManager.GetString("buttonClientes.Text");
-            //buttonProdutos.Text = Properties.Resources.ResourceManager.GetString("buttonProdutos.Text");
-            //buttonSobre.Text = Properties.Resources.ResourceManager.GetString("buttonSobre.Text");
-            //buttonConfiguracoes.Text = Properties.Resources.ResourceManager.GetString("buttonConfiguracoes.Text"); // Em ordem!!!
         }
 
         private void ButtonLogin_MouseClick(object sender, MouseEventArgs e)

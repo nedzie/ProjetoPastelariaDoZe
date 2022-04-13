@@ -5,17 +5,14 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 {
     public partial class Configuracoes : Form
     {
+        /// <summary>
+        /// Construtor da classe Configuracoes
+        /// </summary>
         public Configuracoes()
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);
             this.Text = Properties.Resources.ResourceManager.GetString("formConfiguracoes.Text");
-            //labelTaxaJurosDiaria.Text = Properties.Resources.ResourceManager.GetString("labelTaxaJurosDiaria.Text");
-            //textBoxTaxaJurosDiaria.PlaceholderText = Properties.Resources.ResourceManager.GetString("textBoxTaxaJurosDiaria.PlaceholderText");
-            //labelMultaPorAtraso.Text = Properties.Resources.ResourceManager.GetString("labelMultaPorAtraso.Text");
-            //textBoxMultaPorAtraso.PlaceholderText = Properties.Resources.ResourceManager.GetString("textBoxMultaPorAtraso.PlaceholderText");
-            //buttonSalvar.Text = Properties.Resources.ResourceManager.GetString("buttonSalvar.Text");
-            //buttonFechar.Text = Properties.Resources.ResourceManager.GetString("buttonFechar.Text");
             comboBoxIdiomas.SelectedItem = ConfigurationManager.AppSettings.Get("IdiomaRegiao");
         }
 
@@ -23,8 +20,8 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         {
             Close();
         }
-
-        private void buttonSalvarIdioma_Click(object sender, EventArgs e)
+        //Esse é o método de manipulação
+        private void buttonSalvarIdioma_Click(object sender, EventArgs e) // Sender = Objeto que gerou o evento (Clique no botão > botão que gerou) | e = Informações do evento
         {
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             config.AppSettings.Settings.Remove("IdiomaRegiao");

@@ -1,5 +1,10 @@
 ﻿namespace ProjetoPastelariaDoZe.WinFormsApp
 {
+    /// <summary>
+    /// Classe auxiliar UserControlControleUsuarioGeral - Criada para evitar repetição de códigos. 
+    /// Pode ser utilizada em diversas partes do cógido. 
+    /// Modular.
+    /// </summary>
     partial class UserControlControleUsuarioGeral
     {
         /// <summary> 
@@ -118,10 +123,21 @@
         }
 
         #endregion
-
+        /// <summary>
+        /// Botão para salvar ações
+        /// </summary>
         public Button ButtonSalvar;
+        /// <summary>
+        /// Botão para editar campos selecionados
+        /// </summary>
         public Button ButtonEditar;
+        /// <summary>
+        /// Botão para excluir campos selecionados
+        /// </summary>
         public Button ButtonExcluir;
+        /// <summary>
+        /// Botão para fechar ambientes
+        /// </summary>
         public Button ButtonSair;
     }
 }

@@ -13,6 +13,9 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 {
     public partial class Sobre : Form
     {
+        /// <summary>
+        /// Construtor que inicializa o Form Sobre
+        /// </summary>
         public Sobre()
         {
             InitializeComponent();

@@ -521,7 +521,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Português.
+        ///   Looks up a localized string similar to Reinicando aplicação para alterar idioma.
         /// </summary>
         internal static string MessageBox_Text {
             get {

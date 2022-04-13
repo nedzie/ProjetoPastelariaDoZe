@@ -1,9 +1,11 @@
 ﻿namespace ProjetoPastelariaDoZe.WinFormsApp
-{
+{   /// <summary>
+    /// Classe Sobre, onde contém todas as informações do programa
+    /// </summary>
     partial class Sobre
     {
         /// <summary>
-        /// Required designer variable.
+        /// Formulário "Sobre", que contém as informações do programa
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 

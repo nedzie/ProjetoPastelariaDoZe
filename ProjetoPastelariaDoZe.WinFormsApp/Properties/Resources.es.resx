@@ -238,7 +238,7 @@
     <value>Valor unitario (£)</value>
   </data>
   <data name="MessageBox.Text" xml:space="preserve">
-    <value>Espanhol</value>
+    <value>Reinicio de la aplicación para cambiar el idioma</value>
   </data>
   <data name="radioButtonAdmin.Text" xml:space="preserve">
     <value>Admin</value>

@@ -329,7 +329,7 @@
     <value>Reiniciar para aplicar o novo idioma imediatamente</value>
   </data>
   <data name="MessageBox.Text" xml:space="preserve">
-    <value>Português</value>
+    <value>Reinicando aplicação para alterar idioma</value>
   </data>
   <data name="tabPageIdiomaRegiao.Text" xml:space="preserve">
     <value>Idioma/Região</value>

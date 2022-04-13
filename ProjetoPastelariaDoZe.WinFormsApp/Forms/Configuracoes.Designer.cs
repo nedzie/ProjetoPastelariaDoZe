@@ -1,5 +1,8 @@
 ﻿namespace ProjetoPastelariaDoZe.WinFormsApp
 {
+    /// <summary>
+    /// Classe auxiliar Configuracoes
+    /// </summary>
     partial class Configuracoes
     {
         /// <summary>
