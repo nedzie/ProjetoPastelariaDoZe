@@ -34,17 +34,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuracoes));
             this.labelTaxaJurosDiaria = new System.Windows.Forms.Label();
             this.panelFundoConfiguracoes = new System.Windows.Forms.Panel();
-            this.buttonSalvarIdioma = new System.Windows.Forms.Button();
             this.tabControlParametrosParaCobranca = new System.Windows.Forms.TabControl();
             this.tabPageParametros = new System.Windows.Forms.TabPage();
             this.textBoxMultaPorAtraso = new System.Windows.Forms.TextBox();
             this.labelMultaPorAtraso = new System.Windows.Forms.Label();
-            this.buttonSalvar = new System.Windows.Forms.Button();
+            this.ButtonSalvar = new System.Windows.Forms.Button();
             this.textBoxTaxaJurosDiaria = new System.Windows.Forms.TextBox();
             this.tabPageIdiomaRegiao = new System.Windows.Forms.TabPage();
+            this.buttonSalvarIdioma = new System.Windows.Forms.Button();
             this.checkBoxReiniciar = new System.Windows.Forms.CheckBox();
             this.comboBoxIdiomas = new System.Windows.Forms.ComboBox();
-            this.buttonFechar = new System.Windows.Forms.Button();
             this.panelFundoConfiguracoes.SuspendLayout();
             this.tabControlParametrosParaCobranca.SuspendLayout();
             this.tabPageParametros.SuspendLayout();
@@ -65,26 +64,11 @@
             // panelFundoConfiguracoes
             // 
             this.panelFundoConfiguracoes.BackColor = System.Drawing.Color.Transparent;
-            this.panelFundoConfiguracoes.Controls.Add(this.buttonSalvarIdioma);
             this.panelFundoConfiguracoes.Controls.Add(this.tabControlParametrosParaCobranca);
-            this.panelFundoConfiguracoes.Controls.Add(this.buttonFechar);
             this.panelFundoConfiguracoes.Location = new System.Drawing.Point(12, 12);
             this.panelFundoConfiguracoes.Name = "panelFundoConfiguracoes";
-            this.panelFundoConfiguracoes.Size = new System.Drawing.Size(643, 421);
+            this.panelFundoConfiguracoes.Size = new System.Drawing.Size(643, 270);
             this.panelFundoConfiguracoes.TabIndex = 1;
-            // 
-            // buttonSalvarIdioma
-            // 
-            this.buttonSalvarIdioma.BackColor = System.Drawing.Color.White;
-            this.buttonSalvarIdioma.FlatAppearance.BorderSize = 0;
-            this.buttonSalvarIdioma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvarIdioma.Location = new System.Drawing.Point(23, 374);
-            this.buttonSalvarIdioma.Name = "buttonSalvarIdioma";
-            this.buttonSalvarIdioma.Size = new System.Drawing.Size(75, 23);
-            this.buttonSalvarIdioma.TabIndex = 2;
-            this.buttonSalvarIdioma.Text = "Salvar";
-            this.buttonSalvarIdioma.UseVisualStyleBackColor = false;
-            this.buttonSalvarIdioma.Click += new System.EventHandler(this.buttonSalvarIdioma_Click);
             // 
             // tabControlParametrosParaCobranca
             // 
@@ -95,14 +79,14 @@
             this.tabControlParametrosParaCobranca.Name = "tabControlParametrosParaCobranca";
             this.tabControlParametrosParaCobranca.SelectedIndex = 0;
             this.tabControlParametrosParaCobranca.Size = new System.Drawing.Size(637, 256);
-            this.tabControlParametrosParaCobranca.TabIndex = 6;
+            this.tabControlParametrosParaCobranca.TabIndex = 0;
             // 
             // tabPageParametros
             // 
             this.tabPageParametros.BackColor = System.Drawing.Color.Black;
             this.tabPageParametros.Controls.Add(this.textBoxMultaPorAtraso);
             this.tabPageParametros.Controls.Add(this.labelMultaPorAtraso);
-            this.tabPageParametros.Controls.Add(this.buttonSalvar);
+            this.tabPageParametros.Controls.Add(this.ButtonSalvar);
             this.tabPageParametros.Controls.Add(this.textBoxTaxaJurosDiaria);
             this.tabPageParametros.Controls.Add(this.labelTaxaJurosDiaria);
             this.tabPageParametros.Location = new System.Drawing.Point(4, 24);
@@ -130,17 +114,17 @@
             this.labelMultaPorAtraso.TabIndex = 3;
             this.labelMultaPorAtraso.Text = "Multa por atraso (R$):";
             // 
-            // buttonSalvar
+            // ButtonSalvar
             // 
-            this.buttonSalvar.BackColor = System.Drawing.Color.White;
-            this.buttonSalvar.FlatAppearance.BorderSize = 0;
-            this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvar.Location = new System.Drawing.Point(473, 192);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(150, 30);
-            this.buttonSalvar.TabIndex = 4;
-            this.buttonSalvar.Text = "Salvar";
-            this.buttonSalvar.UseVisualStyleBackColor = false;
+            this.ButtonSalvar.BackColor = System.Drawing.Color.White;
+            this.ButtonSalvar.FlatAppearance.BorderSize = 0;
+            this.ButtonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonSalvar.Location = new System.Drawing.Point(473, 192);
+            this.ButtonSalvar.Name = "ButtonSalvar";
+            this.ButtonSalvar.Size = new System.Drawing.Size(150, 30);
+            this.ButtonSalvar.TabIndex = 3;
+            this.ButtonSalvar.Text = "Salvar";
+            this.ButtonSalvar.UseVisualStyleBackColor = false;
             // 
             // textBoxTaxaJurosDiaria
             // 
@@ -153,6 +137,7 @@
             // tabPageIdiomaRegiao
             // 
             this.tabPageIdiomaRegiao.BackColor = System.Drawing.Color.Black;
+            this.tabPageIdiomaRegiao.Controls.Add(this.buttonSalvarIdioma);
             this.tabPageIdiomaRegiao.Controls.Add(this.checkBoxReiniciar);
             this.tabPageIdiomaRegiao.Controls.Add(this.comboBoxIdiomas);
             this.tabPageIdiomaRegiao.Location = new System.Drawing.Point(4, 24);
@@ -161,6 +146,19 @@
             this.tabPageIdiomaRegiao.Size = new System.Drawing.Size(629, 228);
             this.tabPageIdiomaRegiao.TabIndex = 1;
             this.tabPageIdiomaRegiao.Text = "Idioma/Região";
+            // 
+            // buttonSalvarIdioma
+            // 
+            this.buttonSalvarIdioma.BackColor = System.Drawing.Color.White;
+            this.buttonSalvarIdioma.FlatAppearance.BorderSize = 0;
+            this.buttonSalvarIdioma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSalvarIdioma.Location = new System.Drawing.Point(537, 188);
+            this.buttonSalvarIdioma.Name = "buttonSalvarIdioma";
+            this.buttonSalvarIdioma.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalvarIdioma.TabIndex = 3;
+            this.buttonSalvarIdioma.Text = "Salvar";
+            this.buttonSalvarIdioma.UseVisualStyleBackColor = false;
+            this.buttonSalvarIdioma.Click += new System.EventHandler(this.buttonSalvarIdioma_Click);
             // 
             // checkBoxReiniciar
             // 
@@ -171,7 +169,7 @@
             this.checkBoxReiniciar.Location = new System.Drawing.Point(192, 33);
             this.checkBoxReiniciar.Name = "checkBoxReiniciar";
             this.checkBoxReiniciar.Size = new System.Drawing.Size(295, 19);
-            this.checkBoxReiniciar.TabIndex = 1;
+            this.checkBoxReiniciar.TabIndex = 2;
             this.checkBoxReiniciar.Text = "Reiniciar para aplicar o novo idioma imediatamente";
             this.checkBoxReiniciar.UseVisualStyleBackColor = true;
             // 
@@ -185,29 +183,17 @@
             this.comboBoxIdiomas.Location = new System.Drawing.Point(16, 29);
             this.comboBoxIdiomas.Name = "comboBoxIdiomas";
             this.comboBoxIdiomas.Size = new System.Drawing.Size(121, 23);
-            this.comboBoxIdiomas.TabIndex = 0;
-            // 
-            // buttonFechar
-            // 
-            this.buttonFechar.BackColor = System.Drawing.Color.White;
-            this.buttonFechar.FlatAppearance.BorderSize = 0;
-            this.buttonFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFechar.Location = new System.Drawing.Point(568, 395);
-            this.buttonFechar.Name = "buttonFechar";
-            this.buttonFechar.Size = new System.Drawing.Size(75, 23);
-            this.buttonFechar.TabIndex = 5;
-            this.buttonFechar.Text = "Fechar";
-            this.buttonFechar.UseVisualStyleBackColor = false;
-            this.buttonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
+            this.comboBoxIdiomas.TabIndex = 1;
             // 
             // Configuracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(667, 445);
+            this.ClientSize = new System.Drawing.Size(667, 288);
             this.Controls.Add(this.panelFundoConfiguracoes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "Configuracoes";
             this.Text = "Configurações";
             this.panelFundoConfiguracoes.ResumeLayout(false);
@@ -224,11 +210,10 @@
 
         private Label labelTaxaJurosDiaria;
         private Panel panelFundoConfiguracoes;
-        private Button buttonSalvar;
+        private Button ButtonSalvar;
         private Label labelMultaPorAtraso;
         private TextBox textBoxMultaPorAtraso;
         private TextBox textBoxTaxaJurosDiaria;
-        private Button buttonFechar;
         private TabControl tabControlParametrosParaCobranca;
         private TabPage tabPageParametros;
         private TabPage tabPageIdiomaRegiao;

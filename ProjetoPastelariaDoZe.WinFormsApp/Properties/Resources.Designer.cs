@@ -201,9 +201,9 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Salvar.
         /// </summary>
-        internal static string buttonSalvar_Text {
+        internal static string ButtonSalvar_Text {
             get {
-                return ResourceManager.GetString("buttonSalvar.Text", resourceCulture);
+                return ResourceManager.GetString("ButtonSalvar.Text", resourceCulture);
             }
         }
         

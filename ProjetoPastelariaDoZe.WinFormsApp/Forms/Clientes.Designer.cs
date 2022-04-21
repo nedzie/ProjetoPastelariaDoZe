@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.panelClientes = new System.Windows.Forms.Panel();
-            this.buttonFechar = new System.Windows.Forms.Button();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.labelDiaDoFiado = new System.Windows.Forms.Label();
             this.numericUpDownDiaDoFiado = new System.Windows.Forms.NumericUpDown();
@@ -51,7 +50,6 @@
             // 
             // panelClientes
             // 
-            this.panelClientes.Controls.Add(this.buttonFechar);
             this.panelClientes.Controls.Add(this.buttonCadastrar);
             this.panelClientes.Controls.Add(this.labelDiaDoFiado);
             this.panelClientes.Controls.Add(this.numericUpDownDiaDoFiado);
@@ -71,19 +69,6 @@
             this.panelClientes.Size = new System.Drawing.Size(701, 312);
             this.panelClientes.TabIndex = 0;
             // 
-            // buttonFechar
-            // 
-            this.buttonFechar.BackColor = System.Drawing.Color.White;
-            this.buttonFechar.FlatAppearance.BorderSize = 0;
-            this.buttonFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFechar.Location = new System.Drawing.Point(623, 280);
-            this.buttonFechar.Name = "buttonFechar";
-            this.buttonFechar.Size = new System.Drawing.Size(75, 23);
-            this.buttonFechar.TabIndex = 14;
-            this.buttonFechar.Text = "Fechar";
-            this.buttonFechar.UseVisualStyleBackColor = false;
-            this.buttonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
-            // 
             // buttonCadastrar
             // 
             this.buttonCadastrar.BackColor = System.Drawing.Color.White;
@@ -93,7 +78,7 @@
             this.buttonCadastrar.Location = new System.Drawing.Point(212, 260);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(312, 43);
-            this.buttonCadastrar.TabIndex = 13;
+            this.buttonCadastrar.TabIndex = 7;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = false;
             // 
@@ -112,7 +97,7 @@
             this.numericUpDownDiaDoFiado.Location = new System.Drawing.Point(533, 122);
             this.numericUpDownDiaDoFiado.Name = "numericUpDownDiaDoFiado";
             this.numericUpDownDiaDoFiado.Size = new System.Drawing.Size(120, 23);
-            this.numericUpDownDiaDoFiado.TabIndex = 11;
+            this.numericUpDownDiaDoFiado.TabIndex = 6;
             // 
             // radioButtonFiadoNao
             // 
@@ -121,7 +106,7 @@
             this.radioButtonFiadoNao.Location = new System.Drawing.Point(533, 65);
             this.radioButtonFiadoNao.Name = "radioButtonFiadoNao";
             this.radioButtonFiadoNao.Size = new System.Drawing.Size(47, 19);
-            this.radioButtonFiadoNao.TabIndex = 10;
+            this.radioButtonFiadoNao.TabIndex = 5;
             this.radioButtonFiadoNao.TabStop = true;
             this.radioButtonFiadoNao.Text = "Não";
             this.radioButtonFiadoNao.UseVisualStyleBackColor = true;
@@ -133,7 +118,7 @@
             this.radioButtonFiadoSim.Location = new System.Drawing.Point(533, 40);
             this.radioButtonFiadoSim.Name = "radioButtonFiadoSim";
             this.radioButtonFiadoSim.Size = new System.Drawing.Size(45, 19);
-            this.radioButtonFiadoSim.TabIndex = 9;
+            this.radioButtonFiadoSim.TabIndex = 4;
             this.radioButtonFiadoSim.TabStop = true;
             this.radioButtonFiadoSim.Text = "Sim";
             this.radioButtonFiadoSim.UseVisualStyleBackColor = true;
@@ -154,7 +139,7 @@
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.PlaceholderText = "********";
             this.textBoxSenha.Size = new System.Drawing.Size(100, 23);
-            this.textBoxSenha.TabIndex = 7;
+            this.textBoxSenha.TabIndex = 3;
             // 
             // textBoxTelefone
             // 
@@ -162,7 +147,7 @@
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.PlaceholderText = "(00) 0 0000 0000";
             this.textBoxTelefone.Size = new System.Drawing.Size(144, 23);
-            this.textBoxTelefone.TabIndex = 6;
+            this.textBoxTelefone.TabIndex = 2;
             // 
             // textBoxCPF
             // 
@@ -170,7 +155,7 @@
             this.textBoxCPF.Name = "textBoxCPF";
             this.textBoxCPF.PlaceholderText = "000.000.000-00";
             this.textBoxCPF.Size = new System.Drawing.Size(144, 23);
-            this.textBoxCPF.TabIndex = 5;
+            this.textBoxCPF.TabIndex = 1;
             // 
             // textBoxNome
             // 
@@ -178,7 +163,7 @@
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.PlaceholderText = "Nome do cliente";
             this.textBoxNome.Size = new System.Drawing.Size(257, 23);
-            this.textBoxNome.TabIndex = 4;
+            this.textBoxNome.TabIndex = 0;
             // 
             // labelSenha
             // 
@@ -228,6 +213,7 @@
             this.ClientSize = new System.Drawing.Size(730, 331);
             this.Controls.Add(this.panelClientes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "Clientes";
             this.Text = "Clientes";
             this.panelClientes.ResumeLayout(false);
@@ -254,6 +240,5 @@
         private Label labelDiaDoFiado;
         private NumericUpDown numericUpDownDiaDoFiado;
         private Button buttonCadastrar;
-        private Button buttonFechar;
     }
 }

@@ -153,7 +153,7 @@
   <data name="buttonProdutos.Text" xml:space="preserve">
     <value>Products</value>
   </data>
-  <data name="buttonSalvar.Text" xml:space="preserve">
+  <data name="ButtonSalvar.Text" xml:space="preserve">
     <value>Save</value>
   </data>
   <data name="buttonSalvarIdioma.Text" xml:space="preserve">

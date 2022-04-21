@@ -8,14 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjetoPastelariaDoZe.WinFormsApp
+namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
 {
-    public partial class UserControlControleUsuarioGeral : UserControl
+    /// <summary>
+    /// Classe responsável pela notificação da confirmação do fechamento
+    /// </summary>
+    public partial class Fechar : Form
     {
         /// <summary>
-        /// Construtor do UserControlContoleUsuarioGeral, onde há as opções de Salvar, Editar, Excluir e Fechar
+        /// Construtor da classe Fechar
         /// </summary>
-        public UserControlControleUsuarioGeral()
+        public Fechar()
         {
             InitializeComponent();
         }

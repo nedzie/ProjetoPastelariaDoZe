@@ -78,7 +78,7 @@
             this.buttonCaixa.Location = new System.Drawing.Point(0, 240);
             this.buttonCaixa.Name = "buttonCaixa";
             this.buttonCaixa.Size = new System.Drawing.Size(213, 44);
-            this.buttonCaixa.TabIndex = 1;
+            this.buttonCaixa.TabIndex = 2;
             this.buttonCaixa.Text = "Caixa";
             this.buttonCaixa.UseVisualStyleBackColor = false;
             // 
@@ -96,7 +96,7 @@
             this.buttonLogin.Location = new System.Drawing.Point(1, 0);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(210, 103);
-            this.buttonLogin.TabIndex = 7;
+            this.buttonLogin.TabIndex = 0;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonLogin_MouseClick);
@@ -114,7 +114,7 @@
             this.buttonSobre.Location = new System.Drawing.Point(1, 504);
             this.buttonSobre.Name = "buttonSobre";
             this.buttonSobre.Size = new System.Drawing.Size(210, 44);
-            this.buttonSobre.TabIndex = 6;
+            this.buttonSobre.TabIndex = 8;
             this.buttonSobre.Text = "Sobre";
             this.buttonSobre.UseVisualStyleBackColor = false;
             this.buttonSobre.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonSobre_MouseClick);
@@ -132,7 +132,7 @@
             this.buttonConfiguracoes.Location = new System.Drawing.Point(1, 460);
             this.buttonConfiguracoes.Name = "buttonConfiguracoes";
             this.buttonConfiguracoes.Size = new System.Drawing.Size(210, 44);
-            this.buttonConfiguracoes.TabIndex = 5;
+            this.buttonConfiguracoes.TabIndex = 7;
             this.buttonConfiguracoes.Text = "Configurações";
             this.buttonConfiguracoes.UseVisualStyleBackColor = false;
             this.buttonConfiguracoes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonConfiguracoes_MouseClick);
@@ -150,7 +150,7 @@
             this.buttonFuncionarios.Location = new System.Drawing.Point(0, 284);
             this.buttonFuncionarios.Name = "buttonFuncionarios";
             this.buttonFuncionarios.Size = new System.Drawing.Size(213, 44);
-            this.buttonFuncionarios.TabIndex = 4;
+            this.buttonFuncionarios.TabIndex = 3;
             this.buttonFuncionarios.Text = "Funcionários";
             this.buttonFuncionarios.UseVisualStyleBackColor = false;
             this.buttonFuncionarios.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonFuncionarios_MouseClick);
@@ -168,7 +168,7 @@
             this.buttonProdutos.Location = new System.Drawing.Point(0, 416);
             this.buttonProdutos.Name = "buttonProdutos";
             this.buttonProdutos.Size = new System.Drawing.Size(213, 44);
-            this.buttonProdutos.TabIndex = 3;
+            this.buttonProdutos.TabIndex = 6;
             this.buttonProdutos.Text = "Produtos";
             this.buttonProdutos.UseVisualStyleBackColor = false;
             this.buttonProdutos.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonProdutos_MouseClick);
@@ -186,7 +186,7 @@
             this.buttonClientes.Location = new System.Drawing.Point(0, 372);
             this.buttonClientes.Name = "buttonClientes";
             this.buttonClientes.Size = new System.Drawing.Size(213, 44);
-            this.buttonClientes.TabIndex = 2;
+            this.buttonClientes.TabIndex = 5;
             this.buttonClientes.Text = "Clientes";
             this.buttonClientes.UseVisualStyleBackColor = false;
             this.buttonClientes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClientes_MouseClick);
@@ -204,7 +204,7 @@
             this.buttonComandas.Location = new System.Drawing.Point(1, 328);
             this.buttonComandas.Name = "buttonComandas";
             this.buttonComandas.Size = new System.Drawing.Size(213, 44);
-            this.buttonComandas.TabIndex = 1;
+            this.buttonComandas.TabIndex = 4;
             this.buttonComandas.Text = "Comandas";
             this.buttonComandas.UseVisualStyleBackColor = false;
             this.buttonComandas.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonComanda_MouseClick);
@@ -222,7 +222,7 @@
             this.buttonInicio.Location = new System.Drawing.Point(0, 196);
             this.buttonInicio.Name = "buttonInicio";
             this.buttonInicio.Size = new System.Drawing.Size(213, 44);
-            this.buttonInicio.TabIndex = 0;
+            this.buttonInicio.TabIndex = 1;
             this.buttonInicio.Text = "Início";
             this.buttonInicio.UseVisualStyleBackColor = false;
             // 
@@ -274,8 +274,10 @@
             this.Controls.Add(this.panelMenuSuperior);
             this.Controls.Add(this.panelMenuLateral);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "Inicio";
             this.Text = "Teste";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inicio_FormClosing);
             this.panelMenuLateral.ResumeLayout(false);
             this.panelMenuSuperior.ResumeLayout(false);
             this.panelMenuSuperior.PerformLayout();

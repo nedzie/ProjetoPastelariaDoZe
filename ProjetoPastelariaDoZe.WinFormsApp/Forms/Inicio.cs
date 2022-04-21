@@ -14,9 +14,11 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);
+            Funcoes.EventoFocoCampos(this);
+            this.KeyDown += new KeyEventHandler(Funcoes.FormEventoKeyDown!);
             this.Text = Properties.Resources.ResourceManager.GetString("formInicio.Text");
+            MaximizeBox = false;
         }
-
         private void ButtonLogin_MouseClick(object sender, MouseEventArgs e)
         {
             Login login = new();
@@ -47,7 +49,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             Produtos produtos = new();
             produtos.Show();
         }
-
+        
         private void ButtonSobre_MouseClick(object sender, MouseEventArgs e)
         {
             Sobre sobre = new();
@@ -59,6 +61,13 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         {
             Comandas comanda = new();
             comanda.Show();
+        }
+
+        private void Inicio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Fechar fechar = new();
+            fechar.StartPosition = FormStartPosition.CenterParent;
+            fechar.ShowDialog();
         }
     }
 }

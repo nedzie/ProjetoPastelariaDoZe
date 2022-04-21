@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Funcionarios));
             this.labelNome = new System.Windows.Forms.Label();
             this.PanelFuncionarios = new System.Windows.Forms.Panel();
-            this.buttonFechar = new System.Windows.Forms.Button();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.textBoxTelefone = new System.Windows.Forms.TextBox();
@@ -61,7 +60,6 @@
             // PanelFuncionarios
             // 
             this.PanelFuncionarios.BackColor = System.Drawing.Color.Transparent;
-            this.PanelFuncionarios.Controls.Add(this.buttonFechar);
             this.PanelFuncionarios.Controls.Add(this.buttonCadastrar);
             this.PanelFuncionarios.Controls.Add(this.textBoxSenha);
             this.PanelFuncionarios.Controls.Add(this.textBoxTelefone);
@@ -81,19 +79,6 @@
             this.PanelFuncionarios.Size = new System.Drawing.Size(441, 282);
             this.PanelFuncionarios.TabIndex = 1;
             // 
-            // buttonFechar
-            // 
-            this.buttonFechar.BackColor = System.Drawing.Color.White;
-            this.buttonFechar.FlatAppearance.BorderSize = 0;
-            this.buttonFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFechar.Location = new System.Drawing.Point(314, 238);
-            this.buttonFechar.Name = "buttonFechar";
-            this.buttonFechar.Size = new System.Drawing.Size(75, 23);
-            this.buttonFechar.TabIndex = 14;
-            this.buttonFechar.Text = "Fechar";
-            this.buttonFechar.UseVisualStyleBackColor = false;
-            this.buttonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
-            // 
             // buttonCadastrar
             // 
             this.buttonCadastrar.BackColor = System.Drawing.Color.White;
@@ -102,7 +87,7 @@
             this.buttonCadastrar.Location = new System.Drawing.Point(289, 118);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(100, 30);
-            this.buttonCadastrar.TabIndex = 13;
+            this.buttonCadastrar.TabIndex = 7;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = false;
             // 
@@ -112,7 +97,7 @@
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.PlaceholderText = "********";
             this.textBoxSenha.Size = new System.Drawing.Size(196, 23);
-            this.textBoxSenha.TabIndex = 12;
+            this.textBoxSenha.TabIndex = 4;
             // 
             // textBoxTelefone
             // 
@@ -121,7 +106,7 @@
             this.textBoxTelefone.PlaceholderText = "(00) 0 0000 0000";
             this.textBoxTelefone.ReadOnly = true;
             this.textBoxTelefone.Size = new System.Drawing.Size(196, 23);
-            this.textBoxTelefone.TabIndex = 11;
+            this.textBoxTelefone.TabIndex = 3;
             // 
             // textBoxMatricula
             // 
@@ -129,7 +114,7 @@
             this.textBoxMatricula.Name = "textBoxMatricula";
             this.textBoxMatricula.PlaceholderText = "000000";
             this.textBoxMatricula.Size = new System.Drawing.Size(196, 23);
-            this.textBoxMatricula.TabIndex = 10;
+            this.textBoxMatricula.TabIndex = 2;
             // 
             // radioButtonBalcao
             // 
@@ -138,7 +123,7 @@
             this.radioButtonBalcao.Location = new System.Drawing.Point(289, 82);
             this.radioButtonBalcao.Name = "radioButtonBalcao";
             this.radioButtonBalcao.Size = new System.Drawing.Size(60, 19);
-            this.radioButtonBalcao.TabIndex = 9;
+            this.radioButtonBalcao.TabIndex = 6;
             this.radioButtonBalcao.TabStop = true;
             this.radioButtonBalcao.Text = "Balcão";
             this.radioButtonBalcao.UseVisualStyleBackColor = true;
@@ -150,7 +135,7 @@
             this.radioButtonAdmin.Location = new System.Drawing.Point(289, 57);
             this.radioButtonAdmin.Name = "radioButtonAdmin";
             this.radioButtonAdmin.Size = new System.Drawing.Size(61, 19);
-            this.radioButtonAdmin.TabIndex = 8;
+            this.radioButtonAdmin.TabIndex = 5;
             this.radioButtonAdmin.TabStop = true;
             this.radioButtonAdmin.Text = "Admin";
             this.radioButtonAdmin.UseVisualStyleBackColor = true;
@@ -161,7 +146,7 @@
             this.textBoxCPF.Name = "textBoxCPF";
             this.textBoxCPF.PlaceholderText = "000.000.000-00";
             this.textBoxCPF.Size = new System.Drawing.Size(196, 23);
-            this.textBoxCPF.TabIndex = 7;
+            this.textBoxCPF.TabIndex = 1;
             // 
             // textBoxNome
             // 
@@ -169,7 +154,7 @@
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.PlaceholderText = "Nome empregado";
             this.textBoxNome.Size = new System.Drawing.Size(196, 23);
-            this.textBoxNome.TabIndex = 6;
+            this.textBoxNome.TabIndex = 0;
             // 
             // labelGrupo
             // 
@@ -229,6 +214,7 @@
             this.ClientSize = new System.Drawing.Size(482, 319);
             this.Controls.Add(this.PanelFuncionarios);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "Funcionarios";
             this.Text = "Funcionários";
             this.PanelFuncionarios.ResumeLayout(false);
@@ -254,6 +240,5 @@
         private TextBox textBoxSenha;
         private TextBox textBoxTelefone;
         private TextBox textBoxMatricula;
-        private Button buttonFechar;
     }
 }

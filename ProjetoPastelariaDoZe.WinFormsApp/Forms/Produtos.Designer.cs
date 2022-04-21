@@ -42,10 +42,9 @@
             this.buttonImportar = new System.Windows.Forms.Button();
             this.PictureBoxFotoDoProduto = new System.Windows.Forms.PictureBox();
             this.buttonCadastrar = new System.Windows.Forms.Button();
-            this.ButtonFechar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelProdutos = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxFotoDoProduto)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panelProdutos.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelNome
@@ -65,7 +64,7 @@
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.PlaceholderText = "Nome produto:";
             this.textBoxNome.Size = new System.Drawing.Size(235, 23);
-            this.textBoxNome.TabIndex = 1;
+            this.textBoxNome.TabIndex = 0;
             // 
             // labelDescricao
             // 
@@ -83,7 +82,7 @@
             this.textBoxDescricaoProduto.Name = "textBoxDescricaoProduto";
             this.textBoxDescricaoProduto.PlaceholderText = "Descrição do produto";
             this.textBoxDescricaoProduto.Size = new System.Drawing.Size(298, 23);
-            this.textBoxDescricaoProduto.TabIndex = 3;
+            this.textBoxDescricaoProduto.TabIndex = 1;
             // 
             // labelValorUnitario
             // 
@@ -101,7 +100,7 @@
             this.textBoxValorUnitario.Name = "textBoxValorUnitario";
             this.textBoxValorUnitario.PlaceholderText = "R$";
             this.textBoxValorUnitario.Size = new System.Drawing.Size(100, 23);
-            this.textBoxValorUnitario.TabIndex = 5;
+            this.textBoxValorUnitario.TabIndex = 2;
             // 
             // labelFoto
             // 
@@ -121,7 +120,7 @@
             this.buttonImportar.Location = new System.Drawing.Point(527, 158);
             this.buttonImportar.Name = "buttonImportar";
             this.buttonImportar.Size = new System.Drawing.Size(104, 40);
-            this.buttonImportar.TabIndex = 7;
+            this.buttonImportar.TabIndex = 3;
             this.buttonImportar.Text = "Importar...";
             this.buttonImportar.UseVisualStyleBackColor = false;
             // 
@@ -142,32 +141,18 @@
             this.buttonCadastrar.Location = new System.Drawing.Point(539, 235);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(144, 53);
-            this.buttonCadastrar.TabIndex = 9;
+            this.buttonCadastrar.TabIndex = 4;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = false;
             // 
-            // ButtonFechar
+            // panelProdutos
             // 
-            this.ButtonFechar.BackColor = System.Drawing.Color.White;
-            this.ButtonFechar.FlatAppearance.BorderSize = 0;
-            this.ButtonFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonFechar.Location = new System.Drawing.Point(698, 253);
-            this.ButtonFechar.Name = "ButtonFechar";
-            this.ButtonFechar.Size = new System.Drawing.Size(75, 23);
-            this.ButtonFechar.TabIndex = 10;
-            this.ButtonFechar.Text = "Fechar";
-            this.ButtonFechar.UseVisualStyleBackColor = false;
-            this.ButtonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.ButtonFechar);
-            this.panel1.Controls.Add(this.buttonImportar);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 295);
-            this.panel1.TabIndex = 11;
+            this.panelProdutos.BackColor = System.Drawing.Color.Transparent;
+            this.panelProdutos.Controls.Add(this.buttonImportar);
+            this.panelProdutos.Location = new System.Drawing.Point(12, 12);
+            this.panelProdutos.Name = "panelProdutos";
+            this.panelProdutos.Size = new System.Drawing.Size(776, 295);
+            this.panelProdutos.TabIndex = 11;
             // 
             // Produtos
             // 
@@ -184,12 +169,13 @@
             this.Controls.Add(this.labelDescricao);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.labelNome);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelProdutos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "Produtos";
             this.Text = "Produtos";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxFotoDoProduto)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.panelProdutos.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,7 +193,6 @@
         private Button buttonImportar;
         private PictureBox PictureBoxFotoDoProduto;
         private Button buttonCadastrar;
-        private Button ButtonFechar;
-        private Panel panel1;
+        private Panel panelProdutos;
     }
 }

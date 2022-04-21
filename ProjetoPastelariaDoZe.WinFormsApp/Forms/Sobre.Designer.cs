@@ -50,6 +50,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.labelTextoTemporario);
+            this.KeyPreview = true;
             this.Name = "Sobre";
             this.Text = "Sobre";
             this.ResumeLayout(false);

@@ -13,20 +13,18 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);
+            this.KeyDown += new KeyEventHandler(Funcoes.FormEventoKeyDown!);
             this.Text = Properties.Resources.ResourceManager.GetString("formComandas.Text");
             UserControlControleUsuarioGeral opcoes = new();
             opcoes.Dock = DockStyle.Bottom;
             Size = new(Size.Width, Size.Height + opcoes.Size.Height);
             this.Controls.Add(opcoes);
+            opcoes.buttonSair.Click += ButtonSair_Click; // Invoke
         }
-        /// <summary>
-        /// Captura o evento de click para fechar o form Comandas
-        /// </summary>
-        /// <param name="sender">Define o objecto que está enviando a informação</param>
-        /// <param name="e">Pois agora</param>
-        private void ButtonFechar_Click(object sender, EventArgs e)
+
+        private void ButtonSair_Click(object? sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }

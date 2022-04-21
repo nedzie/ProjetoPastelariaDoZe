@@ -220,7 +220,7 @@
   <data name="buttonImportar.Text" xml:space="preserve">
     <value>Importar</value>
   </data>
-  <data name="buttonSalvar.Text" xml:space="preserve">
+  <data name="ButtonSalvar.Text" xml:space="preserve">
     <value>Salvar</value>
   </data>
   <data name="formClientes.Text" xml:space="preserve">

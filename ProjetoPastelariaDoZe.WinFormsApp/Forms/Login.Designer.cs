@@ -33,7 +33,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panelFundoLogin = new System.Windows.Forms.Panel();
-            this.buttonFechar = new System.Windows.Forms.Button();
             this.labelNovoUsuario = new System.Windows.Forms.Label();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.buttonEntrar = new System.Windows.Forms.Button();
@@ -47,7 +46,6 @@
             // 
             // panelFundoLogin
             // 
-            this.panelFundoLogin.Controls.Add(this.buttonFechar);
             this.panelFundoLogin.Controls.Add(this.labelNovoUsuario);
             this.panelFundoLogin.Controls.Add(this.buttonCadastrar);
             this.panelFundoLogin.Controls.Add(this.buttonEntrar);
@@ -60,19 +58,6 @@
             this.panelFundoLogin.Name = "panelFundoLogin";
             this.panelFundoLogin.Size = new System.Drawing.Size(475, 329);
             this.panelFundoLogin.TabIndex = 0;
-            // 
-            // buttonFechar
-            // 
-            this.buttonFechar.BackColor = System.Drawing.Color.White;
-            this.buttonFechar.FlatAppearance.BorderSize = 0;
-            this.buttonFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFechar.Location = new System.Drawing.Point(376, 281);
-            this.buttonFechar.Name = "buttonFechar";
-            this.buttonFechar.Size = new System.Drawing.Size(75, 23);
-            this.buttonFechar.TabIndex = 8;
-            this.buttonFechar.Text = "Fechar";
-            this.buttonFechar.UseVisualStyleBackColor = false;
-            this.buttonFechar.Click += new System.EventHandler(this.ButtonFechar_Click);
             // 
             // labelNovoUsuario
             // 
@@ -92,7 +77,7 @@
             this.buttonCadastrar.Location = new System.Drawing.Point(36, 279);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(83, 25);
-            this.buttonCadastrar.TabIndex = 6;
+            this.buttonCadastrar.TabIndex = 3;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = false;
             // 
@@ -107,7 +92,7 @@
             this.buttonEntrar.Location = new System.Drawing.Point(36, 210);
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.Size = new System.Drawing.Size(94, 30);
-            this.buttonEntrar.TabIndex = 5;
+            this.buttonEntrar.TabIndex = 2;
             this.buttonEntrar.Text = "Entrar";
             this.buttonEntrar.UseVisualStyleBackColor = false;
             // 
@@ -118,9 +103,7 @@
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.PlaceholderText = "********";
             this.textBoxSenha.Size = new System.Drawing.Size(150, 23);
-            this.textBoxSenha.TabIndex = 4;
-            this.textBoxSenha.Enter += new System.EventHandler(this.textBoxSenha_Enter);
-            this.textBoxSenha.Leave += new System.EventHandler(this.textBoxSenha_Leave);
+            this.textBoxSenha.TabIndex = 1;
             // 
             // textBoxNome
             // 
@@ -129,9 +112,7 @@
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.PlaceholderText = "Seu nome";
             this.textBoxNome.Size = new System.Drawing.Size(150, 23);
-            this.textBoxNome.TabIndex = 3;
-            this.textBoxNome.Enter += new System.EventHandler(this.textBoxNome_Enter);
-            this.textBoxNome.Leave += new System.EventHandler(this.textBoxNome_Leave);
+            this.textBoxNome.TabIndex = 0;
             // 
             // labelSenha
             // 
@@ -172,6 +153,7 @@
             this.ClientSize = new System.Drawing.Size(499, 353);
             this.Controls.Add(this.panelFundoLogin);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "Login";
             this.Text = "Conectar-se";
             this.panelFundoLogin.ResumeLayout(false);
@@ -190,7 +172,6 @@
         private Label labelNome;
         private Label labelLogin;
         private Button buttonCadastrar;
-        private Button buttonFechar;
         private Label labelNovoUsuario;
     }
 }
