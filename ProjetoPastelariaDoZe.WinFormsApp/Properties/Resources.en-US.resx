@@ -150,6 +150,9 @@
   <data name="buttonLogin.Text" xml:space="preserve">
     <value>Login</value>
   </data>
+  <data name="buttonNao.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
   <data name="buttonProdutos.Text" xml:space="preserve">
     <value>Products</value>
   </data>
@@ -158,6 +161,9 @@
   </data>
   <data name="buttonSalvarIdioma.Text" xml:space="preserve">
     <value>Save</value>
+  </data>
+  <data name="buttonSim.Text" xml:space="preserve">
+    <value>Yes</value>
   </data>
   <data name="buttonSobre.Text" xml:space="preserve">
     <value>About</value>
@@ -194,6 +200,9 @@
   </data>
   <data name="labelDescricao.Text" xml:space="preserve">
     <value>Description</value>
+  </data>
+  <data name="labelDesejaSair.Text" xml:space="preserve">
+    <value>Wanna leave?</value>
   </data>
   <data name="labelDiaDoFiado.Text" xml:space="preserve">
     <value>Spun day (0 - Days)</value>

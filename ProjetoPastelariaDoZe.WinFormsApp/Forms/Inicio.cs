@@ -49,7 +49,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             Produtos produtos = new();
             produtos.Show();
         }
-        
+
         private void ButtonSobre_MouseClick(object sender, MouseEventArgs e)
         {
             Sobre sobre = new();
@@ -67,7 +67,8 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         {
             Fechar fechar = new();
             fechar.StartPosition = FormStartPosition.CenterParent;
-            fechar.ShowDialog();
+            if (fechar.ShowDialog() == DialogResult.No)
+                e.Cancel = true;
         }
     }
 }

@@ -21,16 +21,10 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             opcoes.Dock = DockStyle.Bottom;
             this.Controls.Add(opcoes);
             opcoes.buttonSair.Click += ButtonSair_Click;
+            opcoes.buttonSalvar.Click += ButtonSalvar_Click;
             MaximizeBox = false;
         }
-
-        private void ButtonSair_Click(object? sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        //Esse é o método de manipulação
-        private void buttonSalvarIdioma_Click(object sender, EventArgs e) // Sender = Objeto que gerou o evento (Clique no botão > botão que gerou) | e = Informações do evento
+        private void ButtonSalvar_Click(object? sender, EventArgs e)
         {
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             config.AppSettings.Settings.Remove("IdiomaRegiao");
@@ -38,14 +32,17 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             config.Save(ConfigurationSaveMode.Modified);
             ConfigurationManager.RefreshSection("appSettings");
             Close();
-            //_ para descartar esse evento
             _ = MessageBox.Show(Properties.Resources.ResourceManager.GetString("MessageBox.Text"));
 
-            if(checkBoxReiniciar.Checked)
+            if (checkBoxReiniciar.Checked)
             {
-                Application.Restart();
+                System.Diagnostics.Process.Start(Application.ExecutablePath);
                 Environment.Exit(0);
             }
+        }
+        private void ButtonSair_Click(object? sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

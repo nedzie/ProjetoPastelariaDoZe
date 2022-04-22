@@ -337,4 +337,13 @@
   <data name="tabPageParametros.Text" xml:space="preserve">
     <value>Parâmetros para cobrança</value>
   </data>
+  <data name="buttonNao.Text" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="buttonSim.Text" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="labelDesejaSair.Text" xml:space="preserve">
+    <value>Deseja sair?</value>
+  </data>
 </root>

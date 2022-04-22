@@ -190,6 +190,15 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Não.
+        /// </summary>
+        internal static string buttonNao_Text {
+            get {
+                return ResourceManager.GetString("buttonNao.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Produtos.
         /// </summary>
         internal static string buttonProdutos_Text {
@@ -213,6 +222,15 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         internal static string buttonSalvarIdioma_Text {
             get {
                 return ResourceManager.GetString("buttonSalvarIdioma.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sim.
+        /// </summary>
+        internal static string buttonSim_Text {
+            get {
+                return ResourceManager.GetString("buttonSim.Text", resourceCulture);
             }
         }
         
@@ -391,6 +409,15 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         internal static string labelDescricao_Text {
             get {
                 return ResourceManager.GetString("labelDescricao.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deseja sair?.
+        /// </summary>
+        internal static string labelDesejaSair_Text {
+            get {
+                return ResourceManager.GetString("labelDesejaSair.Text", resourceCulture);
             }
         }
         

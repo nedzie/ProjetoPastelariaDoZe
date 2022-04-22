@@ -1,5 +1,8 @@
 ﻿namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
 {
+    /// <summary>
+    /// Classe auxiliar Fechar
+    /// </summary>
     partial class Fechar
     {
         /// <summary>
@@ -30,85 +33,78 @@
         {
             this.buttonSim = new System.Windows.Forms.Button();
             this.buttonNao = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.labelDesejaFechar = new System.Windows.Forms.Label();
+            this.labelDesejaSair = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonSim
             // 
-            this.buttonSim.BackColor = System.Drawing.Color.White;
+            this.buttonSim.BackColor = System.Drawing.Color.Black;
+            this.buttonSim.DialogResult = System.Windows.Forms.DialogResult.Yes;
             this.buttonSim.FlatAppearance.BorderSize = 0;
+            this.buttonSim.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonSim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSim.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonSim.Location = new System.Drawing.Point(33, 104);
+            this.buttonSim.ForeColor = System.Drawing.Color.White;
+            this.buttonSim.Location = new System.Drawing.Point(24, 47);
             this.buttonSim.Name = "buttonSim";
-            this.buttonSim.Size = new System.Drawing.Size(70, 35);
+            this.buttonSim.Size = new System.Drawing.Size(80, 35);
             this.buttonSim.TabIndex = 0;
             this.buttonSim.Text = "Sim";
             this.buttonSim.UseVisualStyleBackColor = false;
             // 
             // buttonNao
             // 
-            this.buttonNao.BackColor = System.Drawing.Color.White;
+            this.buttonNao.BackColor = System.Drawing.Color.Black;
+            this.buttonNao.DialogResult = System.Windows.Forms.DialogResult.No;
             this.buttonNao.FlatAppearance.BorderSize = 0;
+            this.buttonNao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonNao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonNao.Location = new System.Drawing.Point(141, 104);
+            this.buttonNao.ForeColor = System.Drawing.Color.White;
+            this.buttonNao.Location = new System.Drawing.Point(124, 47);
             this.buttonNao.Name = "buttonNao";
-            this.buttonNao.Size = new System.Drawing.Size(70, 35);
+            this.buttonNao.Size = new System.Drawing.Size(80, 35);
             this.buttonNao.TabIndex = 1;
             this.buttonNao.Text = "Não";
             this.buttonNao.UseVisualStyleBackColor = false;
             // 
-            // buttonCancelar
+            // labelDesejaSair
             // 
-            this.buttonCancelar.BackColor = System.Drawing.Color.White;
-            this.buttonCancelar.FlatAppearance.BorderSize = 0;
-            this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonCancelar.Location = new System.Drawing.Point(248, 104);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(70, 35);
-            this.buttonCancelar.TabIndex = 2;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = false;
-            // 
-            // labelDesejaFechar
-            // 
-            this.labelDesejaFechar.AutoSize = true;
-            this.labelDesejaFechar.BackColor = System.Drawing.Color.Transparent;
-            this.labelDesejaFechar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDesejaFechar.ForeColor = System.Drawing.Color.White;
-            this.labelDesejaFechar.Location = new System.Drawing.Point(33, 49);
-            this.labelDesejaFechar.Name = "labelDesejaFechar";
-            this.labelDesejaFechar.Size = new System.Drawing.Size(106, 20);
-            this.labelDesejaFechar.TabIndex = 3;
-            this.labelDesejaFechar.Text = "Deseja fechar?";
+            this.labelDesejaSair.AutoSize = true;
+            this.labelDesejaSair.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelDesejaSair.ForeColor = System.Drawing.Color.White;
+            this.labelDesejaSair.Location = new System.Drawing.Point(24, 9);
+            this.labelDesejaSair.Name = "labelDesejaSair";
+            this.labelDesejaSair.Size = new System.Drawing.Size(71, 15);
+            this.labelDesejaSair.TabIndex = 2;
+            this.labelDesejaSair.Text = "Deseja sair?";
             // 
             // Fechar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(354, 184);
-            this.ControlBox = false;
-            this.Controls.Add(this.labelDesejaFechar);
-            this.Controls.Add(this.buttonCancelar);
+            this.ClientSize = new System.Drawing.Size(236, 102);
+            this.Controls.Add(this.labelDesejaSair);
             this.Controls.Add(this.buttonNao);
             this.Controls.Add(this.buttonSim);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Fechar";
-            this.Text = "Aviso";
+            this.Text = "Fechar";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Button buttonSim;
-        private Button buttonNao;
-        private Button buttonCancelar;
-        private Label labelDesejaFechar;
+        /// <summary>
+        /// Botão Sim de confirmação
+        /// </summary>
+        public Button buttonSim;
+        /// <summary>
+        /// Botão Não de confirmação
+        /// </summary>
+        public Button buttonNao;
+        private Label labelDesejaSair;
     }
 }

@@ -61,7 +61,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
             else if (sender is RadioButton rb)
                 rb.BackColor = Color.LightCyan;
             else if (sender is ButtonBase btn)
-                btn.BackColor = Color.Beige;
+                btn.BackColor = Color.LightCyan;
         }
         /// <summary>
         /// Altera a do do BackColor quando o campo perde foco
@@ -72,13 +72,13 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
         public static void CampoEventoLeave(object sender, EventArgs e)
         {
             if (sender is TextBoxBase txt) // MaskedBox, TextBox
-                txt.BackColor = Color.White;
+                txt.BackColor = Color.LightGray;
             else if (sender is ComboBox cb)
-                cb.BackColor = Color.White;
+                cb.BackColor = Color.LightGray;
             else if (sender is RadioButton rb)
-                rb.BackColor = Color.White;
+                rb.BackColor = Color.LightGray;
             else if (sender is ButtonBase btn)
-                btn.BackColor = Color.Aqua;
+                btn.BackColor = Color.LightGray;
         }
         #endregion
         #region Ajustes de teclado

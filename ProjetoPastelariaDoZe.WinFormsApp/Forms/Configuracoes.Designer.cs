@@ -158,7 +158,6 @@
             this.buttonSalvarIdioma.TabIndex = 3;
             this.buttonSalvarIdioma.Text = "Salvar";
             this.buttonSalvarIdioma.UseVisualStyleBackColor = false;
-            this.buttonSalvarIdioma.Click += new System.EventHandler(this.buttonSalvarIdioma_Click);
             // 
             // checkBoxReiniciar
             // 
