@@ -300,4 +300,28 @@
   <data name="textBoxValorUnitario.PlaceholderText" xml:space="preserve">
     <value>$</value>
   </data>
+  <data name="toolStripMenuItemClientes.Text" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="toolStripMenuItemConfiguracoes.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="toolStripMenuItemFuncionarios.Text" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="toolStripMenuItemInicio.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="toolStripMenuItemLogin.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="toolStripMenuItemProdutos.Text" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="toolStripMenuItemSair.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="toolStripMenuItemSobre.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
 </root>

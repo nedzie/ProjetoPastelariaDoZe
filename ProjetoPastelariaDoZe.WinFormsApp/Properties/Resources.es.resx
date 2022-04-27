@@ -184,7 +184,7 @@
     <value>Empleados</value>
   </data>
   <data name="formInicio.Text" xml:space="preserve">
-    <value>Fiados do Zé em espanhol</value>
+    <value>Pastelaría del Ze</value>
   </data>
   <data name="formLogin.Text" xml:space="preserve">
     <value>Acesso</value>
@@ -299,5 +299,29 @@
   </data>
   <data name="textBoxValorUnitario.PlaceholderText" xml:space="preserve">
     <value>£</value>
+  </data>
+  <data name="toolStripMenuItemClientes.Text" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="toolStripMenuItemConfiguracoes.Text" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="toolStripMenuItemFuncionarios.Text" xml:space="preserve">
+    <value>Empleados</value>
+  </data>
+  <data name="toolStripMenuItemInicio.Text" xml:space="preserve">
+    <value>Comienzo</value>
+  </data>
+  <data name="toolStripMenuItemLogin.Text" xml:space="preserve">
+    <value>Acesso</value>
+  </data>
+  <data name="toolStripMenuItemProdutos.Text" xml:space="preserve">
+    <value>Productos</value>
+  </data>
+  <data name="toolStripMenuItemSair.Text" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="toolStripMenuItemSobre.Text" xml:space="preserve">
+    <value>Sobre</value>
   </data>
 </root>

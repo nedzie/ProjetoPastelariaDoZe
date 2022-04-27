@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.panelMenuLateral = new System.Windows.Forms.Panel();
             this.buttonCaixa = new System.Windows.Forms.Button();
@@ -43,9 +44,23 @@
             this.LabelCabecalho = new System.Windows.Forms.Label();
             this.panelMenuGeral = new System.Windows.Forms.Panel();
             this.LabelCorpo = new System.Windows.Forms.Label();
+            this.contextMenuStripInicio = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItemInicio = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItemLogin = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemFuncionarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemClientes = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemProdutos = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItemConfiguracoes = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemSobre = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.panelMenuLateral.SuspendLayout();
             this.panelMenuSuperior.SuspendLayout();
             this.panelMenuGeral.SuspendLayout();
+            this.contextMenuStripInicio.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenuLateral
@@ -99,7 +114,7 @@
             this.buttonLogin.TabIndex = 0;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
-            this.buttonLogin.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonLogin_MouseClick);
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // buttonSobre
             // 
@@ -117,7 +132,7 @@
             this.buttonSobre.TabIndex = 8;
             this.buttonSobre.Text = "Sobre";
             this.buttonSobre.UseVisualStyleBackColor = false;
-            this.buttonSobre.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonSobre_MouseClick);
+            this.buttonSobre.Click += new System.EventHandler(this.buttonSobre_Click);
             // 
             // buttonConfiguracoes
             // 
@@ -135,7 +150,7 @@
             this.buttonConfiguracoes.TabIndex = 7;
             this.buttonConfiguracoes.Text = "Configurações";
             this.buttonConfiguracoes.UseVisualStyleBackColor = false;
-            this.buttonConfiguracoes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonConfiguracoes_MouseClick);
+            this.buttonConfiguracoes.Click += new System.EventHandler(this.buttonConfiguracoes_Click);
             // 
             // buttonFuncionarios
             // 
@@ -153,7 +168,7 @@
             this.buttonFuncionarios.TabIndex = 3;
             this.buttonFuncionarios.Text = "Funcionários";
             this.buttonFuncionarios.UseVisualStyleBackColor = false;
-            this.buttonFuncionarios.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonFuncionarios_MouseClick);
+            this.buttonFuncionarios.Click += new System.EventHandler(this.buttonFuncionarios_Click);
             // 
             // buttonProdutos
             // 
@@ -171,7 +186,7 @@
             this.buttonProdutos.TabIndex = 6;
             this.buttonProdutos.Text = "Produtos";
             this.buttonProdutos.UseVisualStyleBackColor = false;
-            this.buttonProdutos.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonProdutos_MouseClick);
+            this.buttonProdutos.Click += new System.EventHandler(this.buttonProdutos_Click);
             // 
             // buttonClientes
             // 
@@ -189,7 +204,7 @@
             this.buttonClientes.TabIndex = 5;
             this.buttonClientes.Text = "Clientes";
             this.buttonClientes.UseVisualStyleBackColor = false;
-            this.buttonClientes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClientes_MouseClick);
+            this.buttonClientes.Click += new System.EventHandler(this.buttonClientes_Click);
             // 
             // buttonComandas
             // 
@@ -207,7 +222,7 @@
             this.buttonComandas.TabIndex = 4;
             this.buttonComandas.Text = "Comandas";
             this.buttonComandas.UseVisualStyleBackColor = false;
-            this.buttonComandas.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonComanda_MouseClick);
+            this.buttonComandas.Click += new System.EventHandler(this.buttonComandas_Click);
             // 
             // buttonInicio
             // 
@@ -264,12 +279,111 @@
             this.LabelCorpo.TabIndex = 0;
             this.LabelCorpo.Text = "Aqui vai ter o corpo de cada parte";
             // 
+            // contextMenuStripInicio
+            // 
+            this.contextMenuStripInicio.BackColor = System.Drawing.Color.White;
+            this.contextMenuStripInicio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemInicio,
+            this.toolStripSeparator1,
+            this.toolStripMenuItemFuncionarios,
+            this.toolStripMenuItemClientes,
+            this.toolStripMenuItemProdutos,
+            this.toolStripSeparator2,
+            this.toolStripMenuItemSobre,
+            this.toolStripMenuItemConfiguracoes,
+            this.toolStripSeparator3,
+            this.toolStripMenuItemLogin,
+            this.toolStripSeparator4,
+            this.toolStripMenuItemSair});
+            this.contextMenuStripInicio.Name = "contextMenuStripInicio";
+            this.contextMenuStripInicio.Size = new System.Drawing.Size(203, 226);
+            // 
+            // toolStripMenuItemInicio
+            // 
+            this.toolStripMenuItemInicio.ForeColor = System.Drawing.Color.Black;
+            this.toolStripMenuItemInicio.Name = "toolStripMenuItemInicio";
+            this.toolStripMenuItemInicio.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F1)));
+            this.toolStripMenuItemInicio.Size = new System.Drawing.Size(202, 22);
+            this.toolStripMenuItemInicio.Text = "Início";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.BackColor = System.Drawing.Color.Black;
+            this.toolStripSeparator1.ForeColor = System.Drawing.Color.Black;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(199, 6);
+            // 
+            // toolStripMenuItemLogin
+            // 
+            this.toolStripMenuItemLogin.Name = "toolStripMenuItemLogin";
+            this.toolStripMenuItemLogin.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F10)));
+            this.toolStripMenuItemLogin.Size = new System.Drawing.Size(202, 22);
+            this.toolStripMenuItemLogin.Text = "Login";
+            // 
+            // toolStripMenuItemFuncionarios
+            // 
+            this.toolStripMenuItemFuncionarios.Name = "toolStripMenuItemFuncionarios";
+            this.toolStripMenuItemFuncionarios.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F2)));
+            this.toolStripMenuItemFuncionarios.Size = new System.Drawing.Size(202, 22);
+            this.toolStripMenuItemFuncionarios.Text = "Funcionários";
+            // 
+            // toolStripMenuItemClientes
+            // 
+            this.toolStripMenuItemClientes.Name = "toolStripMenuItemClientes";
+            this.toolStripMenuItemClientes.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F3)));
+            this.toolStripMenuItemClientes.Size = new System.Drawing.Size(202, 22);
+            this.toolStripMenuItemClientes.Text = "Clientes";
+            // 
+            // toolStripMenuItemProdutos
+            // 
+            this.toolStripMenuItemProdutos.Name = "toolStripMenuItemProdutos";
+            this.toolStripMenuItemProdutos.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F4)));
+            this.toolStripMenuItemProdutos.Size = new System.Drawing.Size(202, 22);
+            this.toolStripMenuItemProdutos.Text = "Produtos";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(199, 6);
+            // 
+            // toolStripMenuItemConfiguracoes
+            // 
+            this.toolStripMenuItemConfiguracoes.Name = "toolStripMenuItemConfiguracoes";
+            this.toolStripMenuItemConfiguracoes.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F9)));
+            this.toolStripMenuItemConfiguracoes.Size = new System.Drawing.Size(202, 22);
+            this.toolStripMenuItemConfiguracoes.Text = "Configurações";
+            // 
+            // toolStripMenuItemSobre
+            // 
+            this.toolStripMenuItemSobre.Name = "toolStripMenuItemSobre";
+            this.toolStripMenuItemSobre.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F8)));
+            this.toolStripMenuItemSobre.Size = new System.Drawing.Size(202, 22);
+            this.toolStripMenuItemSobre.Text = "Sobre";
+            // 
+            // toolStripMenuItemSair
+            // 
+            this.toolStripMenuItemSair.Name = "toolStripMenuItemSair";
+            this.toolStripMenuItemSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F11)));
+            this.toolStripMenuItemSair.Size = new System.Drawing.Size(202, 22);
+            this.toolStripMenuItemSair.Text = "Sair";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(199, 6);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(199, 6);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(1307, 679);
+            this.ContextMenuStrip = this.contextMenuStripInicio;
             this.Controls.Add(this.panelMenuGeral);
             this.Controls.Add(this.panelMenuSuperior);
             this.Controls.Add(this.panelMenuLateral);
@@ -283,6 +397,7 @@
             this.panelMenuSuperior.PerformLayout();
             this.panelMenuGeral.ResumeLayout(false);
             this.panelMenuGeral.PerformLayout();
+            this.contextMenuStripInicio.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -303,5 +418,21 @@
         private Label LabelCabecalho;
         private Label LabelCorpo;
         private Button buttonCaixa;
+        private ToolStripMenuItem toolStripMenuItemInicio;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripMenuItem toolStripMenuItemLogin;
+        private ToolStripMenuItem toolStripMenuItemFuncionarios;
+        private ToolStripMenuItem toolStripMenuItemClientes;
+        private ToolStripMenuItem toolStripMenuItemProdutos;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStripMenuItem toolStripMenuItemConfiguracoes;
+        private ToolStripMenuItem toolStripMenuItemSobre;
+        private ToolStripMenuItem toolStripMenuItemSair;
+        /// <summary>
+        /// Menu de contexto do menu inicial. Acesse clicando com o botão direito do mouse em algum local do mesmo.
+        /// </summary>
+        public ContextMenuStrip contextMenuStripInicio;
+        private ToolStripSeparator toolStripSeparator3;
+        private ToolStripSeparator toolStripSeparator4;
     }
 }

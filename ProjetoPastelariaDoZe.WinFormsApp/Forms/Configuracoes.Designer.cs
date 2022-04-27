@@ -38,10 +38,8 @@
             this.tabPageParametros = new System.Windows.Forms.TabPage();
             this.textBoxMultaPorAtraso = new System.Windows.Forms.TextBox();
             this.labelMultaPorAtraso = new System.Windows.Forms.Label();
-            this.ButtonSalvar = new System.Windows.Forms.Button();
             this.textBoxTaxaJurosDiaria = new System.Windows.Forms.TextBox();
             this.tabPageIdiomaRegiao = new System.Windows.Forms.TabPage();
-            this.buttonSalvarIdioma = new System.Windows.Forms.Button();
             this.checkBoxReiniciar = new System.Windows.Forms.CheckBox();
             this.comboBoxIdiomas = new System.Windows.Forms.ComboBox();
             this.panelFundoConfiguracoes.SuspendLayout();
@@ -86,7 +84,6 @@
             this.tabPageParametros.BackColor = System.Drawing.Color.Black;
             this.tabPageParametros.Controls.Add(this.textBoxMultaPorAtraso);
             this.tabPageParametros.Controls.Add(this.labelMultaPorAtraso);
-            this.tabPageParametros.Controls.Add(this.ButtonSalvar);
             this.tabPageParametros.Controls.Add(this.textBoxTaxaJurosDiaria);
             this.tabPageParametros.Controls.Add(this.labelTaxaJurosDiaria);
             this.tabPageParametros.Location = new System.Drawing.Point(4, 24);
@@ -114,18 +111,6 @@
             this.labelMultaPorAtraso.TabIndex = 3;
             this.labelMultaPorAtraso.Text = "Multa por atraso (R$):";
             // 
-            // ButtonSalvar
-            // 
-            this.ButtonSalvar.BackColor = System.Drawing.Color.White;
-            this.ButtonSalvar.FlatAppearance.BorderSize = 0;
-            this.ButtonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonSalvar.Location = new System.Drawing.Point(473, 192);
-            this.ButtonSalvar.Name = "ButtonSalvar";
-            this.ButtonSalvar.Size = new System.Drawing.Size(150, 30);
-            this.ButtonSalvar.TabIndex = 3;
-            this.ButtonSalvar.Text = "Salvar";
-            this.ButtonSalvar.UseVisualStyleBackColor = false;
-            // 
             // textBoxTaxaJurosDiaria
             // 
             this.textBoxTaxaJurosDiaria.Location = new System.Drawing.Point(19, 48);
@@ -137,7 +122,6 @@
             // tabPageIdiomaRegiao
             // 
             this.tabPageIdiomaRegiao.BackColor = System.Drawing.Color.Black;
-            this.tabPageIdiomaRegiao.Controls.Add(this.buttonSalvarIdioma);
             this.tabPageIdiomaRegiao.Controls.Add(this.checkBoxReiniciar);
             this.tabPageIdiomaRegiao.Controls.Add(this.comboBoxIdiomas);
             this.tabPageIdiomaRegiao.Location = new System.Drawing.Point(4, 24);
@@ -146,18 +130,6 @@
             this.tabPageIdiomaRegiao.Size = new System.Drawing.Size(629, 228);
             this.tabPageIdiomaRegiao.TabIndex = 1;
             this.tabPageIdiomaRegiao.Text = "Idioma/Região";
-            // 
-            // buttonSalvarIdioma
-            // 
-            this.buttonSalvarIdioma.BackColor = System.Drawing.Color.White;
-            this.buttonSalvarIdioma.FlatAppearance.BorderSize = 0;
-            this.buttonSalvarIdioma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvarIdioma.Location = new System.Drawing.Point(537, 188);
-            this.buttonSalvarIdioma.Name = "buttonSalvarIdioma";
-            this.buttonSalvarIdioma.Size = new System.Drawing.Size(75, 23);
-            this.buttonSalvarIdioma.TabIndex = 3;
-            this.buttonSalvarIdioma.Text = "Salvar";
-            this.buttonSalvarIdioma.UseVisualStyleBackColor = false;
             // 
             // checkBoxReiniciar
             // 
@@ -209,7 +181,6 @@
 
         private Label labelTaxaJurosDiaria;
         private Panel panelFundoConfiguracoes;
-        private Button ButtonSalvar;
         private Label labelMultaPorAtraso;
         private TextBox textBoxMultaPorAtraso;
         private TextBox textBoxTaxaJurosDiaria;
@@ -218,6 +189,5 @@
         private TabPage tabPageIdiomaRegiao;
         private ComboBox comboBoxIdiomas;
         private CheckBox checkBoxReiniciar;
-        private Button buttonSalvarIdioma;
     }
 }

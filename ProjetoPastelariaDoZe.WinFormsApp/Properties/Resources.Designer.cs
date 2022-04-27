@@ -750,6 +750,78 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clientes.
+        /// </summary>
+        internal static string toolStripMenuItemClientes_Text {
+            get {
+                return ResourceManager.GetString("toolStripMenuItemClientes.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configurações.
+        /// </summary>
+        internal static string toolStripMenuItemConfiguracoes_Text {
+            get {
+                return ResourceManager.GetString("toolStripMenuItemConfiguracoes.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Funcionários.
+        /// </summary>
+        internal static string toolStripMenuItemFuncionarios_Text {
+            get {
+                return ResourceManager.GetString("toolStripMenuItemFuncionarios.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Início.
+        /// </summary>
+        internal static string toolStripMenuItemInicio_Text {
+            get {
+                return ResourceManager.GetString("toolStripMenuItemInicio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        internal static string toolStripMenuItemLogin_Text {
+            get {
+                return ResourceManager.GetString("toolStripMenuItemLogin.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Produtos.
+        /// </summary>
+        internal static string toolStripMenuItemProdutos_Text {
+            get {
+                return ResourceManager.GetString("toolStripMenuItemProdutos.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sair.
+        /// </summary>
+        internal static string toolStripMenuItemSair_Text {
+            get {
+                return ResourceManager.GetString("toolStripMenuItemSair.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sobre.
+        /// </summary>
+        internal static string toolStripMenuItemSobre_Text {
+            get {
+                return ResourceManager.GetString("toolStripMenuItemSobre.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap user_friends_solid {
