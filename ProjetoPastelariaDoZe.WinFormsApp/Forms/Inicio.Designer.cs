@@ -47,20 +47,26 @@
             this.contextMenuStripInicio = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemInicio = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItemLogin = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemFuncionarios = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemProdutos = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItemConfiguracoes = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemSobre = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemConfiguracoes = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItemLogin = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItemSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyIconSystemTray = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStripSystemTray = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItemSystemTrayAbrir = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemSystemTraySair = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemSystemTraySobre = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenuLateral.SuspendLayout();
             this.panelMenuSuperior.SuspendLayout();
             this.panelMenuGeral.SuspendLayout();
             this.contextMenuStripInicio.SuspendLayout();
+            this.contextMenuStripSystemTray.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenuLateral
@@ -296,7 +302,7 @@
             this.toolStripSeparator4,
             this.toolStripMenuItemSair});
             this.contextMenuStripInicio.Name = "contextMenuStripInicio";
-            this.contextMenuStripInicio.Size = new System.Drawing.Size(203, 226);
+            this.contextMenuStripInicio.Size = new System.Drawing.Size(203, 204);
             // 
             // toolStripMenuItemInicio
             // 
@@ -312,13 +318,6 @@
             this.toolStripSeparator1.ForeColor = System.Drawing.Color.Black;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(199, 6);
-            // 
-            // toolStripMenuItemLogin
-            // 
-            this.toolStripMenuItemLogin.Name = "toolStripMenuItemLogin";
-            this.toolStripMenuItemLogin.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F10)));
-            this.toolStripMenuItemLogin.Size = new System.Drawing.Size(202, 22);
-            this.toolStripMenuItemLogin.Text = "Login";
             // 
             // toolStripMenuItemFuncionarios
             // 
@@ -346,6 +345,13 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(199, 6);
             // 
+            // toolStripMenuItemSobre
+            // 
+            this.toolStripMenuItemSobre.Name = "toolStripMenuItemSobre";
+            this.toolStripMenuItemSobre.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F8)));
+            this.toolStripMenuItemSobre.Size = new System.Drawing.Size(202, 22);
+            this.toolStripMenuItemSobre.Text = "Sobre";
+            // 
             // toolStripMenuItemConfiguracoes
             // 
             this.toolStripMenuItemConfiguracoes.Name = "toolStripMenuItemConfiguracoes";
@@ -353,12 +359,22 @@
             this.toolStripMenuItemConfiguracoes.Size = new System.Drawing.Size(202, 22);
             this.toolStripMenuItemConfiguracoes.Text = "Configurações";
             // 
-            // toolStripMenuItemSobre
+            // toolStripSeparator3
             // 
-            this.toolStripMenuItemSobre.Name = "toolStripMenuItemSobre";
-            this.toolStripMenuItemSobre.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F8)));
-            this.toolStripMenuItemSobre.Size = new System.Drawing.Size(202, 22);
-            this.toolStripMenuItemSobre.Text = "Sobre";
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(199, 6);
+            // 
+            // toolStripMenuItemLogin
+            // 
+            this.toolStripMenuItemLogin.Name = "toolStripMenuItemLogin";
+            this.toolStripMenuItemLogin.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F10)));
+            this.toolStripMenuItemLogin.Size = new System.Drawing.Size(202, 22);
+            this.toolStripMenuItemLogin.Text = "Login";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(199, 6);
             // 
             // toolStripMenuItemSair
             // 
@@ -367,15 +383,43 @@
             this.toolStripMenuItemSair.Size = new System.Drawing.Size(202, 22);
             this.toolStripMenuItemSair.Text = "Sair";
             // 
-            // toolStripSeparator3
+            // notifyIconSystemTray
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(199, 6);
+            this.notifyIconSystemTray.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIconSystemTray.BalloonTipText = "A aplicação continuará rodando em segundo plano";
+            this.notifyIconSystemTray.BalloonTipTitle = "Pastelaria do Zé";
+            this.notifyIconSystemTray.ContextMenuStrip = this.contextMenuStripSystemTray;
+            this.notifyIconSystemTray.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconSystemTray.Icon")));
+            this.notifyIconSystemTray.Text = "Pastelaria Do Zé";
+            this.notifyIconSystemTray.Visible = true;
+            this.notifyIconSystemTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconSystemTray_MouseDoubleClick);
             // 
-            // toolStripSeparator4
+            // contextMenuStripSystemTray
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(199, 6);
+            this.contextMenuStripSystemTray.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemSystemTrayAbrir,
+            this.toolStripMenuItemSystemTraySair,
+            this.toolStripMenuItemSystemTraySobre});
+            this.contextMenuStripSystemTray.Name = "contextMenuStripSystemTray";
+            this.contextMenuStripSystemTray.Size = new System.Drawing.Size(105, 70);
+            // 
+            // toolStripMenuItemSystemTrayAbrir
+            // 
+            this.toolStripMenuItemSystemTrayAbrir.Name = "toolStripMenuItemSystemTrayAbrir";
+            this.toolStripMenuItemSystemTrayAbrir.Size = new System.Drawing.Size(104, 22);
+            this.toolStripMenuItemSystemTrayAbrir.Text = "Abrir";
+            // 
+            // toolStripMenuItemSystemTraySair
+            // 
+            this.toolStripMenuItemSystemTraySair.Name = "toolStripMenuItemSystemTraySair";
+            this.toolStripMenuItemSystemTraySair.Size = new System.Drawing.Size(104, 22);
+            this.toolStripMenuItemSystemTraySair.Text = "Sair";
+            // 
+            // toolStripMenuItemSystemTraySobre
+            // 
+            this.toolStripMenuItemSystemTraySobre.Name = "toolStripMenuItemSystemTraySobre";
+            this.toolStripMenuItemSystemTraySobre.Size = new System.Drawing.Size(104, 22);
+            this.toolStripMenuItemSystemTraySobre.Text = "Sobre";
             // 
             // Inicio
             // 
@@ -387,17 +431,21 @@
             this.Controls.Add(this.panelMenuGeral);
             this.Controls.Add(this.panelMenuSuperior);
             this.Controls.Add(this.panelMenuLateral);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Teste";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inicio_FormClosing);
+            this.Resize += new System.EventHandler(this.Inicio_Resize);
             this.panelMenuLateral.ResumeLayout(false);
             this.panelMenuSuperior.ResumeLayout(false);
             this.panelMenuSuperior.PerformLayout();
             this.panelMenuGeral.ResumeLayout(false);
             this.panelMenuGeral.PerformLayout();
             this.contextMenuStripInicio.ResumeLayout(false);
+            this.contextMenuStripSystemTray.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -434,5 +482,10 @@
         public ContextMenuStrip contextMenuStripInicio;
         private ToolStripSeparator toolStripSeparator3;
         private ToolStripSeparator toolStripSeparator4;
+        private NotifyIcon notifyIconSystemTray;
+        private ContextMenuStrip contextMenuStripSystemTray;
+        private ToolStripMenuItem toolStripMenuItemSystemTrayAbrir;
+        private ToolStripMenuItem toolStripMenuItemSystemTraySair;
+        private ToolStripMenuItem toolStripMenuItemSystemTraySobre;
     }
 }

@@ -213,9 +213,11 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(482, 319);
             this.Controls.Add(this.PanelFuncionarios);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Funcionarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Funcionários";
             this.PanelFuncionarios.ResumeLayout(false);
             this.PanelFuncionarios.PerformLayout();

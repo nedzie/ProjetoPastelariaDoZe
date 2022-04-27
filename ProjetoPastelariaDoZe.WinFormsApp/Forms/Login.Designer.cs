@@ -152,9 +152,11 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(499, 353);
             this.Controls.Add(this.panelFundoLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Conectar-se";
             this.panelFundoLogin.ResumeLayout(false);
             this.panelFundoLogin.PerformLayout();

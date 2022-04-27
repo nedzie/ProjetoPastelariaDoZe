@@ -370,4 +370,19 @@
   <data name="toolStripMenuItemSobre.Text" xml:space="preserve">
     <value>Sobre</value>
   </data>
+  <data name="toolStripMenuItemSystemTrayAbrir.Text" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="toolStripMenuItemSystemTraySair.Text" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="toolStripMenuItemSystemTraySobre.Text" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="BalloonTipText.Text" xml:space="preserve">
+    <value>A aplicação conitnuará rodando em segundo plano</value>
+  </data>
+  <data name="BalloonTipTitle.Text" xml:space="preserve">
+    <value>Pastelaria do Zé</value>
+  </data>
 </root>

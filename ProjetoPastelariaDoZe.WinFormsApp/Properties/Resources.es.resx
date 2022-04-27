@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BalloonTipText.Text" xml:space="preserve">
+    <value>La aplicación seguirá ejecutándose en segundo plano</value>
+  </data>
+  <data name="BalloonTipTitle.Text" xml:space="preserve">
+    <value>Pastelaría del Zé</value>
+  </data>
   <data name="buttonCadastrar.Text" xml:space="preserve">
     <value>Registrar</value>
   </data>
@@ -184,7 +190,7 @@
     <value>Empleados</value>
   </data>
   <data name="formInicio.Text" xml:space="preserve">
-    <value>Pastelaría del Ze</value>
+    <value>Pastelaría del Zé</value>
   </data>
   <data name="formLogin.Text" xml:space="preserve">
     <value>Acesso</value>
@@ -322,6 +328,15 @@
     <value>Salir</value>
   </data>
   <data name="toolStripMenuItemSobre.Text" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="toolStripMenuItemSystemTrayAbrir.Text" xml:space="preserve">
+    <value>Abierto</value>
+  </data>
+  <data name="toolStripMenuItemSystemTraySair.Text" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="toolStripMenuItemSystemTraySobre.Text" xml:space="preserve">
     <value>Sobre</value>
   </data>
 </root>

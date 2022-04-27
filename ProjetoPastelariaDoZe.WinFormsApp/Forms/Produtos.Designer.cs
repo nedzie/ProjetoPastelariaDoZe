@@ -170,9 +170,11 @@
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.panelProdutos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Produtos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Produtos";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxFotoDoProduto)).EndInit();
             this.panelProdutos.ResumeLayout(false);

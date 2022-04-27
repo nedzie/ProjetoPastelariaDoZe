@@ -81,6 +81,24 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A aplicação conitnuará rodando em segundo plano.
+        /// </summary>
+        internal static string BalloonTipText_Text {
+            get {
+                return ResourceManager.GetString("BalloonTipText.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pastelaria do Zé.
+        /// </summary>
+        internal static string BalloonTipTitle_Text {
+            get {
+                return ResourceManager.GetString("BalloonTipTitle.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap barras_configuracoes_solido_branco {
@@ -818,6 +836,33 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         internal static string toolStripMenuItemSobre_Text {
             get {
                 return ResourceManager.GetString("toolStripMenuItemSobre.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Abrir.
+        /// </summary>
+        internal static string toolStripMenuItemSystemTrayAbrir_Text {
+            get {
+                return ResourceManager.GetString("toolStripMenuItemSystemTrayAbrir.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sair.
+        /// </summary>
+        internal static string toolStripMenuItemSystemTraySair_Text {
+            get {
+                return ResourceManager.GetString("toolStripMenuItemSystemTraySair.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sobre.
+        /// </summary>
+        internal static string toolStripMenuItemSystemTraySobre_Text {
+            get {
+                return ResourceManager.GetString("toolStripMenuItemSystemTraySobre.Text", resourceCulture);
             }
         }
         
