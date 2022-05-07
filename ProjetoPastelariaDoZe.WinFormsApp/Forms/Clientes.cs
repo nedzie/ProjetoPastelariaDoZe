@@ -32,11 +32,42 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             this.Controls.Add(opcoes);
             opcoes.buttonSair.Click += ButtonSair_Click;
             MaximizeBox = false;
+            maskedTextBoxCNPJ.Enabled = false;
+            maskedTextBoxCPF.Enabled = false;
+            numericUpDownDiaDoFiado.Enabled = false;
         }
 
         private void ButtonSair_Click(object? sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void radioButtonFisica_CheckedChanged(object sender, EventArgs e)
+        {
+            maskedTextBoxCPF.Enabled = true;
+            maskedTextBoxCNPJ.Enabled = false;
+            maskedTextBoxCNPJ.Clear();
+            maskedTextBoxCPF.Focus();
+        }
+
+        private void radioButtonJuridica_CheckedChanged(object sender, EventArgs e)
+        {
+            maskedTextBoxCNPJ.Enabled = true;
+            maskedTextBoxCPF.Enabled = false;
+            maskedTextBoxCPF.Clear();
+            maskedTextBoxCNPJ.Focus();
+        }
+
+        private void radioButtonFiadoSim_CheckedChanged(object sender, EventArgs e)
+        {
+            numericUpDownDiaDoFiado.Enabled = true;
+            numericUpDownDiaDoFiado.Focus();
+        }
+
+        private void radioButtonFiadoNao_CheckedChanged(object sender, EventArgs e)
+        {
+            numericUpDownDiaDoFiado.Enabled = false;
+            numericUpDownDiaDoFiado.ResetText();
         }
     }
 }

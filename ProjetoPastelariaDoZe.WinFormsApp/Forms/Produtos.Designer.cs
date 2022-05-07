@@ -43,6 +43,7 @@
             this.PictureBoxFotoDoProduto = new System.Windows.Forms.PictureBox();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.panelProdutos = new System.Windows.Forms.Panel();
+            this.maskedTextBoxValorUnitario = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxFotoDoProduto)).BeginInit();
             this.panelProdutos.SuspendLayout();
             this.SuspendLayout();
@@ -148,11 +149,20 @@
             // panelProdutos
             // 
             this.panelProdutos.BackColor = System.Drawing.Color.Transparent;
+            this.panelProdutos.Controls.Add(this.maskedTextBoxValorUnitario);
             this.panelProdutos.Controls.Add(this.buttonImportar);
             this.panelProdutos.Location = new System.Drawing.Point(12, 12);
             this.panelProdutos.Name = "panelProdutos";
             this.panelProdutos.Size = new System.Drawing.Size(776, 295);
             this.panelProdutos.TabIndex = 11;
+            // 
+            // maskedTextBoxValorUnitario
+            // 
+            this.maskedTextBoxValorUnitario.Location = new System.Drawing.Point(106, 223);
+            this.maskedTextBoxValorUnitario.Mask = "999.999,99";
+            this.maskedTextBoxValorUnitario.Name = "maskedTextBoxValorUnitario";
+            this.maskedTextBoxValorUnitario.Size = new System.Drawing.Size(100, 23);
+            this.maskedTextBoxValorUnitario.TabIndex = 4;
             // 
             // Produtos
             // 
@@ -178,6 +188,7 @@
             this.Text = "Produtos";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxFotoDoProduto)).EndInit();
             this.panelProdutos.ResumeLayout(false);
+            this.panelProdutos.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,5 +207,6 @@
         private PictureBox PictureBoxFotoDoProduto;
         private Button buttonCadastrar;
         private Panel panelProdutos;
+        private MaskedTextBox maskedTextBoxValorUnitario;
     }
 }

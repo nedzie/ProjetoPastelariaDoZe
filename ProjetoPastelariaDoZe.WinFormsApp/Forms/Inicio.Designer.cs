@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.panelMenuLateral = new System.Windows.Forms.Panel();
+            this.buttonSair = new System.Windows.Forms.Button();
             this.buttonCaixa = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.buttonSobre = new System.Windows.Forms.Button();
@@ -72,6 +73,7 @@
             // panelMenuLateral
             // 
             this.panelMenuLateral.BackColor = System.Drawing.Color.Black;
+            this.panelMenuLateral.Controls.Add(this.buttonSair);
             this.panelMenuLateral.Controls.Add(this.buttonCaixa);
             this.panelMenuLateral.Controls.Add(this.buttonLogin);
             this.panelMenuLateral.Controls.Add(this.buttonSobre);
@@ -85,6 +87,23 @@
             this.panelMenuLateral.Name = "panelMenuLateral";
             this.panelMenuLateral.Size = new System.Drawing.Size(211, 679);
             this.panelMenuLateral.TabIndex = 0;
+            // 
+            // buttonSair
+            // 
+            this.buttonSair.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSair.FlatAppearance.BorderSize = 0;
+            this.buttonSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
+            this.buttonSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSair.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonSair.ForeColor = System.Drawing.Color.White;
+            this.buttonSair.Image = global::ProjetoPastelariaDoZe.WinFormsApp.Properties.Resources.fechar_solido_branco;
+            this.buttonSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSair.Location = new System.Drawing.Point(1, 551);
+            this.buttonSair.Name = "buttonSair";
+            this.buttonSair.Size = new System.Drawing.Size(210, 44);
+            this.buttonSair.TabIndex = 9;
+            this.buttonSair.Text = "Sair";
+            this.buttonSair.UseVisualStyleBackColor = false;
             // 
             // buttonCaixa
             // 
@@ -487,5 +506,6 @@
         private ToolStripMenuItem toolStripMenuItemSystemTrayAbrir;
         private ToolStripMenuItem toolStripMenuItemSystemTraySair;
         private ToolStripMenuItem toolStripMenuItemSystemTraySobre;
+        private Button buttonSair;
     }
 }

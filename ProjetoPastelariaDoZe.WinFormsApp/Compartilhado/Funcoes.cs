@@ -59,7 +59,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
             else if (sender is ComboBox cb)
                 cb.BackColor = Color.LightCyan;
             else if (sender is RadioButton rb)
-                rb.BackColor = Color.LightCyan;
+                rb.ForeColor = Color.LightCyan;
             else if (sender is ButtonBase btn)
                 btn.BackColor = Color.LightCyan;
         }
@@ -76,7 +76,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
             else if (sender is ComboBox cb)
                 cb.BackColor = Color.LightGray;
             else if (sender is RadioButton rb)
-                rb.BackColor = Color.LightGray;
+                rb.ForeColor = Color.LightGray;
             else if (sender is ButtonBase btn)
                 btn.BackColor = Color.LightGray;
         }

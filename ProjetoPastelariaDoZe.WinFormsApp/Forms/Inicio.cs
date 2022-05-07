@@ -19,7 +19,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             this.KeyDown += new KeyEventHandler(Funcoes.FormEventoKeyDown!);
             this.Text = Properties.Resources.ResourceManager.GetString("formInicio.Text");
             MaximizeBox = false;
-            //Button início?
+
             toolStripMenuItemLogin.Click += new EventHandler(buttonLogin_Click!);
             toolStripMenuItemFuncionarios.Click += new EventHandler(buttonFuncionarios_Click!);
             toolStripMenuItemClientes.Click += new EventHandler(buttonClientes_Click!);
@@ -31,6 +31,8 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             toolStripMenuItemSystemTrayAbrir.Click += ToolStripMenuItemSystemTrayAbrir_Click;
             toolStripMenuItemSystemTraySair.Click += ToolStripMenuItemSystemTraySair_Click;
             toolStripMenuItemSystemTraySobre.Click += new EventHandler(buttonSobre_Click!);
+
+            buttonSair.Click += ToolStripMenuItemSystemTraySair_Click;
 
             ComponentResourceManager resources = new(typeof(Properties.Resources));
             foreach (ToolStripItem c in contextMenuStripInicio.Items)
