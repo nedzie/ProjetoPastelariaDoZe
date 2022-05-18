@@ -76,12 +76,12 @@
             this.panelClientes.Controls.Add(this.labelNome);
             this.panelClientes.Location = new System.Drawing.Point(12, 12);
             this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(443, 298);
+            this.panelClientes.Size = new System.Drawing.Size(443, 306);
             this.panelClientes.TabIndex = 0;
             // 
             // maskedTextBoxTelefone
             // 
-            this.maskedTextBoxTelefone.Location = new System.Drawing.Point(0, 221);
+            this.maskedTextBoxTelefone.Location = new System.Drawing.Point(0, 225);
             this.maskedTextBoxTelefone.Mask = "(00) 90000-0000";
             this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
             this.maskedTextBoxTelefone.Size = new System.Drawing.Size(100, 23);
@@ -89,7 +89,7 @@
             // 
             // maskedTextBoxCPF
             // 
-            this.maskedTextBoxCPF.Location = new System.Drawing.Point(0, 129);
+            this.maskedTextBoxCPF.Location = new System.Drawing.Point(0, 133);
             this.maskedTextBoxCPF.Mask = "000\\.000\\.000-00";
             this.maskedTextBoxCPF.Name = "maskedTextBoxCPF";
             this.maskedTextBoxCPF.Size = new System.Drawing.Size(144, 23);
@@ -97,7 +97,7 @@
             // 
             // maskedTextBoxCNPJ
             // 
-            this.maskedTextBoxCNPJ.Location = new System.Drawing.Point(0, 173);
+            this.maskedTextBoxCNPJ.Location = new System.Drawing.Point(0, 177);
             this.maskedTextBoxCNPJ.Mask = "00\\.000\\.000/0000-00";
             this.maskedTextBoxCNPJ.Name = "maskedTextBoxCNPJ";
             this.maskedTextBoxCNPJ.Size = new System.Drawing.Size(144, 23);
@@ -107,7 +107,7 @@
             // 
             this.labelCNPJ.AutoSize = true;
             this.labelCNPJ.ForeColor = System.Drawing.Color.White;
-            this.labelCNPJ.Location = new System.Drawing.Point(0, 155);
+            this.labelCNPJ.Location = new System.Drawing.Point(0, 159);
             this.labelCNPJ.Name = "labelCNPJ";
             this.labelCNPJ.Size = new System.Drawing.Size(37, 15);
             this.labelCNPJ.TabIndex = 17;
@@ -155,7 +155,7 @@
             this.buttonCadastrar.FlatAppearance.BorderSize = 0;
             this.buttonCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCadastrar.ForeColor = System.Drawing.Color.Black;
-            this.buttonCadastrar.Location = new System.Drawing.Point(267, 247);
+            this.buttonCadastrar.Location = new System.Drawing.Point(266, 251);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(165, 43);
             this.buttonCadastrar.TabIndex = 8;
@@ -222,7 +222,7 @@
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Location = new System.Drawing.Point(0, 267);
+            this.textBoxSenha.Location = new System.Drawing.Point(0, 271);
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.PasswordChar = '*';
             this.textBoxSenha.PlaceholderText = "********";
@@ -241,7 +241,7 @@
             // 
             this.labelSenha.AutoSize = true;
             this.labelSenha.ForeColor = System.Drawing.Color.White;
-            this.labelSenha.Location = new System.Drawing.Point(0, 247);
+            this.labelSenha.Location = new System.Drawing.Point(0, 251);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(42, 15);
             this.labelSenha.TabIndex = 3;
@@ -251,7 +251,7 @@
             // 
             this.labelTelefone.AutoSize = true;
             this.labelTelefone.ForeColor = System.Drawing.Color.White;
-            this.labelTelefone.Location = new System.Drawing.Point(0, 203);
+            this.labelTelefone.Location = new System.Drawing.Point(0, 207);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(54, 15);
             this.labelTelefone.TabIndex = 2;
@@ -282,7 +282,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(456, 318);
+            this.ClientSize = new System.Drawing.Size(456, 326);
             this.Controls.Add(this.panelClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

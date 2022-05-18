@@ -38,5 +38,10 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         {
             this.Close();
         }
+
+        private void textBoxValorUnitario_Click(object sender, EventArgs e)
+        {
+            Funcoes.AplicaMascaraMoeda(textBoxValorUnitario);
+        }
     }
 }

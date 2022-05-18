@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Funcionarios));
             this.labelNome = new System.Windows.Forms.Label();
             this.PanelFuncionarios = new System.Windows.Forms.Panel();
+            this.maskedTextBoxTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxCPF = new System.Windows.Forms.MaskedTextBox();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
-            this.textBoxTelefone = new System.Windows.Forms.TextBox();
             this.textBoxMatricula = new System.Windows.Forms.TextBox();
             this.radioButtonBalcao = new System.Windows.Forms.RadioButton();
             this.radioButtonAdmin = new System.Windows.Forms.RadioButton();
-            this.textBoxCPF = new System.Windows.Forms.TextBox();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.labelGrupo = new System.Windows.Forms.Label();
             this.labelSenha = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             // 
             this.labelNome.AutoSize = true;
             this.labelNome.ForeColor = System.Drawing.Color.White;
-            this.labelNome.Location = new System.Drawing.Point(52, 14);
+            this.labelNome.Location = new System.Drawing.Point(3, 0);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(43, 15);
             this.labelNome.TabIndex = 0;
@@ -60,13 +60,13 @@
             // PanelFuncionarios
             // 
             this.PanelFuncionarios.BackColor = System.Drawing.Color.Transparent;
+            this.PanelFuncionarios.Controls.Add(this.maskedTextBoxTelefone);
+            this.PanelFuncionarios.Controls.Add(this.maskedTextBoxCPF);
             this.PanelFuncionarios.Controls.Add(this.buttonCadastrar);
             this.PanelFuncionarios.Controls.Add(this.textBoxSenha);
-            this.PanelFuncionarios.Controls.Add(this.textBoxTelefone);
             this.PanelFuncionarios.Controls.Add(this.textBoxMatricula);
             this.PanelFuncionarios.Controls.Add(this.radioButtonBalcao);
             this.PanelFuncionarios.Controls.Add(this.radioButtonAdmin);
-            this.PanelFuncionarios.Controls.Add(this.textBoxCPF);
             this.PanelFuncionarios.Controls.Add(this.textBoxNome);
             this.PanelFuncionarios.Controls.Add(this.labelGrupo);
             this.PanelFuncionarios.Controls.Add(this.labelSenha);
@@ -76,41 +76,52 @@
             this.PanelFuncionarios.Controls.Add(this.labelNome);
             this.PanelFuncionarios.Location = new System.Drawing.Point(12, 12);
             this.PanelFuncionarios.Name = "PanelFuncionarios";
-            this.PanelFuncionarios.Size = new System.Drawing.Size(441, 282);
+            this.PanelFuncionarios.Size = new System.Drawing.Size(351, 258);
             this.PanelFuncionarios.TabIndex = 1;
+            // 
+            // maskedTextBoxTelefone
+            // 
+            this.maskedTextBoxTelefone.Location = new System.Drawing.Point(3, 180);
+            this.maskedTextBoxTelefone.Mask = "(00) 90000-0000";
+            this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
+            this.maskedTextBoxTelefone.Size = new System.Drawing.Size(100, 23);
+            this.maskedTextBoxTelefone.TabIndex = 3;
+            // 
+            // maskedTextBoxCPF
+            // 
+            this.maskedTextBoxCPF.Location = new System.Drawing.Point(3, 68);
+            this.maskedTextBoxCPF.Mask = "000\\.000\\.000-00";
+            this.maskedTextBoxCPF.Name = "maskedTextBoxCPF";
+            this.maskedTextBoxCPF.Size = new System.Drawing.Size(144, 23);
+            this.maskedTextBoxCPF.TabIndex = 1;
             // 
             // buttonCadastrar
             // 
             this.buttonCadastrar.BackColor = System.Drawing.Color.White;
             this.buttonCadastrar.FlatAppearance.BorderSize = 0;
             this.buttonCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCadastrar.Location = new System.Drawing.Point(289, 118);
+            this.buttonCadastrar.Location = new System.Drawing.Point(240, 104);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(100, 30);
             this.buttonCadastrar.TabIndex = 7;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = false;
+            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Location = new System.Drawing.Point(52, 238);
+            this.textBoxSenha.Location = new System.Drawing.Point(3, 224);
+            this.textBoxSenha.MaxLength = 20;
             this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.PasswordChar = '×';
             this.textBoxSenha.PlaceholderText = "********";
             this.textBoxSenha.Size = new System.Drawing.Size(196, 23);
             this.textBoxSenha.TabIndex = 4;
             // 
-            // textBoxTelefone
-            // 
-            this.textBoxTelefone.Location = new System.Drawing.Point(52, 194);
-            this.textBoxTelefone.Name = "textBoxTelefone";
-            this.textBoxTelefone.PlaceholderText = "(00) 0 0000 0000";
-            this.textBoxTelefone.ReadOnly = true;
-            this.textBoxTelefone.Size = new System.Drawing.Size(196, 23);
-            this.textBoxTelefone.TabIndex = 3;
-            // 
             // textBoxMatricula
             // 
-            this.textBoxMatricula.Location = new System.Drawing.Point(52, 137);
+            this.textBoxMatricula.Location = new System.Drawing.Point(3, 123);
+            this.textBoxMatricula.MaxLength = 10;
             this.textBoxMatricula.Name = "textBoxMatricula";
             this.textBoxMatricula.PlaceholderText = "000000";
             this.textBoxMatricula.Size = new System.Drawing.Size(196, 23);
@@ -120,7 +131,7 @@
             // 
             this.radioButtonBalcao.AutoSize = true;
             this.radioButtonBalcao.ForeColor = System.Drawing.Color.White;
-            this.radioButtonBalcao.Location = new System.Drawing.Point(289, 82);
+            this.radioButtonBalcao.Location = new System.Drawing.Point(240, 68);
             this.radioButtonBalcao.Name = "radioButtonBalcao";
             this.radioButtonBalcao.Size = new System.Drawing.Size(60, 19);
             this.radioButtonBalcao.TabIndex = 6;
@@ -132,7 +143,7 @@
             // 
             this.radioButtonAdmin.AutoSize = true;
             this.radioButtonAdmin.ForeColor = System.Drawing.Color.White;
-            this.radioButtonAdmin.Location = new System.Drawing.Point(289, 57);
+            this.radioButtonAdmin.Location = new System.Drawing.Point(240, 43);
             this.radioButtonAdmin.Name = "radioButtonAdmin";
             this.radioButtonAdmin.Size = new System.Drawing.Size(61, 19);
             this.radioButtonAdmin.TabIndex = 5;
@@ -140,17 +151,10 @@
             this.radioButtonAdmin.Text = "Admin";
             this.radioButtonAdmin.UseVisualStyleBackColor = true;
             // 
-            // textBoxCPF
-            // 
-            this.textBoxCPF.Location = new System.Drawing.Point(52, 82);
-            this.textBoxCPF.Name = "textBoxCPF";
-            this.textBoxCPF.PlaceholderText = "000.000.000-00";
-            this.textBoxCPF.Size = new System.Drawing.Size(196, 23);
-            this.textBoxCPF.TabIndex = 1;
-            // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(52, 32);
+            this.textBoxNome.Location = new System.Drawing.Point(3, 18);
+            this.textBoxNome.MaxLength = 120;
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.PlaceholderText = "Nome empregado";
             this.textBoxNome.Size = new System.Drawing.Size(196, 23);
@@ -160,7 +164,7 @@
             // 
             this.labelGrupo.AutoSize = true;
             this.labelGrupo.ForeColor = System.Drawing.Color.White;
-            this.labelGrupo.Location = new System.Drawing.Point(289, 26);
+            this.labelGrupo.Location = new System.Drawing.Point(240, 12);
             this.labelGrupo.Name = "labelGrupo";
             this.labelGrupo.Size = new System.Drawing.Size(43, 15);
             this.labelGrupo.TabIndex = 5;
@@ -170,7 +174,7 @@
             // 
             this.labelSenha.AutoSize = true;
             this.labelSenha.ForeColor = System.Drawing.Color.White;
-            this.labelSenha.Location = new System.Drawing.Point(52, 220);
+            this.labelSenha.Location = new System.Drawing.Point(3, 206);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(42, 15);
             this.labelSenha.TabIndex = 4;
@@ -180,7 +184,7 @@
             // 
             this.labelTelefone.AutoSize = true;
             this.labelTelefone.ForeColor = System.Drawing.Color.White;
-            this.labelTelefone.Location = new System.Drawing.Point(52, 176);
+            this.labelTelefone.Location = new System.Drawing.Point(3, 162);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(54, 15);
             this.labelTelefone.TabIndex = 3;
@@ -190,7 +194,7 @@
             // 
             this.labelMatricula.AutoSize = true;
             this.labelMatricula.ForeColor = System.Drawing.Color.White;
-            this.labelMatricula.Location = new System.Drawing.Point(52, 119);
+            this.labelMatricula.Location = new System.Drawing.Point(3, 105);
             this.labelMatricula.Name = "labelMatricula";
             this.labelMatricula.Size = new System.Drawing.Size(60, 15);
             this.labelMatricula.TabIndex = 2;
@@ -200,7 +204,7 @@
             // 
             this.labelCPF.AutoSize = true;
             this.labelCPF.ForeColor = System.Drawing.Color.White;
-            this.labelCPF.Location = new System.Drawing.Point(52, 61);
+            this.labelCPF.Location = new System.Drawing.Point(3, 47);
             this.labelCPF.Name = "labelCPF";
             this.labelCPF.Size = new System.Drawing.Size(31, 15);
             this.labelCPF.TabIndex = 1;
@@ -211,7 +215,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(482, 319);
+            this.ClientSize = new System.Drawing.Size(379, 285);
             this.Controls.Add(this.PanelFuncionarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -231,7 +235,6 @@
         private Panel PanelFuncionarios;
         private RadioButton radioButtonBalcao;
         private RadioButton radioButtonAdmin;
-        private TextBox textBoxCPF;
         private TextBox textBoxNome;
         private Label labelGrupo;
         private Label labelSenha;
@@ -240,7 +243,8 @@
         private Label labelCPF;
         private Button buttonCadastrar;
         private TextBox textBoxSenha;
-        private TextBox textBoxTelefone;
         private TextBox textBoxMatricula;
+        private MaskedTextBox maskedTextBoxTelefone;
+        private MaskedTextBox maskedTextBoxCPF;
     }
 }

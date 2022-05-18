@@ -43,7 +43,6 @@
             this.PictureBoxFotoDoProduto = new System.Windows.Forms.PictureBox();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.panelProdutos = new System.Windows.Forms.Panel();
-            this.maskedTextBoxValorUnitario = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxFotoDoProduto)).BeginInit();
             this.panelProdutos.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +61,7 @@
             // 
             this.textBoxNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxNome.Location = new System.Drawing.Point(118, 42);
+            this.textBoxNome.MaxLength = 120;
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.PlaceholderText = "Nome produto:";
             this.textBoxNome.Size = new System.Drawing.Size(235, 23);
@@ -79,7 +79,7 @@
             // 
             // textBoxDescricaoProduto
             // 
-            this.textBoxDescricaoProduto.Location = new System.Drawing.Point(118, 121);
+            this.textBoxDescricaoProduto.Location = new System.Drawing.Point(106, 88);
             this.textBoxDescricaoProduto.Name = "textBoxDescricaoProduto";
             this.textBoxDescricaoProduto.PlaceholderText = "Descrição do produto";
             this.textBoxDescricaoProduto.Size = new System.Drawing.Size(298, 23);
@@ -89,7 +89,7 @@
             // 
             this.labelValorUnitario.AutoSize = true;
             this.labelValorUnitario.ForeColor = System.Drawing.Color.White;
-            this.labelValorUnitario.Location = new System.Drawing.Point(118, 170);
+            this.labelValorUnitario.Location = new System.Drawing.Point(106, 122);
             this.labelValorUnitario.Name = "labelValorUnitario";
             this.labelValorUnitario.Size = new System.Drawing.Size(104, 15);
             this.labelValorUnitario.TabIndex = 4;
@@ -97,11 +97,13 @@
             // 
             // textBoxValorUnitario
             // 
-            this.textBoxValorUnitario.Location = new System.Drawing.Point(118, 199);
+            this.textBoxValorUnitario.Location = new System.Drawing.Point(106, 140);
+            this.textBoxValorUnitario.MaxLength = 11;
             this.textBoxValorUnitario.Name = "textBoxValorUnitario";
             this.textBoxValorUnitario.PlaceholderText = "R$";
             this.textBoxValorUnitario.Size = new System.Drawing.Size(100, 23);
             this.textBoxValorUnitario.TabIndex = 2;
+            this.textBoxValorUnitario.Click += new System.EventHandler(this.textBoxValorUnitario_Click);
             // 
             // labelFoto
             // 
@@ -149,20 +151,14 @@
             // panelProdutos
             // 
             this.panelProdutos.BackColor = System.Drawing.Color.Transparent;
-            this.panelProdutos.Controls.Add(this.maskedTextBoxValorUnitario);
             this.panelProdutos.Controls.Add(this.buttonImportar);
+            this.panelProdutos.Controls.Add(this.textBoxDescricaoProduto);
+            this.panelProdutos.Controls.Add(this.textBoxValorUnitario);
+            this.panelProdutos.Controls.Add(this.labelValorUnitario);
             this.panelProdutos.Location = new System.Drawing.Point(12, 12);
             this.panelProdutos.Name = "panelProdutos";
             this.panelProdutos.Size = new System.Drawing.Size(776, 295);
             this.panelProdutos.TabIndex = 11;
-            // 
-            // maskedTextBoxValorUnitario
-            // 
-            this.maskedTextBoxValorUnitario.Location = new System.Drawing.Point(106, 223);
-            this.maskedTextBoxValorUnitario.Mask = "999.999,99";
-            this.maskedTextBoxValorUnitario.Name = "maskedTextBoxValorUnitario";
-            this.maskedTextBoxValorUnitario.Size = new System.Drawing.Size(100, 23);
-            this.maskedTextBoxValorUnitario.TabIndex = 4;
             // 
             // Produtos
             // 
@@ -173,9 +169,6 @@
             this.Controls.Add(this.buttonCadastrar);
             this.Controls.Add(this.PictureBoxFotoDoProduto);
             this.Controls.Add(this.labelFoto);
-            this.Controls.Add(this.textBoxValorUnitario);
-            this.Controls.Add(this.labelValorUnitario);
-            this.Controls.Add(this.textBoxDescricaoProduto);
             this.Controls.Add(this.labelDescricao);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.labelNome);
@@ -207,6 +200,5 @@
         private PictureBox PictureBoxFotoDoProduto;
         private Button buttonCadastrar;
         private Panel panelProdutos;
-        private MaskedTextBox maskedTextBoxValorUnitario;
     }
 }

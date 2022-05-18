@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Configuration;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
 {
@@ -106,6 +107,54 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
             {
                 form.Close(); // Feche
             }
+        }
+        #endregion
+
+        #region gambiarra
+        private static void RetornarMascaraMoeda(object sender, EventArgs e)
+        {
+            TextBoxBase txt = (TextBoxBase)sender;
+            txt.Text = double.Parse(txt.Text).ToString("C2");
+        }
+        //Função para retirar a mascara
+        private static void TirarMascaraMoeda(object sender, EventArgs e)
+        {
+            string moeda = ConfigurationManager.AppSettings.Get("IdiomaRegiao")!;
+            //if (moeda == "pt-BR")
+            //    moeda = "R$";
+            //if (moeda == "en-US")
+            //    moeda = "$";
+            //if (moeda == "es")
+            //    moeda = "€";
+
+            TextBoxBase txt = (TextBoxBase)sender;
+            txt.Text = txt.Text.Replace(moeda, "").Trim();
+        }
+        //Função para somente permitir números e virgula
+        private static void ApenasValorNumericoMoeda(object sender, KeyPressEventArgs e)
+        {
+            TextBoxBase txt = (TextBoxBase)sender;
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back))
+            {
+                if (e.KeyChar == ',')
+                {
+                    e.Handled = txt.Text.Contains(',');
+                }
+                else
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="txt"></param>
+        public static void AplicaMascaraMoeda(TextBoxBase txt)
+        {
+            txt.Enter += TirarMascaraMoeda!;
+            txt.Leave += RetornarMascaraMoeda!;
+            txt.KeyPress += ApenasValorNumericoMoeda!;
         }
         #endregion
     }
