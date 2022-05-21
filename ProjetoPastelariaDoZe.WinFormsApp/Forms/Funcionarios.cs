@@ -1,7 +1,8 @@
 ﻿using FluentValidation.Results;
+using ProjetoPastelariaDoZe.DAO;
 using ProjetoPastelariaDoZe.WinFormsApp.Compartilhado;
-using ProjetoPastelariaDoZe.WinFormsApp.Entidades;
 using ProjetoPastelariaDoZe.WinFormsApp.Validadores;
+using System.Configuration;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
@@ -10,6 +11,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
     /// </summary>
     public partial class Funcionarios : Form
     {
+        private readonly FuncionarioDAO dao;
         /// <summary>
         /// Construtor da classe Funcionários
         /// </summary>
@@ -26,6 +28,12 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             this.Controls.Add(opcoes);
             opcoes.buttonSair.Click += ButtonSair_Click;
             MaximizeBox = false;
+
+
+            string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
+            string connectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+
+            dao = new(provider, connectionString);
         }
 
         private void ButtonSair_Click(object? sender, EventArgs e)
@@ -37,29 +45,59 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         {
             Funcionario funcionario = new();
 
-            funcionario.Nome = textBoxNome.Text;
-            funcionario.Matricula = textBoxMatricula.Text;
-            funcionario.CPF = maskedTextBoxCPF.Text;
-            funcionario.Telefone = maskedTextBoxTelefone.Text;
-            funcionario.Senha = textBoxSenha.Text;
-            if (radioButtonAdmin.Checked)
-                funcionario.Grupo = 1;
-            if (radioButtonBalcao.Checked)
-                funcionario.Grupo = 2;
+            ConfigurarAtributos(funcionario);
 
             ValidadorFuncionario vf = new();
 
             ValidationResult vr = vf.Validate(funcionario);
 
+            RemoverMascaras(funcionario);
+
             if (!vr.IsValid)
-            {
                 MessageBox.Show(vr.ToString());
-            }
             else
             {
-                MessageBox.Show("Deu boa!");
-                this.Close();
+                try
+                {
+                    dao.InserirDBProvider(funcionario);
+
+                    MessageBox.Show("Deu boa");
+                    Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
+        }
+
+        private void ConfigurarAtributos(Funcionario funcionario)
+        {
+            funcionario.Nome = textBoxNome.Text;
+            funcionario.Matricula = textBoxMatricula.Text;
+            funcionario.CPF = maskedTextBoxCPF.Text;
+            funcionario.Telefone = maskedTextBoxTelefone.Text;
+            funcionario.Senha = textBoxSenha.Text;
+            funcionario.Grupo = (radioButtonAdmin.Checked) ? 1 : 2; // Se .Checked == true, Grupo=1, senão, Grupo=2;
+        }
+
+        private void RemoverMascaras(Funcionario funcionario)
+        {
+            AjustarCPF(funcionario);
+            AjustarTelefone(funcionario);
+        }
+        private static void AjustarTelefone(Funcionario funcionario)
+        {
+            funcionario.Telefone = funcionario.Telefone!.Replace('-', ' ');
+            funcionario.Telefone = funcionario.Telefone.Replace('(', ' ');
+            funcionario.Telefone = funcionario.Telefone.Replace(')', ' ');
+            funcionario.Telefone = funcionario.Telefone.Replace(" ", "");
+        }
+
+        private static void AjustarCPF(Funcionario funcionario)
+        {
+            funcionario.CPF = funcionario.CPF!.Replace(".", "");
+            funcionario.CPF = funcionario.CPF.Replace("-", "");
         }
     }
 }

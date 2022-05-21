@@ -76,7 +76,7 @@
             this.PanelFuncionarios.Controls.Add(this.labelNome);
             this.PanelFuncionarios.Location = new System.Drawing.Point(12, 12);
             this.PanelFuncionarios.Name = "PanelFuncionarios";
-            this.PanelFuncionarios.Size = new System.Drawing.Size(351, 258);
+            this.PanelFuncionarios.Size = new System.Drawing.Size(371, 371);
             this.PanelFuncionarios.TabIndex = 1;
             // 
             // maskedTextBoxTelefone
@@ -100,7 +100,7 @@
             this.buttonCadastrar.BackColor = System.Drawing.Color.White;
             this.buttonCadastrar.FlatAppearance.BorderSize = 0;
             this.buttonCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCadastrar.Location = new System.Drawing.Point(240, 104);
+            this.buttonCadastrar.Location = new System.Drawing.Point(0, 331);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(100, 30);
             this.buttonCadastrar.TabIndex = 7;
@@ -131,7 +131,7 @@
             // 
             this.radioButtonBalcao.AutoSize = true;
             this.radioButtonBalcao.ForeColor = System.Drawing.Color.White;
-            this.radioButtonBalcao.Location = new System.Drawing.Point(240, 68);
+            this.radioButtonBalcao.Location = new System.Drawing.Point(0, 306);
             this.radioButtonBalcao.Name = "radioButtonBalcao";
             this.radioButtonBalcao.Size = new System.Drawing.Size(60, 19);
             this.radioButtonBalcao.TabIndex = 6;
@@ -143,7 +143,7 @@
             // 
             this.radioButtonAdmin.AutoSize = true;
             this.radioButtonAdmin.ForeColor = System.Drawing.Color.White;
-            this.radioButtonAdmin.Location = new System.Drawing.Point(240, 43);
+            this.radioButtonAdmin.Location = new System.Drawing.Point(0, 281);
             this.radioButtonAdmin.Name = "radioButtonAdmin";
             this.radioButtonAdmin.Size = new System.Drawing.Size(61, 19);
             this.radioButtonAdmin.TabIndex = 5;
@@ -164,7 +164,7 @@
             // 
             this.labelGrupo.AutoSize = true;
             this.labelGrupo.ForeColor = System.Drawing.Color.White;
-            this.labelGrupo.Location = new System.Drawing.Point(240, 12);
+            this.labelGrupo.Location = new System.Drawing.Point(0, 263);
             this.labelGrupo.Name = "labelGrupo";
             this.labelGrupo.Size = new System.Drawing.Size(43, 15);
             this.labelGrupo.TabIndex = 5;
@@ -215,7 +215,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(379, 285);
+            this.ClientSize = new System.Drawing.Size(395, 389);
             this.Controls.Add(this.PanelFuncionarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

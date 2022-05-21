@@ -36,6 +36,12 @@
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.0.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.29" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoPastelariaDoZe.DAO\ProjetoPastelariaDoZe.DAO.csproj" />
   </ItemGroup>
 
 </Project>

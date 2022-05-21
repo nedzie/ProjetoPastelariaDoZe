@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using ProjetoPastelariaDoZe.WinFormsApp.Entidades;
+using ProjetoPastelariaDoZe.DAO;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores
 {
@@ -17,11 +17,14 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores
                 .NotNull()
                 .NotEmpty()
                 .MaximumLength(120);
+
             string CPF = "^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$";
+
             RuleFor(x => x.CPF)
                 .NotNull()
                 .NotEmpty()
                 .Matches(CPF)
+                .MinimumLength(14)
                 .MaximumLength(14);
 
             RuleFor(x => x.Matricula)
@@ -32,6 +35,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores
             RuleFor(x => x.Telefone)
                 .NotNull()
                 .NotEmpty()
+                .MinimumLength(14)
                 .MaximumLength(15);
 
             RuleFor(x => x.Senha)
