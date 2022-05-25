@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
             this.panelClientes = new System.Windows.Forms.Panel();
             this.maskedTextBoxTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.groupBoxTipoCliente = new System.Windows.Forms.GroupBox();
+            this.labelOpcaoCliente = new System.Windows.Forms.Label();
+            this.radioButtonFisica = new System.Windows.Forms.RadioButton();
+            this.radioButtonJuridica = new System.Windows.Forms.RadioButton();
             this.maskedTextBoxCPF = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.labelCNPJ = new System.Windows.Forms.Label();
-            this.radioButtonJuridica = new System.Windows.Forms.RadioButton();
-            this.radioButtonFisica = new System.Windows.Forms.RadioButton();
-            this.labelOpcaoCliente = new System.Windows.Forms.Label();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.labelDiaDoFiado = new System.Windows.Forms.Label();
             this.numericUpDownDiaDoFiado = new System.Windows.Forms.NumericUpDown();
@@ -50,11 +51,10 @@
             this.labelMarcaFiado = new System.Windows.Forms.Label();
             this.radioButtonFiadoSim = new System.Windows.Forms.RadioButton();
             this.radioButtonFiadoNao = new System.Windows.Forms.RadioButton();
-            this.groupBoxTipoCliente = new System.Windows.Forms.GroupBox();
             this.panelClientes.SuspendLayout();
+            this.groupBoxTipoCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDiaDoFiado)).BeginInit();
             this.groupBoxMarcaFiado.SuspendLayout();
-            this.groupBoxTipoCliente.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelClientes
@@ -86,49 +86,29 @@
             this.maskedTextBoxTelefone.Mask = "(00) 90000-0000";
             this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
             this.maskedTextBoxTelefone.Size = new System.Drawing.Size(100, 23);
-            this.maskedTextBoxTelefone.TabIndex = 20;
+            this.maskedTextBoxTelefone.TabIndex = 6;
             // 
-            // maskedTextBoxCPF
+            // groupBoxTipoCliente
             // 
-            this.maskedTextBoxCPF.Enabled = false;
-            this.maskedTextBoxCPF.Location = new System.Drawing.Point(223, 231);
-            this.maskedTextBoxCPF.Mask = "000\\.000\\.000-00";
-            this.maskedTextBoxCPF.Name = "maskedTextBoxCPF";
-            this.maskedTextBoxCPF.Size = new System.Drawing.Size(144, 23);
-            this.maskedTextBoxCPF.TabIndex = 19;
+            this.groupBoxTipoCliente.Controls.Add(this.labelOpcaoCliente);
+            this.groupBoxTipoCliente.Controls.Add(this.radioButtonFisica);
+            this.groupBoxTipoCliente.Controls.Add(this.radioButtonJuridica);
+            this.groupBoxTipoCliente.Location = new System.Drawing.Point(0, 194);
+            this.groupBoxTipoCliente.Name = "groupBoxTipoCliente";
+            this.groupBoxTipoCliente.Size = new System.Drawing.Size(200, 113);
+            this.groupBoxTipoCliente.TabIndex = 3;
+            this.groupBoxTipoCliente.TabStop = false;
+            this.groupBoxTipoCliente.Text = "*";
             // 
-            // maskedTextBoxCNPJ
+            // labelOpcaoCliente
             // 
-            this.maskedTextBoxCNPJ.Enabled = false;
-            this.maskedTextBoxCNPJ.Location = new System.Drawing.Point(223, 275);
-            this.maskedTextBoxCNPJ.Mask = "00\\.000\\.000/0000-00";
-            this.maskedTextBoxCNPJ.Name = "maskedTextBoxCNPJ";
-            this.maskedTextBoxCNPJ.Size = new System.Drawing.Size(144, 23);
-            this.maskedTextBoxCNPJ.TabIndex = 18;
-            // 
-            // labelCNPJ
-            // 
-            this.labelCNPJ.AutoSize = true;
-            this.labelCNPJ.ForeColor = System.Drawing.Color.White;
-            this.labelCNPJ.Location = new System.Drawing.Point(223, 257);
-            this.labelCNPJ.Name = "labelCNPJ";
-            this.labelCNPJ.Size = new System.Drawing.Size(37, 15);
-            this.labelCNPJ.TabIndex = 17;
-            this.labelCNPJ.Text = "CNPJ:";
-            // 
-            // radioButtonJuridica
-            // 
-            this.radioButtonJuridica.AutoSize = true;
-            this.radioButtonJuridica.Enabled = false;
-            this.radioButtonJuridica.ForeColor = System.Drawing.Color.White;
-            this.radioButtonJuridica.Location = new System.Drawing.Point(6, 68);
-            this.radioButtonJuridica.Name = "radioButtonJuridica";
-            this.radioButtonJuridica.Size = new System.Drawing.Size(65, 19);
-            this.radioButtonJuridica.TabIndex = 2;
-            this.radioButtonJuridica.TabStop = true;
-            this.radioButtonJuridica.Text = "Jurídica";
-            this.radioButtonJuridica.UseVisualStyleBackColor = true;
-            this.radioButtonJuridica.CheckedChanged += new System.EventHandler(this.radioButtonJuridica_CheckedChanged);
+            this.labelOpcaoCliente.AutoSize = true;
+            this.labelOpcaoCliente.ForeColor = System.Drawing.Color.White;
+            this.labelOpcaoCliente.Location = new System.Drawing.Point(6, 19);
+            this.labelOpcaoCliente.Name = "labelOpcaoCliente";
+            this.labelOpcaoCliente.Size = new System.Drawing.Size(137, 15);
+            this.labelOpcaoCliente.TabIndex = 13;
+            this.labelOpcaoCliente.Text = "Pessoa física ou jurídica?";
             // 
             // radioButtonFisica
             // 
@@ -144,15 +124,47 @@
             this.radioButtonFisica.UseVisualStyleBackColor = true;
             this.radioButtonFisica.CheckedChanged += new System.EventHandler(this.radioButtonFisica_CheckedChanged);
             // 
-            // labelOpcaoCliente
+            // radioButtonJuridica
             // 
-            this.labelOpcaoCliente.AutoSize = true;
-            this.labelOpcaoCliente.ForeColor = System.Drawing.Color.White;
-            this.labelOpcaoCliente.Location = new System.Drawing.Point(6, 19);
-            this.labelOpcaoCliente.Name = "labelOpcaoCliente";
-            this.labelOpcaoCliente.Size = new System.Drawing.Size(137, 15);
-            this.labelOpcaoCliente.TabIndex = 13;
-            this.labelOpcaoCliente.Text = "Pessoa física ou jurídica?";
+            this.radioButtonJuridica.AutoSize = true;
+            this.radioButtonJuridica.Enabled = false;
+            this.radioButtonJuridica.ForeColor = System.Drawing.Color.White;
+            this.radioButtonJuridica.Location = new System.Drawing.Point(6, 68);
+            this.radioButtonJuridica.Name = "radioButtonJuridica";
+            this.radioButtonJuridica.Size = new System.Drawing.Size(65, 19);
+            this.radioButtonJuridica.TabIndex = 2;
+            this.radioButtonJuridica.TabStop = true;
+            this.radioButtonJuridica.Text = "Jurídica";
+            this.radioButtonJuridica.UseVisualStyleBackColor = true;
+            this.radioButtonJuridica.CheckedChanged += new System.EventHandler(this.radioButtonJuridica_CheckedChanged);
+            // 
+            // maskedTextBoxCPF
+            // 
+            this.maskedTextBoxCPF.Enabled = false;
+            this.maskedTextBoxCPF.Location = new System.Drawing.Point(223, 231);
+            this.maskedTextBoxCPF.Mask = "000\\.000\\.000-00";
+            this.maskedTextBoxCPF.Name = "maskedTextBoxCPF";
+            this.maskedTextBoxCPF.Size = new System.Drawing.Size(144, 23);
+            this.maskedTextBoxCPF.TabIndex = 4;
+            // 
+            // maskedTextBoxCNPJ
+            // 
+            this.maskedTextBoxCNPJ.Enabled = false;
+            this.maskedTextBoxCNPJ.Location = new System.Drawing.Point(223, 275);
+            this.maskedTextBoxCNPJ.Mask = "00\\.000\\.000/0000-00";
+            this.maskedTextBoxCNPJ.Name = "maskedTextBoxCNPJ";
+            this.maskedTextBoxCNPJ.Size = new System.Drawing.Size(144, 23);
+            this.maskedTextBoxCNPJ.TabIndex = 5;
+            // 
+            // labelCNPJ
+            // 
+            this.labelCNPJ.AutoSize = true;
+            this.labelCNPJ.ForeColor = System.Drawing.Color.White;
+            this.labelCNPJ.Location = new System.Drawing.Point(223, 257);
+            this.labelCNPJ.Name = "labelCNPJ";
+            this.labelCNPJ.Size = new System.Drawing.Size(37, 15);
+            this.labelCNPJ.TabIndex = 17;
+            this.labelCNPJ.Text = "CNPJ:";
             // 
             // buttonCadastrar
             // 
@@ -190,7 +202,7 @@
             this.numericUpDownDiaDoFiado.Name = "numericUpDownDiaDoFiado";
             this.numericUpDownDiaDoFiado.ReadOnly = true;
             this.numericUpDownDiaDoFiado.Size = new System.Drawing.Size(45, 23);
-            this.numericUpDownDiaDoFiado.TabIndex = 7;
+            this.numericUpDownDiaDoFiado.TabIndex = 1;
             // 
             // textBoxSenha
             // 
@@ -200,7 +212,7 @@
             this.textBoxSenha.PasswordChar = '*';
             this.textBoxSenha.PlaceholderText = "********";
             this.textBoxSenha.Size = new System.Drawing.Size(257, 23);
-            this.textBoxSenha.TabIndex = 4;
+            this.textBoxSenha.TabIndex = 7;
             // 
             // textBoxNome
             // 
@@ -209,7 +221,7 @@
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.PlaceholderText = "Nome do cliente";
             this.textBoxNome.Size = new System.Drawing.Size(257, 23);
-            this.textBoxNome.TabIndex = 0;
+            this.textBoxNome.TabIndex = 2;
             // 
             // labelSenha
             // 
@@ -260,7 +272,7 @@
             this.groupBoxMarcaFiado.Location = new System.Drawing.Point(3, 15);
             this.groupBoxMarcaFiado.Name = "groupBoxMarcaFiado";
             this.groupBoxMarcaFiado.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxMarcaFiado.TabIndex = 21;
+            this.groupBoxMarcaFiado.TabIndex = 0;
             this.groupBoxMarcaFiado.TabStop = false;
             this.groupBoxMarcaFiado.Text = "*";
             // 
@@ -300,18 +312,6 @@
             this.radioButtonFiadoNao.UseVisualStyleBackColor = true;
             this.radioButtonFiadoNao.CheckedChanged += new System.EventHandler(this.radioButtonFiadoNao_CheckedChanged);
             // 
-            // groupBoxTipoCliente
-            // 
-            this.groupBoxTipoCliente.Controls.Add(this.labelOpcaoCliente);
-            this.groupBoxTipoCliente.Controls.Add(this.radioButtonFisica);
-            this.groupBoxTipoCliente.Controls.Add(this.radioButtonJuridica);
-            this.groupBoxTipoCliente.Location = new System.Drawing.Point(0, 194);
-            this.groupBoxTipoCliente.Name = "groupBoxTipoCliente";
-            this.groupBoxTipoCliente.Size = new System.Drawing.Size(200, 113);
-            this.groupBoxTipoCliente.TabIndex = 22;
-            this.groupBoxTipoCliente.TabStop = false;
-            this.groupBoxTipoCliente.Text = "*";
-            // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -327,11 +327,11 @@
             this.Text = "Clientes";
             this.panelClientes.ResumeLayout(false);
             this.panelClientes.PerformLayout();
+            this.groupBoxTipoCliente.ResumeLayout(false);
+            this.groupBoxTipoCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDiaDoFiado)).EndInit();
             this.groupBoxMarcaFiado.ResumeLayout(false);
             this.groupBoxMarcaFiado.PerformLayout();
-            this.groupBoxTipoCliente.ResumeLayout(false);
-            this.groupBoxTipoCliente.PerformLayout();
             this.ResumeLayout(false);
 
         }

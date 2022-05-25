@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Configuration;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
 {
@@ -109,7 +111,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
             }
         }
         #endregion
-
         #region gambiarra
         private static void RetornarMascaraMoeda(object sender, EventArgs e)
         {
@@ -155,6 +156,21 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
             txt.Enter += TirarMascaraMoeda!;
             txt.Leave += RetornarMascaraMoeda!;
             txt.KeyPress += ApenasValorNumericoMoeda!;
+        }
+        #endregion
+        #region Criptografar Senha
+        public static string Sha256Hash(string senha)
+        {
+            var hash = new StringBuilder();
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                byte[] data = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(senha));
+                for (int i = 0; i < data.Length; i++)
+                {
+                    hash.Append(data[i].ToString("x2"));
+                }
+            }
+            return hash.ToString();
         }
         #endregion
     }

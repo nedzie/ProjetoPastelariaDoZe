@@ -138,7 +138,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
                 cliente.Telefone = maskedTextBoxTelefone.Text;
 
-                cliente.Senha = textBoxSenha.Text;
+                cliente.Senha = Funcoes.Sha256Hash(textBoxSenha.Text);
             }
             else
                 cliente.Nome = textBoxNome.Text;
