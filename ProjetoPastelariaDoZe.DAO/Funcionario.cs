@@ -92,7 +92,8 @@ namespace ProjetoPastelariaDoZe.DAO
                             @MATRICULA,
                             @TELEFONE,
                             @SENHA,
-                            @GRUPO)";
+                            @GRUPO
+                            )";
 
             var linhas = comando.ExecuteNonQuery();
         }

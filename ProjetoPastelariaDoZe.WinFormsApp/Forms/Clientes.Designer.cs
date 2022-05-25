@@ -1,6 +1,6 @@
 ﻿namespace ProjetoPastelariaDoZe.WinFormsApp
 {
-    partial class Clientes
+    partial class Cliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
             this.panelClientes = new System.Windows.Forms.Panel();
             this.maskedTextBoxTelefone = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxCPF = new System.Windows.Forms.MaskedTextBox();
@@ -49,8 +49,10 @@
             this.labelTelefone = new System.Windows.Forms.Label();
             this.labelCPF = new System.Windows.Forms.Label();
             this.labelNome = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panelClientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDiaDoFiado)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelClientes
@@ -65,23 +67,22 @@
             this.panelClientes.Controls.Add(this.buttonCadastrar);
             this.panelClientes.Controls.Add(this.labelDiaDoFiado);
             this.panelClientes.Controls.Add(this.numericUpDownDiaDoFiado);
-            this.panelClientes.Controls.Add(this.radioButtonFiadoNao);
-            this.panelClientes.Controls.Add(this.radioButtonFiadoSim);
-            this.panelClientes.Controls.Add(this.labelMarcaFiado);
             this.panelClientes.Controls.Add(this.textBoxSenha);
             this.panelClientes.Controls.Add(this.textBoxNome);
             this.panelClientes.Controls.Add(this.labelSenha);
             this.panelClientes.Controls.Add(this.labelTelefone);
             this.panelClientes.Controls.Add(this.labelCPF);
             this.panelClientes.Controls.Add(this.labelNome);
+            this.panelClientes.Controls.Add(this.groupBox1);
             this.panelClientes.Location = new System.Drawing.Point(12, 12);
             this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(443, 306);
+            this.panelClientes.Size = new System.Drawing.Size(443, 446);
             this.panelClientes.TabIndex = 0;
             // 
             // maskedTextBoxTelefone
             // 
-            this.maskedTextBoxTelefone.Location = new System.Drawing.Point(0, 225);
+            this.maskedTextBoxTelefone.Enabled = false;
+            this.maskedTextBoxTelefone.Location = new System.Drawing.Point(0, 365);
             this.maskedTextBoxTelefone.Mask = "(00) 90000-0000";
             this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
             this.maskedTextBoxTelefone.Size = new System.Drawing.Size(100, 23);
@@ -89,7 +90,8 @@
             // 
             // maskedTextBoxCPF
             // 
-            this.maskedTextBoxCPF.Location = new System.Drawing.Point(0, 133);
+            this.maskedTextBoxCPF.Enabled = false;
+            this.maskedTextBoxCPF.Location = new System.Drawing.Point(0, 273);
             this.maskedTextBoxCPF.Mask = "000\\.000\\.000-00";
             this.maskedTextBoxCPF.Name = "maskedTextBoxCPF";
             this.maskedTextBoxCPF.Size = new System.Drawing.Size(144, 23);
@@ -97,7 +99,8 @@
             // 
             // maskedTextBoxCNPJ
             // 
-            this.maskedTextBoxCNPJ.Location = new System.Drawing.Point(0, 177);
+            this.maskedTextBoxCNPJ.Enabled = false;
+            this.maskedTextBoxCNPJ.Location = new System.Drawing.Point(0, 317);
             this.maskedTextBoxCNPJ.Mask = "00\\.000\\.000/0000-00";
             this.maskedTextBoxCNPJ.Name = "maskedTextBoxCNPJ";
             this.maskedTextBoxCNPJ.Size = new System.Drawing.Size(144, 23);
@@ -107,7 +110,7 @@
             // 
             this.labelCNPJ.AutoSize = true;
             this.labelCNPJ.ForeColor = System.Drawing.Color.White;
-            this.labelCNPJ.Location = new System.Drawing.Point(0, 159);
+            this.labelCNPJ.Location = new System.Drawing.Point(0, 299);
             this.labelCNPJ.Name = "labelCNPJ";
             this.labelCNPJ.Size = new System.Drawing.Size(37, 15);
             this.labelCNPJ.TabIndex = 17;
@@ -116,8 +119,9 @@
             // radioButtonJuridica
             // 
             this.radioButtonJuridica.AutoSize = true;
+            this.radioButtonJuridica.Enabled = false;
             this.radioButtonJuridica.ForeColor = System.Drawing.Color.White;
-            this.radioButtonJuridica.Location = new System.Drawing.Point(0, 93);
+            this.radioButtonJuridica.Location = new System.Drawing.Point(0, 233);
             this.radioButtonJuridica.Name = "radioButtonJuridica";
             this.radioButtonJuridica.Size = new System.Drawing.Size(65, 19);
             this.radioButtonJuridica.TabIndex = 2;
@@ -129,8 +133,9 @@
             // radioButtonFisica
             // 
             this.radioButtonFisica.AutoSize = true;
+            this.radioButtonFisica.Enabled = false;
             this.radioButtonFisica.ForeColor = System.Drawing.Color.White;
-            this.radioButtonFisica.Location = new System.Drawing.Point(0, 68);
+            this.radioButtonFisica.Location = new System.Drawing.Point(0, 208);
             this.radioButtonFisica.Name = "radioButtonFisica";
             this.radioButtonFisica.Size = new System.Drawing.Size(54, 19);
             this.radioButtonFisica.TabIndex = 1;
@@ -143,7 +148,7 @@
             // 
             this.labelOpcaoCliente.AutoSize = true;
             this.labelOpcaoCliente.ForeColor = System.Drawing.Color.White;
-            this.labelOpcaoCliente.Location = new System.Drawing.Point(0, 44);
+            this.labelOpcaoCliente.Location = new System.Drawing.Point(0, 184);
             this.labelOpcaoCliente.Name = "labelOpcaoCliente";
             this.labelOpcaoCliente.Size = new System.Drawing.Size(137, 15);
             this.labelOpcaoCliente.TabIndex = 13;
@@ -155,18 +160,19 @@
             this.buttonCadastrar.FlatAppearance.BorderSize = 0;
             this.buttonCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCadastrar.ForeColor = System.Drawing.Color.Black;
-            this.buttonCadastrar.Location = new System.Drawing.Point(266, 251);
+            this.buttonCadastrar.Location = new System.Drawing.Point(275, 391);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(165, 43);
             this.buttonCadastrar.TabIndex = 8;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = false;
+            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // labelDiaDoFiado
             // 
             this.labelDiaDoFiado.AutoSize = true;
             this.labelDiaDoFiado.ForeColor = System.Drawing.Color.White;
-            this.labelDiaDoFiado.Location = new System.Drawing.Point(266, 93);
+            this.labelDiaDoFiado.Location = new System.Drawing.Point(0, 75);
             this.labelDiaDoFiado.Name = "labelDiaDoFiado";
             this.labelDiaDoFiado.Size = new System.Drawing.Size(166, 15);
             this.labelDiaDoFiado.TabIndex = 12;
@@ -174,7 +180,8 @@
             // 
             // numericUpDownDiaDoFiado
             // 
-            this.numericUpDownDiaDoFiado.Location = new System.Drawing.Point(266, 122);
+            this.numericUpDownDiaDoFiado.Enabled = false;
+            this.numericUpDownDiaDoFiado.Location = new System.Drawing.Point(0, 104);
             this.numericUpDownDiaDoFiado.Maximum = new decimal(new int[] {
             31,
             0,
@@ -188,7 +195,7 @@
             // 
             this.radioButtonFiadoNao.AutoSize = true;
             this.radioButtonFiadoNao.ForeColor = System.Drawing.Color.White;
-            this.radioButtonFiadoNao.Location = new System.Drawing.Point(266, 65);
+            this.radioButtonFiadoNao.Location = new System.Drawing.Point(6, 66);
             this.radioButtonFiadoNao.Name = "radioButtonFiadoNao";
             this.radioButtonFiadoNao.Size = new System.Drawing.Size(47, 19);
             this.radioButtonFiadoNao.TabIndex = 6;
@@ -201,7 +208,7 @@
             // 
             this.radioButtonFiadoSim.AutoSize = true;
             this.radioButtonFiadoSim.ForeColor = System.Drawing.Color.White;
-            this.radioButtonFiadoSim.Location = new System.Drawing.Point(266, 40);
+            this.radioButtonFiadoSim.Location = new System.Drawing.Point(6, 41);
             this.radioButtonFiadoSim.Name = "radioButtonFiadoSim";
             this.radioButtonFiadoSim.Size = new System.Drawing.Size(45, 19);
             this.radioButtonFiadoSim.TabIndex = 5;
@@ -214,7 +221,7 @@
             // 
             this.labelMarcaFiado.AutoSize = true;
             this.labelMarcaFiado.ForeColor = System.Drawing.Color.White;
-            this.labelMarcaFiado.Location = new System.Drawing.Point(266, 18);
+            this.labelMarcaFiado.Location = new System.Drawing.Point(6, 19);
             this.labelMarcaFiado.Name = "labelMarcaFiado";
             this.labelMarcaFiado.Size = new System.Drawing.Size(75, 15);
             this.labelMarcaFiado.TabIndex = 8;
@@ -222,16 +229,18 @@
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Location = new System.Drawing.Point(0, 271);
+            this.textBoxSenha.Enabled = false;
+            this.textBoxSenha.Location = new System.Drawing.Point(0, 411);
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.PasswordChar = '*';
             this.textBoxSenha.PlaceholderText = "********";
-            this.textBoxSenha.Size = new System.Drawing.Size(100, 23);
+            this.textBoxSenha.Size = new System.Drawing.Size(257, 23);
             this.textBoxSenha.TabIndex = 4;
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(0, 18);
+            this.textBoxNome.Enabled = false;
+            this.textBoxNome.Location = new System.Drawing.Point(0, 158);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.PlaceholderText = "Nome do cliente";
             this.textBoxNome.Size = new System.Drawing.Size(257, 23);
@@ -241,7 +250,7 @@
             // 
             this.labelSenha.AutoSize = true;
             this.labelSenha.ForeColor = System.Drawing.Color.White;
-            this.labelSenha.Location = new System.Drawing.Point(0, 251);
+            this.labelSenha.Location = new System.Drawing.Point(0, 391);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(42, 15);
             this.labelSenha.TabIndex = 3;
@@ -251,7 +260,7 @@
             // 
             this.labelTelefone.AutoSize = true;
             this.labelTelefone.ForeColor = System.Drawing.Color.White;
-            this.labelTelefone.Location = new System.Drawing.Point(0, 207);
+            this.labelTelefone.Location = new System.Drawing.Point(0, 347);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(54, 15);
             this.labelTelefone.TabIndex = 2;
@@ -261,7 +270,7 @@
             // 
             this.labelCPF.AutoSize = true;
             this.labelCPF.ForeColor = System.Drawing.Color.White;
-            this.labelCPF.Location = new System.Drawing.Point(0, 115);
+            this.labelCPF.Location = new System.Drawing.Point(0, 255);
             this.labelCPF.Name = "labelCPF";
             this.labelCPF.Size = new System.Drawing.Size(31, 15);
             this.labelCPF.TabIndex = 1;
@@ -271,28 +280,42 @@
             // 
             this.labelNome.AutoSize = true;
             this.labelNome.ForeColor = System.Drawing.Color.White;
-            this.labelNome.Location = new System.Drawing.Point(0, 0);
+            this.labelNome.Location = new System.Drawing.Point(0, 140);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(43, 15);
             this.labelNome.TabIndex = 0;
             this.labelNome.Text = "Nome:";
             // 
-            // Clientes
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.labelMarcaFiado);
+            this.groupBox1.Controls.Add(this.radioButtonFiadoSim);
+            this.groupBox1.Controls.Add(this.radioButtonFiadoNao);
+            this.groupBox1.Location = new System.Drawing.Point(191, 13);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(456, 326);
+            this.ClientSize = new System.Drawing.Size(465, 463);
             this.Controls.Add(this.panelClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Name = "Clientes";
+            this.Name = "Cliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
             this.panelClientes.ResumeLayout(false);
             this.panelClientes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDiaDoFiado)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -319,5 +342,6 @@
         private MaskedTextBox maskedTextBoxCPF;
         private MaskedTextBox maskedTextBoxCNPJ;
         private MaskedTextBox maskedTextBoxTelefone;
+        private GroupBox groupBox1;
     }
 }

@@ -83,7 +83,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         }
         private void buttonClientes_Click(object sender, EventArgs e)
         {
-            Clientes clientes = new();
+            Cliente clientes = new();
             clientes.Show();
         }
         private void buttonProdutos_Click(object sender, EventArgs e)
