@@ -100,15 +100,17 @@ namespace ProjetoPastelariaDoZe.DAO
                             (
                             NOME,
                             CPF,
+                            CNPJ,
                             TELEFONE,
                             SENHA,
-                            MARCAFIADO,
-                            DIADOFIADO
+                            COMPRA_FIADO,
+                            DIA_FIADO
                             )
                         VALUES
                             (
                             @NOME,
                             @CPF,
+                            @CNPJ,
                             @TELEFONE,
                             @SENHA,
                             @MARCAFIADO,
@@ -117,6 +119,8 @@ namespace ProjetoPastelariaDoZe.DAO
 
             var linhas = comando.ExecuteNonQuery();
         }
+
+        
 
         private void ConfigurarParametrosCliente(Cliente cliente, DbCommand comando)
         {
@@ -132,7 +136,8 @@ namespace ProjetoPastelariaDoZe.DAO
 
             var cnpj = comando.CreateParameter();
             cnpj.ParameterName = "@CNPJ";
-            cpf.Value = string.IsNullOrEmpty(cliente.CNPJ) ? DBNull.Value : cliente.CNPJ;
+            cnpj.Value = string.IsNullOrEmpty(cliente.CNPJ) ? DBNull.Value : cliente.CNPJ;
+            comando.Parameters.Add(cnpj);
 
             var telefone = comando.CreateParameter();
             telefone.ParameterName = "@TELEFONE";
@@ -151,7 +156,11 @@ namespace ProjetoPastelariaDoZe.DAO
 
             var diaDoFiado = comando.CreateParameter();
             diaDoFiado.ParameterName = "@DIADOFIADO";
-            diaDoFiado.Value = cliente.DiaDoFiado == 0 ? DBNull.Value : cliente.DiaDoFiado;
+            if (cliente.MarcaFiado == 0)
+                diaDoFiado.Value = DBNull.Value;
+            else
+                diaDoFiado.Value = cliente.DiaDoFiado;
+
             comando.Parameters.Add(diaDoFiado);
         }
     }

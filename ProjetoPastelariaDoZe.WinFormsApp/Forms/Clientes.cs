@@ -40,21 +40,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             this.Close();
         }
 
-        private void radioButtonFisica_CheckedChanged(object sender, EventArgs e)
-        {
-            maskedTextBoxCPF.Enabled = true;
-            maskedTextBoxCNPJ.Enabled = false;
-            maskedTextBoxCNPJ.Clear();
-            maskedTextBoxCPF.Focus();
-        }
-
-        private void radioButtonJuridica_CheckedChanged(object sender, EventArgs e)
-        {
-            maskedTextBoxCNPJ.Enabled = true;
-            maskedTextBoxCPF.Enabled = false;
-            maskedTextBoxCPF.Clear();
-            maskedTextBoxCNPJ.Focus();
-        }
 
         private void radioButtonFiadoSim_CheckedChanged(object sender, EventArgs e)
         {
@@ -73,6 +58,29 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             numericUpDownDiaDoFiado.ResetText();
             textBoxSenha.ResetText();
             textBoxNome.Enabled = true;
+
+            numericUpDownDiaDoFiado.Enabled = false;
+            radioButtonFisica.Enabled = false;
+            radioButtonJuridica.Enabled = false;
+            maskedTextBoxCPF.Enabled = false;
+            maskedTextBoxCNPJ.Enabled = false;
+            maskedTextBoxTelefone.Enabled = false;
+            textBoxSenha.Enabled = false;
+        }
+        private void radioButtonFisica_CheckedChanged(object sender, EventArgs e)
+        {
+            maskedTextBoxCPF.Enabled = true;
+            maskedTextBoxCNPJ.Enabled = false;
+            maskedTextBoxCNPJ.Clear();
+            maskedTextBoxCPF.Focus();
+        }
+
+        private void radioButtonJuridica_CheckedChanged(object sender, EventArgs e)
+        {
+            maskedTextBoxCNPJ.Enabled = true;
+            maskedTextBoxCPF.Enabled = false;
+            maskedTextBoxCPF.Clear();
+            maskedTextBoxCNPJ.Focus();
         }
 
         private void buttonCadastrar_Click(object sender, EventArgs e)
@@ -82,7 +90,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             ValidadorClienteFiadoCNPJ validadorFiadoCNPJ = new();
             ValidadorClienteComum validadorVista = new();
             ConfigurarAtributos(cliente);
-
 
             ValidationResult vr;
             if (cliente.MarcaFiado == 1)
@@ -95,13 +102,15 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             else
                 vr = validadorVista.Validate(cliente);
 
+            RemoverMascaras(cliente);
+
             if (!vr.IsValid)
                 MessageBox.Show(vr.ToString());
             else
             {
                 try
                 {
-                    //dao.InserirDBProvider(cliente);
+                    dao.InserirDBProvider(cliente);
                     MessageBox.Show("Deu boa");
                     this.Close();
                 }
@@ -133,6 +142,37 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             }
             else
                 cliente.Nome = textBoxNome.Text;
+        }
+            
+        private void RemoverMascaras(DAO.Cliente cliente)
+        {
+            if (!string.IsNullOrEmpty(cliente.CPF))
+                AjustarCPF(cliente);
+            if (!string.IsNullOrEmpty(cliente.CNPJ))
+                AjustarCNPJ(cliente);
+            if(!string.IsNullOrEmpty(cliente.Telefone))
+                AjustarTelefone(cliente);
+        }
+
+        private void AjustarCNPJ(DAO.Cliente cliente)
+        {
+            cliente.CNPJ = cliente.CNPJ!.Replace(".", "");
+            cliente.CNPJ = cliente.CNPJ.Replace("/", "");
+            cliente.CNPJ = cliente.CNPJ.Replace("-", "");
+        }
+
+        private static void AjustarTelefone(DAO.Cliente cliente)
+        {
+            cliente.Telefone = cliente.Telefone!.Replace('-', ' ');
+            cliente.Telefone = cliente.Telefone.Replace('(', ' ');
+            cliente.Telefone = cliente.Telefone.Replace(')', ' ');
+            cliente.Telefone = cliente.Telefone.Replace(" ", "");
+        }
+
+        private static void AjustarCPF(DAO.Cliente cliente)
+        {
+            cliente.CPF = cliente.CPF!.Replace(".", "");
+            cliente.CPF = cliente.CPF.Replace("-", "");
         }
     }
 }

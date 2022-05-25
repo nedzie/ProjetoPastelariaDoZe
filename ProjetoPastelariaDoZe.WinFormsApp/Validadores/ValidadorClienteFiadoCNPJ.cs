@@ -26,6 +26,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores
                 .MinimumLength(14)
                 .MaximumLength(18);
 
+
             RuleFor(x => x.Telefone)
                 .NotNull()
                 .NotEmpty()
