@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using ProjetoPastelariaDoZe.DAO.Compartilhado;
+using System.Data;
 using System.Data.Common;
 
 namespace ProjetoPastelariaDoZe.DAO
@@ -51,12 +52,18 @@ namespace ProjetoPastelariaDoZe.DAO
         }
     }
 
-    public class FuncionarioDAO
+    public class FuncionarioDAO : EntidadeBase
     {
-        private readonly DbProviderFactory factory;
-        private string Provider { get; set; }
-        private string StringConexao { get; set; }
+        private readonly DbProviderFactory? factory;
+        private string? Provider { get; set; }
+        private string? StringConexao { get; set; }
+        /// <summary>
+        /// Construtor vazio da classe FuncionarioDAO
+        /// </summary>
+        public FuncionarioDAO()
+        {
 
+        }
         public FuncionarioDAO(string provider, string stringConexao)
         {
             this.Provider = provider;
@@ -66,7 +73,7 @@ namespace ProjetoPastelariaDoZe.DAO
 
         public void InserirDBProvider(Funcionario funcionario)
         {
-            using var conexao = factory.CreateConnection(); // Conexão com o BD
+            using var conexao = factory!.CreateConnection(); // Conexão com o BD
             conexao!.ConnectionString = StringConexao; // Informa a ConnectionString, o caminho para o BD
             using var comando = factory.CreateCommand(); // Cria o comando para o BD
             comando!.Connection = conexao; // Atribui a conexão
@@ -101,7 +108,7 @@ namespace ProjetoPastelariaDoZe.DAO
 
         public DataTable SelectDBProvider(Funcionario funcionario)
         {
-            using var conexao = factory.CreateConnection(); // Conexão com o BD
+            using var conexao = factory!.CreateConnection(); // Conexão com o BD
             conexao!.ConnectionString = StringConexao; // Informa a ConnectionString, o caminho para o BD
             using var comando = factory.CreateCommand(); // Cria o comando para o BD
             comando!.Connection = conexao; // Atribui a conexão

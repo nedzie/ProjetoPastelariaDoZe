@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoPastelariaDoZe.DAO.Compartilhado;
+using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Linq;
@@ -70,7 +71,7 @@ namespace ProjetoPastelariaDoZe.DAO
         }
     }
 
-    public class ClienteDAO
+    public class ClienteDAO : EntidadeBase
     {
         private readonly DbProviderFactory factory;
         private string Provider { get; set; }

@@ -1,5 +1,8 @@
+using ProjetoPastelariaDoZe.DAO;
+using ProjetoPastelariaDoZe.DAO.Compartilhado;
 using ProjetoPastelariaDoZe.WinFormsApp.Compartilhado;
 using System.ComponentModel;
+using System.Data;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
@@ -8,8 +11,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
     /// </summary>
     public partial class Inicio : Form
     {
-        Form a = new();
-
+        EntidadeBase? dao;
         /// <summary>
         /// Construtor da classe Inicio
         /// </summary>
@@ -69,17 +71,44 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            Login login = new()
+            Opcao o = new();
+
+            var res = o.ShowDialog();
+
+            if (res == DialogResult.OK)
             {
-                StartPosition = FormStartPosition.CenterParent
-            };
-            login.ShowDialog(); // Modal
+                Login login = new()
+                {
+                    StartPosition = FormStartPosition.CenterParent
+                };
+                login.ShowDialog(); // Modal
+            }
+            else if (res == DialogResult.Yes)
+            {
+                AtualizarTela(1);
+            }
         }
 
         private void buttonFuncionarios_Click(object sender, EventArgs e)
         {
-            Funcionarios funcionarios = new();
-            funcionarios.ShowDialog();
+            Opcao o = new();
+
+            var res = o.ShowDialog();
+
+            if (res == DialogResult.OK)
+            {
+                Funcionarios funcionarios = new();
+                {
+                    StartPosition = FormStartPosition.CenterParent;
+                };
+
+                funcionarios.ShowDialog(); // Modal
+                AtualizarTela(1);
+            }
+            else if (res == DialogResult.Yes)
+            {
+                AtualizarTela(1);
+            }
         }
 
         private void buttonComandas_Click(object sender, EventArgs e)
@@ -113,16 +142,16 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private void Inicio_Resize(object sender, EventArgs e)
         {
-            if(this.WindowState == FormWindowState.Minimized)
+            if (this.WindowState == FormWindowState.Minimized)
             {
                 this.Hide();
                 notifyIconSystemTray.Visible = true;
                 notifyIconSystemTray.BalloonTipText = Properties.Resources.ResourceManager.GetString("BalloonTipText.Text");
                 notifyIconSystemTray.BalloonTipTitle = Properties.Resources.ResourceManager.GetString("BalloonTipTitle.Text");
                 notifyIconSystemTray.ShowBalloonTip(1000);
-                
+
             }
-            else if(FormWindowState.Normal == this.WindowState)
+            else if (FormWindowState.Normal == this.WindowState)
             {
                 notifyIconSystemTray.Visible = false;
             }
@@ -134,5 +163,32 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             notifyIconSystemTray.Visible = false;
         }
 
+        private void AtualizarTela(int codigoObjeto)
+        {
+            Funcionario funcionario = new Funcionario
+            {
+                Numero = 0
+            };
+            switch (codigoObjeto)
+            {
+                case 1:
+                    dao = new FuncionarioDAO();
+                    break;
+            }
+
+            try
+            {
+                DataTable linhas = dao!.SelectDBProvider(funcionario);
+
+                dataGridViewDados.Columns.Clear();
+                dataGridViewDados.AutoGenerateColumns = true;
+                dataGridViewDados.DataSource = linhas;
+                dataGridViewDados.Refresh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
