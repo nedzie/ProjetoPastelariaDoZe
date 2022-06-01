@@ -1,4 +1,5 @@
-﻿using System.Data.Common;
+﻿using System.Data;
+using System.Data.Common;
 
 namespace ProjetoPastelariaDoZe.DAO
 {
@@ -96,6 +97,35 @@ namespace ProjetoPastelariaDoZe.DAO
                             )";
 
             var linhas = comando.ExecuteNonQuery();
+        }
+
+        public DataTable SelectDBProvider(Funcionario funcionario)
+        {
+            using var conexao = factory.CreateConnection(); // Conexão com o BD
+            conexao!.ConnectionString = StringConexao; // Informa a ConnectionString, o caminho para o BD
+            using var comando = factory.CreateCommand(); // Cria o comando para o BD
+            comando!.Connection = conexao; // Atribui a conexão
+
+            conexao.Open();
+
+            comando.CommandText =
+                @"SELECT
+                    ID_FUNCIONARIO AS Id,
+                    NOME AS Nome,
+                    CPF AS CPF,
+                    TELEFONE AS Telefone,
+                    MATRICULA AS Matricula,
+                    GRUPO AS Grupo
+                FROM
+                    tb_funcionario";
+
+            var sdr = comando.ExecuteReader();
+
+            DataTable linhas = new();
+
+            linhas.Load(sdr);
+
+            return linhas;
         }
 
         private static void ConfigurarParametrosFuncionario(Funcionario funcionario, DbCommand comando)

@@ -1,7 +1,7 @@
-﻿using ProjetoPastelariaDoZe.WinFormsApp.Compartilhado;
+﻿using FluentValidation.Results;
 using ProjetoPastelariaDoZe.DAO;
-using ProjetoPastelariaDoZe.WinFormsApp.Validadores;
-using FluentValidation.Results;
+using ProjetoPastelariaDoZe.WinFormsApp.Compartilhado;
+using ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloCliente;
 using System.Configuration;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
@@ -9,13 +9,13 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
     /// <summary>
     /// Classe auxiliar Clientes
     /// </summary>
-    public partial class Cliente : Form
+    public partial class Clientes : Form
     {
         private readonly ClienteDAO dao;
         /// <summary>
         /// Construtor da classe Clientes
         /// </summary>
-        public Cliente()
+        public Clientes()
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);
@@ -27,12 +27,51 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             Size = new Size(Size.Width, Size.Height + opcoes.Size.Height);
             this.Controls.Add(opcoes);
             opcoes.buttonSair.Click += ButtonSair_Click;
+            opcoes.buttonSalvar.Click += ButtonSalvar_Click;
             MaximizeBox = false;
 
             string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
             string connectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
 
             dao = new(provider, connectionString);
+        }
+
+        private void ButtonSalvar_Click(object? sender, EventArgs e)
+        {
+            DAO.Cliente cliente = new();
+            ValidadorClienteFiadoCPF validadorFiadoCPF = new();
+            ValidadorClienteFiadoCNPJ validadorFiadoCNPJ = new();
+            ValidadorClienteComum validadorVista = new();
+            ConfigurarAtributos(cliente);
+
+            ValidationResult vr;
+            if (cliente.MarcaFiado == 1)
+            {
+                if (cliente.CPF != null)
+                    vr = validadorFiadoCPF.Validate(cliente);
+                else
+                    vr = validadorFiadoCNPJ.Validate(cliente);
+            }
+            else
+                vr = validadorVista.Validate(cliente);
+
+            RemoverMascaras(cliente);
+
+            if (!vr.IsValid)
+                MessageBox.Show(vr.ToString());
+            else
+            {
+                try
+                {
+                    dao.InserirDBProvider(cliente);
+                    MessageBox.Show("Deu boa");
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void ButtonSair_Click(object? sender, EventArgs e)
@@ -83,44 +122,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             maskedTextBoxCNPJ.Focus();
         }
 
-        private void buttonCadastrar_Click(object sender, EventArgs e)
-        {
-            DAO.Cliente cliente = new();
-            ValidadorClienteFiadoCPF validadorFiadoCPF = new(); 
-            ValidadorClienteFiadoCNPJ validadorFiadoCNPJ = new();
-            ValidadorClienteComum validadorVista = new();
-            ConfigurarAtributos(cliente);
-
-            ValidationResult vr;
-            if (cliente.MarcaFiado == 1)
-            {
-                if (cliente.CPF != null)
-                    vr = validadorFiadoCPF.Validate(cliente);
-                else
-                    vr = validadorFiadoCNPJ.Validate(cliente);
-            }
-            else
-                vr = validadorVista.Validate(cliente);
-
-            RemoverMascaras(cliente);
-
-            if (!vr.IsValid)
-                MessageBox.Show(vr.ToString());
-            else
-            {
-                try
-                {
-                    dao.InserirDBProvider(cliente);
-                    MessageBox.Show("Deu boa");
-                    this.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-            }
-
         private void ConfigurarAtributos(DAO.Cliente cliente)
         {
             cliente.MarcaFiado = radioButtonFiadoSim.Checked ? 1 : 0;
@@ -143,14 +144,14 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             else
                 cliente.Nome = textBoxNome.Text;
         }
-            
+
         private void RemoverMascaras(DAO.Cliente cliente)
         {
             if (!string.IsNullOrEmpty(cliente.CPF))
                 AjustarCPF(cliente);
             if (!string.IsNullOrEmpty(cliente.CNPJ))
                 AjustarCNPJ(cliente);
-            if(!string.IsNullOrEmpty(cliente.Telefone))
+            if (!string.IsNullOrEmpty(cliente.Telefone))
                 AjustarTelefone(cliente);
         }
 
@@ -171,6 +172,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private static void AjustarCPF(DAO.Cliente cliente)
         {
+            Clientes c = new();
             cliente.CPF = cliente.CPF!.Replace(".", "");
             cliente.CPF = cliente.CPF.Replace("-", "");
         }

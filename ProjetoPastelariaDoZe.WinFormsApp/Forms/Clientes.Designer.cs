@@ -1,6 +1,6 @@
 ﻿namespace ProjetoPastelariaDoZe.WinFormsApp
 {
-    partial class Cliente
+    partial class Clientes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.panelClientes = new System.Windows.Forms.Panel();
             this.maskedTextBoxTelefone = new System.Windows.Forms.MaskedTextBox();
             this.groupBoxTipoCliente = new System.Windows.Forms.GroupBox();
@@ -38,7 +38,6 @@
             this.maskedTextBoxCPF = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.labelCNPJ = new System.Windows.Forms.Label();
-            this.buttonCadastrar = new System.Windows.Forms.Button();
             this.labelDiaDoFiado = new System.Windows.Forms.Label();
             this.numericUpDownDiaDoFiado = new System.Windows.Forms.NumericUpDown();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
@@ -64,7 +63,6 @@
             this.panelClientes.Controls.Add(this.maskedTextBoxCPF);
             this.panelClientes.Controls.Add(this.maskedTextBoxCNPJ);
             this.panelClientes.Controls.Add(this.labelCNPJ);
-            this.panelClientes.Controls.Add(this.buttonCadastrar);
             this.panelClientes.Controls.Add(this.labelDiaDoFiado);
             this.panelClientes.Controls.Add(this.numericUpDownDiaDoFiado);
             this.panelClientes.Controls.Add(this.textBoxSenha);
@@ -76,7 +74,7 @@
             this.panelClientes.Controls.Add(this.groupBoxMarcaFiado);
             this.panelClientes.Location = new System.Drawing.Point(12, 12);
             this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(443, 502);
+            this.panelClientes.Size = new System.Drawing.Size(443, 374);
             this.panelClientes.TabIndex = 0;
             // 
             // maskedTextBoxTelefone
@@ -165,20 +163,6 @@
             this.labelCNPJ.Size = new System.Drawing.Size(37, 15);
             this.labelCNPJ.TabIndex = 17;
             this.labelCNPJ.Text = "CNPJ:";
-            // 
-            // buttonCadastrar
-            // 
-            this.buttonCadastrar.BackColor = System.Drawing.Color.White;
-            this.buttonCadastrar.FlatAppearance.BorderSize = 0;
-            this.buttonCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCadastrar.ForeColor = System.Drawing.Color.Black;
-            this.buttonCadastrar.Location = new System.Drawing.Point(278, 446);
-            this.buttonCadastrar.Name = "buttonCadastrar";
-            this.buttonCadastrar.Size = new System.Drawing.Size(165, 43);
-            this.buttonCadastrar.TabIndex = 8;
-            this.buttonCadastrar.Text = "Cadastrar";
-            this.buttonCadastrar.UseVisualStyleBackColor = false;
-            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // labelDiaDoFiado
             // 
@@ -317,7 +301,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(465, 519);
+            this.ClientSize = new System.Drawing.Size(465, 391);
             this.Controls.Add(this.panelClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -350,7 +334,6 @@
         private RadioButton radioButtonFiadoSim;
         private Label labelDiaDoFiado;
         private NumericUpDown numericUpDownDiaDoFiado;
-        private Button buttonCadastrar;
         private Label labelCNPJ;
         private RadioButton radioButtonJuridica;
         private RadioButton radioButtonFisica;

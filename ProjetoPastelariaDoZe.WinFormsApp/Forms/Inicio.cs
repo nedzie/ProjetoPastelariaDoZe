@@ -8,6 +8,8 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
     /// </summary>
     public partial class Inicio : Form
     {
+        Form a = new();
+
         /// <summary>
         /// Construtor da classe Inicio
         /// </summary>
@@ -57,23 +59,27 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private void Inicio_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Fechar fechar = new();
-            fechar.StartPosition = FormStartPosition.CenterParent;
+            Fechar fechar = new()
+            {
+                StartPosition = FormStartPosition.CenterParent
+            };
             if (fechar.ShowDialog() == DialogResult.No)
                 e.Cancel = true;
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            Login login = new();
-            login.StartPosition = FormStartPosition.CenterParent;
+            Login login = new()
+            {
+                StartPosition = FormStartPosition.CenterParent
+            };
             login.ShowDialog(); // Modal
         }
 
         private void buttonFuncionarios_Click(object sender, EventArgs e)
         {
             Funcionarios funcionarios = new();
-            funcionarios.Show();
+            funcionarios.ShowDialog();
         }
 
         private void buttonComandas_Click(object sender, EventArgs e)
@@ -83,7 +89,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         }
         private void buttonClientes_Click(object sender, EventArgs e)
         {
-            Cliente clientes = new();
+            Clientes clientes = new();
             clientes.Show();
         }
         private void buttonProdutos_Click(object sender, EventArgs e)
@@ -98,8 +104,10 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         }
         private void buttonSobre_Click(object sender, EventArgs e)
         {
-            Sobre sobre = new();
-            sobre.StartPosition = FormStartPosition.CenterParent;
+            Sobre sobre = new()
+            {
+                StartPosition = FormStartPosition.CenterParent
+            };
             sobre.ShowDialog();
         }
 
@@ -125,5 +133,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             WindowState = FormWindowState.Normal;
             notifyIconSystemTray.Visible = false;
         }
+
     }
 }

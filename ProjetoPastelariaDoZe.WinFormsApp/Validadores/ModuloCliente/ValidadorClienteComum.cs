@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using ProjetoPastelariaDoZe.DAO;
 
-namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores
+namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloCliente
 {
     /// <summary>
     /// Validador da Classe Cliente para quando o cliente compra a vista

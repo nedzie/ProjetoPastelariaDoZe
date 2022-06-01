@@ -1,18 +1,18 @@
 ﻿using FluentValidation;
 using ProjetoPastelariaDoZe.DAO;
 
-namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores
+namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloFuncionario
 {
     /// <summary>
-    /// Validador da classe Cliente para quando o cliente compra fiado e usa CPF
+    /// Classe validadora de informações do tipo funcionário
     /// </summary>
-    public class ValidadorClienteFiadoCPF : AbstractValidator<DAO.Cliente>
+    public class ValidadorFuncionario : AbstractValidator<Funcionario>
     {
-        private const string padraoCPF = "^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$";
+        private const string padrao = "^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$";
         /// <summary>
-        /// Construtor da classe Cliente para quando o cliente compra fiado e usa CPF
+        /// Construtor do validador de funcionário
         /// </summary>
-        public ValidadorClienteFiadoCPF()
+        public ValidadorFuncionario()
         {
             RuleFor(x => x.Nome)
                 .NotNull()
@@ -22,9 +22,14 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores
             RuleFor(x => x.CPF)
                 .NotNull()
                 .NotEmpty()
-                .Matches(padraoCPF)
+                .Matches(padrao)
                 .MinimumLength(14)
                 .MaximumLength(14);
+
+            RuleFor(x => x.Matricula)
+                .NotNull()
+                .NotEmpty()
+                .MaximumLength(10);
 
             RuleFor(x => x.Telefone)
                 .NotNull()
@@ -36,6 +41,10 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores
                 .NotNull()
                 .NotEmpty()
                 .MaximumLength(200);
+
+            RuleFor(x => x.Grupo)
+                .NotNull()
+                .NotEmpty();
         }
     }
 }

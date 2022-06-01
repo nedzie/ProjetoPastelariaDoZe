@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using ProjetoPastelariaDoZe.DAO;
 
-namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores
+namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloCliente
 {
     /// <summary>
     /// Validador de cliente para quando não compra fiado e usa CNPJ

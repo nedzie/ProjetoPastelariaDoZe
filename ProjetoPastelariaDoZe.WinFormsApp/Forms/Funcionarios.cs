@@ -1,8 +1,9 @@
 ﻿using FluentValidation.Results;
 using ProjetoPastelariaDoZe.DAO;
 using ProjetoPastelariaDoZe.WinFormsApp.Compartilhado;
-using ProjetoPastelariaDoZe.WinFormsApp.Validadores;
+using ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloFuncionario;
 using System.Configuration;
+using System.Data;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
@@ -22,8 +23,10 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             Funcoes.EventoFocoCampos(this);
             this.KeyDown += new KeyEventHandler(Funcoes.FormEventoKeyDown!);
             this.Text = Properties.Resources.ResourceManager.GetString("formFuncionarios.Text");
-            UserControlControleUsuarioGeral opcoes = new();
-            opcoes.Dock = DockStyle.Bottom;
+            UserControlControleUsuarioGeral opcoes = new()
+            {
+                Dock = DockStyle.Bottom
+            };
             Size = new(Size.Width, Size.Height + opcoes.Size.Height);
             this.Controls.Add(opcoes);
             opcoes.buttonSair.Click += ButtonSair_Click;

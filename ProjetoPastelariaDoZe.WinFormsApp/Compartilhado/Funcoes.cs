@@ -159,6 +159,11 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
         }
         #endregion
         #region Criptografar Senha
+        /// <summary>
+        /// Método da classe funções para criptografar a senha dos clientes
+        /// </summary>
+        /// <param name="senha"></param>
+        /// <returns></returns>
         public static string Sha256Hash(string senha)
         {
             var hash = new StringBuilder();

@@ -42,9 +42,8 @@
             this.buttonComandas = new System.Windows.Forms.Button();
             this.buttonInicio = new System.Windows.Forms.Button();
             this.panelMenuSuperior = new System.Windows.Forms.Panel();
-            this.LabelCabecalho = new System.Windows.Forms.Label();
             this.panelMenuGeral = new System.Windows.Forms.Panel();
-            this.LabelCorpo = new System.Windows.Forms.Label();
+            this.dataGridViewDados = new System.Windows.Forms.DataGridView();
             this.contextMenuStripInicio = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemInicio = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -64,8 +63,8 @@
             this.toolStripMenuItemSystemTraySair = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemSystemTraySobre = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenuLateral.SuspendLayout();
-            this.panelMenuSuperior.SuspendLayout();
             this.panelMenuGeral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).BeginInit();
             this.contextMenuStripInicio.SuspendLayout();
             this.contextMenuStripSystemTray.SuspendLayout();
             this.SuspendLayout();
@@ -269,40 +268,29 @@
             // panelMenuSuperior
             // 
             this.panelMenuSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelMenuSuperior.Controls.Add(this.LabelCabecalho);
             this.panelMenuSuperior.Location = new System.Drawing.Point(209, 0);
             this.panelMenuSuperior.Name = "panelMenuSuperior";
             this.panelMenuSuperior.Size = new System.Drawing.Size(1098, 103);
             this.panelMenuSuperior.TabIndex = 1;
             // 
-            // LabelCabecalho
-            // 
-            this.LabelCabecalho.AutoSize = true;
-            this.LabelCabecalho.ForeColor = System.Drawing.Color.White;
-            this.LabelCabecalho.Location = new System.Drawing.Point(370, 45);
-            this.LabelCabecalho.Name = "LabelCabecalho";
-            this.LabelCabecalho.Size = new System.Drawing.Size(134, 15);
-            this.LabelCabecalho.TabIndex = 0;
-            this.LabelCabecalho.Text = "Aqui vai ter o cabeçalho";
-            // 
             // panelMenuGeral
             // 
             this.panelMenuGeral.BackColor = System.Drawing.Color.Gray;
-            this.panelMenuGeral.Controls.Add(this.LabelCorpo);
+            this.panelMenuGeral.Controls.Add(this.dataGridViewDados);
             this.panelMenuGeral.Location = new System.Drawing.Point(209, 103);
             this.panelMenuGeral.Name = "panelMenuGeral";
             this.panelMenuGeral.Size = new System.Drawing.Size(1098, 576);
             this.panelMenuGeral.TabIndex = 2;
             // 
-            // LabelCorpo
+            // dataGridViewDados
             // 
-            this.LabelCorpo.AutoSize = true;
-            this.LabelCorpo.ForeColor = System.Drawing.Color.White;
-            this.LabelCorpo.Location = new System.Drawing.Point(393, 225);
-            this.LabelCorpo.Name = "LabelCorpo";
-            this.LabelCorpo.Size = new System.Drawing.Size(185, 15);
-            this.LabelCorpo.TabIndex = 0;
-            this.LabelCorpo.Text = "Aqui vai ter o corpo de cada parte";
+            this.dataGridViewDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewDados.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewDados.Name = "dataGridViewDados";
+            this.dataGridViewDados.RowTemplate.Height = 25;
+            this.dataGridViewDados.Size = new System.Drawing.Size(1098, 576);
+            this.dataGridViewDados.TabIndex = 1;
             // 
             // contextMenuStripInicio
             // 
@@ -459,10 +447,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inicio_FormClosing);
             this.Resize += new System.EventHandler(this.Inicio_Resize);
             this.panelMenuLateral.ResumeLayout(false);
-            this.panelMenuSuperior.ResumeLayout(false);
-            this.panelMenuSuperior.PerformLayout();
             this.panelMenuGeral.ResumeLayout(false);
-            this.panelMenuGeral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDados)).EndInit();
             this.contextMenuStripInicio.ResumeLayout(false);
             this.contextMenuStripSystemTray.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -482,8 +468,6 @@
         private Button buttonLogin;
         private Button buttonSobre;
         private Button buttonConfiguracoes;
-        private Label LabelCabecalho;
-        private Label LabelCorpo;
         private Button buttonCaixa;
         private ToolStripMenuItem toolStripMenuItemInicio;
         private ToolStripSeparator toolStripSeparator1;
@@ -507,5 +491,6 @@
         private ToolStripMenuItem toolStripMenuItemSystemTraySair;
         private ToolStripMenuItem toolStripMenuItemSystemTraySobre;
         private Button buttonSair;
+        private DataGridView dataGridViewDados;
     }
 }
