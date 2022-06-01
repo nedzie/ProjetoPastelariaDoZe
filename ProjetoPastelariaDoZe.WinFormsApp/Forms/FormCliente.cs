@@ -9,13 +9,13 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
     /// <summary>
     /// Classe auxiliar Clientes
     /// </summary>
-    public partial class Clientes : Form
+    public partial class FormCliente : Form
     {
-        private readonly ClienteDAO dao;
+        public readonly ClienteDAO dao;
         /// <summary>
         /// Construtor da classe Clientes
         /// </summary>
-        public Clientes()
+        public FormCliente()
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);
@@ -38,7 +38,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private void ButtonSalvar_Click(object? sender, EventArgs e)
         {
-            DAO.Cliente cliente = new();
+            Cliente cliente = new();
             ValidadorClienteFiadoCPF validadorFiadoCPF = new();
             ValidadorClienteFiadoCNPJ validadorFiadoCNPJ = new();
             ValidadorClienteComum validadorVista = new();
@@ -122,7 +122,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             maskedTextBoxCNPJ.Focus();
         }
 
-        private void ConfigurarAtributos(DAO.Cliente cliente)
+        private void ConfigurarAtributos(Cliente cliente)
         {
             cliente.MarcaFiado = radioButtonFiadoSim.Checked ? 1 : 0;
 
@@ -145,7 +145,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
                 cliente.Nome = textBoxNome.Text;
         }
 
-        private void RemoverMascaras(DAO.Cliente cliente)
+        private void RemoverMascaras(Cliente cliente)
         {
             if (!string.IsNullOrEmpty(cliente.CPF))
                 AjustarCPF(cliente);
@@ -155,14 +155,14 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
                 AjustarTelefone(cliente);
         }
 
-        private void AjustarCNPJ(DAO.Cliente cliente)
+        private void AjustarCNPJ(Cliente cliente)
         {
             cliente.CNPJ = cliente.CNPJ!.Replace(".", "");
             cliente.CNPJ = cliente.CNPJ.Replace("/", "");
             cliente.CNPJ = cliente.CNPJ.Replace("-", "");
         }
 
-        private static void AjustarTelefone(DAO.Cliente cliente)
+        private static void AjustarTelefone(Cliente cliente)
         {
             cliente.Telefone = cliente.Telefone!.Replace('-', ' ');
             cliente.Telefone = cliente.Telefone.Replace('(', ' ');
@@ -170,9 +170,9 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             cliente.Telefone = cliente.Telefone.Replace(" ", "");
         }
 
-        private static void AjustarCPF(DAO.Cliente cliente)
+        private static void AjustarCPF(Cliente cliente)
         {
-            Clientes c = new();
+            FormCliente c = new();
             cliente.CPF = cliente.CPF!.Replace(".", "");
             cliente.CPF = cliente.CPF.Replace("-", "");
         }

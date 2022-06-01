@@ -1,6 +1,6 @@
 ﻿namespace ProjetoPastelariaDoZe.WinFormsApp
 {
-    partial class Clientes
+    partial class FormCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCliente));
             this.panelClientes = new System.Windows.Forms.Panel();
             this.maskedTextBoxTelefone = new System.Windows.Forms.MaskedTextBox();
             this.groupBoxTipoCliente = new System.Windows.Forms.GroupBox();

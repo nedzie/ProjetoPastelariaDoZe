@@ -10,13 +10,13 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
     /// <summary>
     /// Classe responsável pelo form Funcionários
     /// </summary>
-    public partial class Funcionarios : Form
+    public partial class FormFuncionario : Form
     {
-        private readonly FuncionarioDAO dao;
+        public readonly FuncionarioDAO dao;
         /// <summary>
         /// Construtor da classe Funcionários
         /// </summary>
-        public Funcionarios()
+        public FormFuncionario()
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);
@@ -46,7 +46,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private void buttonCadastrar_Click(object sender, EventArgs e)
         {
-            Funcionario funcionario = new();
+            DAO.Funcionario funcionario = new();
 
             ConfigurarAtributos(funcionario);
 
@@ -74,7 +74,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             }
         }
 
-        private void ConfigurarAtributos(Funcionario funcionario)
+        private void ConfigurarAtributos(DAO.Funcionario funcionario)
         {
             funcionario.Nome = textBoxNome.Text;
             funcionario.Matricula = textBoxMatricula.Text;
@@ -84,12 +84,12 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             funcionario.Grupo = (radioButtonAdmin.Checked) ? 1 : 2; // Se .Checked == true, Grupo=1, senão, Grupo=2;
         }
 
-        private void RemoverMascaras(Funcionario funcionario)
+        private void RemoverMascaras(DAO.Funcionario funcionario)
         {
             AjustarCPF(funcionario);
             AjustarTelefone(funcionario);
         }
-        private static void AjustarTelefone(Funcionario funcionario)
+        private static void AjustarTelefone(DAO.Funcionario funcionario)
         {
             funcionario.Telefone = funcionario.Telefone!.Replace('-', ' ');
             funcionario.Telefone = funcionario.Telefone.Replace('(', ' ');
@@ -97,7 +97,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             funcionario.Telefone = funcionario.Telefone.Replace(" ", "");
         }
 
-        private static void AjustarCPF(Funcionario funcionario)
+        private static void AjustarCPF(DAO.Funcionario funcionario)
         {
             funcionario.CPF = funcionario.CPF!.Replace(".", "");
             funcionario.CPF = funcionario.CPF.Replace("-", "");

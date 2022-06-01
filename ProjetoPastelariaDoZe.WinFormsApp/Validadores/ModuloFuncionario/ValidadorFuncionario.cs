@@ -6,7 +6,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloFuncionario
     /// <summary>
     /// Classe validadora de informações do tipo funcionário
     /// </summary>
-    public class ValidadorFuncionario : AbstractValidator<Funcionario>
+    public class ValidadorFuncionario : AbstractValidator<DAO.Funcionario>
     {
         private const string padrao = "^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$";
         /// <summary>

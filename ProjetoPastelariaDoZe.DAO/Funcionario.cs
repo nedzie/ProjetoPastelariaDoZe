@@ -106,7 +106,7 @@ namespace ProjetoPastelariaDoZe.DAO
             var linhas = comando.ExecuteNonQuery();
         }
 
-        public DataTable SelectDBProvider(Funcionario funcionario)
+        public override DataTable SelectDBProvider(object funcionario)
         {
             using var conexao = factory!.CreateConnection(); // Conexão com o BD
             conexao!.ConnectionString = StringConexao; // Informa a ConnectionString, o caminho para o BD

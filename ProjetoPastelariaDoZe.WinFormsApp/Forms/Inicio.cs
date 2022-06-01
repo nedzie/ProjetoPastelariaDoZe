@@ -71,22 +71,11 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            Opcao o = new();
-
-            var res = o.ShowDialog();
-
-            if (res == DialogResult.OK)
+            Login login = new()
             {
-                Login login = new()
-                {
-                    StartPosition = FormStartPosition.CenterParent
-                };
-                login.ShowDialog(); // Modal
-            }
-            else if (res == DialogResult.Yes)
-            {
-                AtualizarTela(1);
-            }
+                StartPosition = FormStartPosition.CenterParent
+            };
+            login.ShowDialog(); // Modal
         }
 
         private void buttonFuncionarios_Click(object sender, EventArgs e)
@@ -95,31 +84,44 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
             var res = o.ShowDialog();
 
+            FormFuncionario funcionarios = new();
+            {
+                StartPosition = FormStartPosition.CenterScreen;
+            };
+
             if (res == DialogResult.OK)
             {
-                Funcionarios funcionarios = new();
-                {
-                    StartPosition = FormStartPosition.CenterParent;
-                };
-
                 funcionarios.ShowDialog(); // Modal
-                AtualizarTela(1);
+                AtualizarTela(funcionarios.dao);
             }
             else if (res == DialogResult.Yes)
+                AtualizarTela(funcionarios.dao);
+        }
+        private void buttonClientes_Click(object sender, EventArgs e)
+        {
+            Opcao o = new();
+
+            var res = o.ShowDialog();
+
+            FormCliente clientes = new FormCliente
             {
-                AtualizarTela(1);
+                StartPosition = FormStartPosition.CenterScreen
+            };
+
+            if (res == DialogResult.OK)
+            {
+                clientes.ShowDialog();
+                AtualizarTela(clientes.dao);
             }
+            else if (res == DialogResult.Yes)
+                AtualizarTela(clientes.dao);
+
         }
 
         private void buttonComandas_Click(object sender, EventArgs e)
         {
             Comandas comanda = new();
             comanda.Show();
-        }
-        private void buttonClientes_Click(object sender, EventArgs e)
-        {
-            Clientes clientes = new();
-            clientes.Show();
         }
         private void buttonProdutos_Click(object sender, EventArgs e)
         {
@@ -162,23 +164,40 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             WindowState = FormWindowState.Normal;
             notifyIconSystemTray.Visible = false;
         }
-
-        private void AtualizarTela(int codigoObjeto)
+        /// <summary>
+        /// Código para povoar a tela principal com as informações escolhidas. <br></br>
+        /// </summary>
+        /// <param name="objetoDAO">Objeto em questão</param>
+        private void AtualizarTela(object objetoDAO)
         {
             Funcionario funcionario = new Funcionario
             {
                 Numero = 0
             };
-            switch (codigoObjeto)
+
+            Cliente cliente = new Cliente
             {
-                case 1:
-                    dao = new FuncionarioDAO();
+                Numero = 0
+            };
+
+            var tipo = objetoDAO.GetType();
+
+            switch (tipo.Name)
+            {
+                case "FuncionarioDAO":
+                    dao = (FuncionarioDAO)objetoDAO;
+                    break;
+                case "ClienteDAO":
+                    dao = (ClienteDAO)objetoDAO;
+                    break;
+                case "ProdutoDAO":
+                    //dao = (ProdutoDao)objetoDAO;
                     break;
             }
 
             try
             {
-                DataTable linhas = dao!.SelectDBProvider(funcionario);
+                DataTable linhas = dao!.SelectDBProvider(cliente);
 
                 dataGridViewDados.Columns.Clear();
                 dataGridViewDados.AutoGenerateColumns = true;

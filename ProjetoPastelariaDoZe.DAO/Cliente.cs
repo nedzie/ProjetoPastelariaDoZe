@@ -1,6 +1,7 @@
 ﻿using ProjetoPastelariaDoZe.DAO.Compartilhado;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
@@ -121,7 +122,35 @@ namespace ProjetoPastelariaDoZe.DAO
             var linhas = comando.ExecuteNonQuery();
         }
 
-        
+        public override DataTable SelectDBProvider(object cliente)
+        {
+            using var conexao = factory!.CreateConnection(); // Conexão com o BD
+            conexao!.ConnectionString = StringConexao; // Informa a ConnectionString, o caminho para o BD
+            using var comando = factory.CreateCommand(); // Cria o comando para o BD
+            comando!.Connection = conexao; // Atribui a conexão
+
+            conexao.Open();
+
+            comando.CommandText =
+                @"SELECT
+                    ID_CLIENTE AS Id,
+                    NOME AS Nome,
+                    CPF AS CPF,
+                    CNPJ AS CNPJ,
+                    TELEFONE AS Telefone,
+                    COMPRA_FIADO AS Fiado,
+                    DIA_FIADO AS Dia
+                FROM
+                    TB_CLIENTE";
+
+            var sdr = comando.ExecuteReader();
+
+            DataTable linhas = new();
+
+            linhas.Load(sdr);
+
+            return linhas;
+        }
 
         private void ConfigurarParametrosCliente(Cliente cliente, DbCommand comando)
         {
