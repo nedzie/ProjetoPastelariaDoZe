@@ -12,6 +12,9 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
     /// </summary>
     public partial class FormFuncionario : Form
     {
+        /// <summary>
+        /// Instância DAO dentro da classe FormFuncionario
+        /// </summary>
         public readonly FuncionarioDAO dao;
         /// <summary>
         /// Construtor da classe Funcionários
@@ -74,7 +77,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             }
         }
 
-        private void ConfigurarAtributos(DAO.Funcionario funcionario)
+        private void ConfigurarAtributos(Funcionario funcionario)
         {
             funcionario.Nome = textBoxNome.Text;
             funcionario.Matricula = textBoxMatricula.Text;
@@ -84,12 +87,12 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             funcionario.Grupo = (radioButtonAdmin.Checked) ? 1 : 2; // Se .Checked == true, Grupo=1, senão, Grupo=2;
         }
 
-        private void RemoverMascaras(DAO.Funcionario funcionario)
+        private void RemoverMascaras(Funcionario funcionario)
         {
             AjustarCPF(funcionario);
             AjustarTelefone(funcionario);
         }
-        private static void AjustarTelefone(DAO.Funcionario funcionario)
+        private static void AjustarTelefone(Funcionario funcionario)
         {
             funcionario.Telefone = funcionario.Telefone!.Replace('-', ' ');
             funcionario.Telefone = funcionario.Telefone.Replace('(', ' ');
@@ -97,7 +100,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             funcionario.Telefone = funcionario.Telefone.Replace(" ", "");
         }
 
-        private static void AjustarCPF(DAO.Funcionario funcionario)
+        private static void AjustarCPF(Funcionario funcionario)
         {
             funcionario.CPF = funcionario.CPF!.Replace(".", "");
             funcionario.CPF = funcionario.CPF.Replace("-", "");

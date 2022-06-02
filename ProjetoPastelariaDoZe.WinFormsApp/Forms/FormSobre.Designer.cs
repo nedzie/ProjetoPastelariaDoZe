@@ -2,7 +2,7 @@
 {   /// <summary>
     /// Classe Sobre, onde contém todas as informações do programa
     /// </summary>
-    partial class Sobre
+    partial class FormSobre
     {
         /// <summary>
         /// Formulário "Sobre", que contém as informações do programa

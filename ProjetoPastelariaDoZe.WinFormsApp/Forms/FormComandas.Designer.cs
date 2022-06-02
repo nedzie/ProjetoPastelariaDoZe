@@ -1,6 +1,6 @@
 ﻿namespace ProjetoPastelariaDoZe.WinFormsApp
 {
-    partial class Comandas
+    partial class FormComandas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Comandas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormComandas));
             this.PanelComandas = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 

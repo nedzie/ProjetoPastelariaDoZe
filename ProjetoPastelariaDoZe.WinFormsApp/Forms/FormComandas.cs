@@ -4,12 +4,12 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 {   /// <summary>
     /// Classe comandas
     /// </summary>
-    public partial class Comandas : Form
+    public partial class FormComandas : Form
     {
         /// <summary>
         /// Construtor da classe Comandas
         /// </summary>
-        public Comandas()
+        public FormComandas()
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);

@@ -3,7 +3,7 @@
     /// <summary>
     /// Classe Produtos, onde são definidas as informações dos produtos
     /// </summary>
-    partial class Produtos
+    partial class FormProdutos
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Produtos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProdutos));
             this.labelNome = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.labelDescricao = new System.Windows.Forms.Label();

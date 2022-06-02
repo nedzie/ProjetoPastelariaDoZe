@@ -2,12 +2,12 @@
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
-    public partial class Login : Form
+    public partial class FormLogin : Form
     {
         /// <summary>
         /// Construtor da classe Login
         /// </summary>
-        public Login()
+        public FormLogin()
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);

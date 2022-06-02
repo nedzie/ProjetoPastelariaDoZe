@@ -9,13 +9,13 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
     /// <summary>
     /// Classe auxiliar Inicio
     /// </summary>
-    public partial class Inicio : Form
+    public partial class FormInicio : Form
     {
         EntidadeBase? dao;
         /// <summary>
         /// Construtor da classe Inicio
         /// </summary>
-        public Inicio()
+        public FormInicio()
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);
@@ -71,7 +71,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            Login login = new()
+            FormLogin login = new()
             {
                 StartPosition = FormStartPosition.CenterParent
             };
@@ -120,22 +120,22 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private void buttonComandas_Click(object sender, EventArgs e)
         {
-            Comandas comanda = new();
+            FormComandas comanda = new();
             comanda.Show();
         }
         private void buttonProdutos_Click(object sender, EventArgs e)
         {
-            Produtos produtos = new();
+            FormProdutos produtos = new();
             produtos.Show();
         }
         private void buttonConfiguracoes_Click(object sender, EventArgs e)
         {
-            Configuracoes configuracoes = new();
+            FormConfiguracoes configuracoes = new();
             configuracoes.Show(); // Janela normal
         }
         private void buttonSobre_Click(object sender, EventArgs e)
         {
-            Sobre sobre = new()
+            FormSobre sobre = new()
             {
                 StartPosition = FormStartPosition.CenterParent
             };

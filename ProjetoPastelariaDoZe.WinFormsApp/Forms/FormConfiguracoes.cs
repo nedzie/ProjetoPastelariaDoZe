@@ -3,27 +3,28 @@ using System.Configuration;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
-    public partial class Configuracoes : Form
+    public partial class FormConfiguracoes : Form
     {
         /// <summary>
         /// Construtor da classe Configuracoes
         /// </summary>
-        public Configuracoes()
+        public FormConfiguracoes()
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);
             Funcoes.EventoFocoCampos(this);
+
             this.KeyDown += new KeyEventHandler(Funcoes.FormEventoKeyDown!);
             this.Text = Properties.Resources.ResourceManager.GetString("formConfiguracoes.Text");
             comboBoxIdiomas.SelectedItem = ConfigurationManager.AppSettings.Get("IdiomaRegiao");
-            UserControlControleUsuarioGeral opcoes = new();
-            Size = new(Size.Width, Size.Height + opcoes.Size.Height);
-            opcoes.Dock = DockStyle.Bottom;
-            this.Controls.Add(opcoes);
-            opcoes.buttonSair.Click += ButtonSair_Click;
-            opcoes.buttonSalvar.Click += ButtonSalvar_Click;
-            MaximizeBox = false;
+
+            ConfigurarUserControl();
+
+            ConfigurarBD();
         }
+
+        
+
         private void ButtonSalvar_Click(object? sender, EventArgs e)
         {
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
@@ -43,6 +44,25 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         private void ButtonSair_Click(object? sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ConfigurarUserControl()
+        {
+            UserControlControleUsuarioGeral opcoes = new();
+            Size = new(Size.Width, Size.Height + opcoes.Size.Height);
+            opcoes.Dock = DockStyle.Bottom;
+            this.Controls.Add(opcoes);
+            opcoes.buttonSair.Click += ButtonSair_Click;
+            opcoes.buttonSalvar.Click += ButtonSalvar_Click;
+        }
+
+        private void ConfigurarBD()
+        {
+            ConnectionStringSettings connectionStringSettings = ConfigurationManager.ConnectionStrings["BD"];
+
+            comboBoxProvedores.Text = connectionStringSettings.ProviderName;
+
+            textBoxConnectionString.Text = connectionStringSettings.ConnectionString;
         }
     }
 }

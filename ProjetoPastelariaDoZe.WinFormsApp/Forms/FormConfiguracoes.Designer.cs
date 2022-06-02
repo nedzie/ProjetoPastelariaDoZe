@@ -3,7 +3,7 @@
     /// <summary>
     /// Classe auxiliar Configuracoes
     /// </summary>
-    partial class Configuracoes
+    partial class FormConfiguracoes
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuracoes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConfiguracoes));
             this.labelTaxaJurosDiaria = new System.Windows.Forms.Label();
             this.panelFundoConfiguracoes = new System.Windows.Forms.Panel();
             this.tabControlParametrosParaCobranca = new System.Windows.Forms.TabControl();
@@ -42,10 +42,16 @@
             this.tabPageIdiomaRegiao = new System.Windows.Forms.TabPage();
             this.checkBoxReiniciar = new System.Windows.Forms.CheckBox();
             this.comboBoxIdiomas = new System.Windows.Forms.ComboBox();
+            this.tabPageBancoDeDados = new System.Windows.Forms.TabPage();
+            this.textBoxConnectionString = new System.Windows.Forms.TextBox();
+            this.comboBoxProvedores = new System.Windows.Forms.ComboBox();
+            this.labelConnectionString = new System.Windows.Forms.Label();
+            this.labelProvider = new System.Windows.Forms.Label();
             this.panelFundoConfiguracoes.SuspendLayout();
             this.tabControlParametrosParaCobranca.SuspendLayout();
             this.tabPageParametros.SuspendLayout();
             this.tabPageIdiomaRegiao.SuspendLayout();
+            this.tabPageBancoDeDados.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelTaxaJurosDiaria
@@ -72,6 +78,7 @@
             // 
             this.tabControlParametrosParaCobranca.Controls.Add(this.tabPageParametros);
             this.tabControlParametrosParaCobranca.Controls.Add(this.tabPageIdiomaRegiao);
+            this.tabControlParametrosParaCobranca.Controls.Add(this.tabPageBancoDeDados);
             this.tabControlParametrosParaCobranca.Location = new System.Drawing.Point(3, 3);
             this.tabControlParametrosParaCobranca.Multiline = true;
             this.tabControlParametrosParaCobranca.Name = "tabControlParametrosParaCobranca";
@@ -156,7 +163,57 @@
             this.comboBoxIdiomas.Size = new System.Drawing.Size(121, 23);
             this.comboBoxIdiomas.TabIndex = 1;
             // 
-            // Configuracoes
+            // tabPageBancoDeDados
+            // 
+            this.tabPageBancoDeDados.BackColor = System.Drawing.Color.Black;
+            this.tabPageBancoDeDados.Controls.Add(this.textBoxConnectionString);
+            this.tabPageBancoDeDados.Controls.Add(this.comboBoxProvedores);
+            this.tabPageBancoDeDados.Controls.Add(this.labelConnectionString);
+            this.tabPageBancoDeDados.Controls.Add(this.labelProvider);
+            this.tabPageBancoDeDados.Location = new System.Drawing.Point(4, 24);
+            this.tabPageBancoDeDados.Name = "tabPageBancoDeDados";
+            this.tabPageBancoDeDados.Size = new System.Drawing.Size(629, 228);
+            this.tabPageBancoDeDados.TabIndex = 2;
+            this.tabPageBancoDeDados.Text = "Banco de Dados";
+            // 
+            // textBoxConnectionString
+            // 
+            this.textBoxConnectionString.Location = new System.Drawing.Point(18, 89);
+            this.textBoxConnectionString.Name = "textBoxConnectionString";
+            this.textBoxConnectionString.Size = new System.Drawing.Size(595, 23);
+            this.textBoxConnectionString.TabIndex = 3;
+            // 
+            // comboBoxProvedores
+            // 
+            this.comboBoxProvedores.FormattingEnabled = true;
+            this.comboBoxProvedores.Location = new System.Drawing.Point(18, 36);
+            this.comboBoxProvedores.Name = "comboBoxProvedores";
+            this.comboBoxProvedores.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxProvedores.TabIndex = 2;
+            // 
+            // labelConnectionString
+            // 
+            this.labelConnectionString.AutoSize = true;
+            this.labelConnectionString.BackColor = System.Drawing.Color.Transparent;
+            this.labelConnectionString.ForeColor = System.Drawing.Color.White;
+            this.labelConnectionString.Location = new System.Drawing.Point(18, 71);
+            this.labelConnectionString.Name = "labelConnectionString";
+            this.labelConnectionString.Size = new System.Drawing.Size(106, 15);
+            this.labelConnectionString.TabIndex = 1;
+            this.labelConnectionString.Text = "Connection String:";
+            // 
+            // labelProvider
+            // 
+            this.labelProvider.AutoSize = true;
+            this.labelProvider.BackColor = System.Drawing.Color.Transparent;
+            this.labelProvider.ForeColor = System.Drawing.Color.White;
+            this.labelProvider.Location = new System.Drawing.Point(18, 18);
+            this.labelProvider.Name = "labelProvider";
+            this.labelProvider.Size = new System.Drawing.Size(54, 15);
+            this.labelProvider.TabIndex = 0;
+            this.labelProvider.Text = "Provider:";
+            // 
+            // FormConfiguracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,7 +223,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Name = "Configuracoes";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FormConfiguracoes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configurações";
             this.panelFundoConfiguracoes.ResumeLayout(false);
@@ -175,6 +234,8 @@
             this.tabPageParametros.PerformLayout();
             this.tabPageIdiomaRegiao.ResumeLayout(false);
             this.tabPageIdiomaRegiao.PerformLayout();
+            this.tabPageBancoDeDados.ResumeLayout(false);
+            this.tabPageBancoDeDados.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -191,5 +252,10 @@
         private TabPage tabPageIdiomaRegiao;
         private ComboBox comboBoxIdiomas;
         private CheckBox checkBoxReiniciar;
+        private TabPage tabPageBancoDeDados;
+        private TextBox textBoxConnectionString;
+        private ComboBox comboBoxProvedores;
+        private Label labelConnectionString;
+        private Label labelProvider;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ProjetoPastelariaDoZe.WinFormsApp
 {
-    partial class Inicio
+    partial class FormInicio
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInicio));
             this.panelMenuLateral = new System.Windows.Forms.Panel();
             this.buttonSair = new System.Windows.Forms.Button();
             this.buttonCaixa = new System.Windows.Forms.Button();
@@ -90,6 +90,7 @@
             // buttonSair
             // 
             this.buttonSair.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSair.FlatAppearance.BorderSize = 0;
             this.buttonSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.buttonSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -107,6 +108,7 @@
             // buttonCaixa
             // 
             this.buttonCaixa.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCaixa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCaixa.FlatAppearance.BorderSize = 0;
             this.buttonCaixa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
             this.buttonCaixa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -125,6 +127,7 @@
             // 
             this.buttonLogin.BackColor = System.Drawing.Color.Transparent;
             this.buttonLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLogin.FlatAppearance.BorderSize = 0;
             this.buttonLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -143,6 +146,7 @@
             // buttonSobre
             // 
             this.buttonSobre.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSobre.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSobre.FlatAppearance.BorderSize = 0;
             this.buttonSobre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.buttonSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -161,6 +165,7 @@
             // buttonConfiguracoes
             // 
             this.buttonConfiguracoes.BackColor = System.Drawing.Color.Transparent;
+            this.buttonConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonConfiguracoes.FlatAppearance.BorderSize = 0;
             this.buttonConfiguracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateBlue;
             this.buttonConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -179,6 +184,7 @@
             // buttonFuncionarios
             // 
             this.buttonFuncionarios.BackColor = System.Drawing.Color.Transparent;
+            this.buttonFuncionarios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonFuncionarios.FlatAppearance.BorderSize = 0;
             this.buttonFuncionarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OliveDrab;
             this.buttonFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -197,6 +203,7 @@
             // buttonProdutos
             // 
             this.buttonProdutos.BackColor = System.Drawing.Color.Transparent;
+            this.buttonProdutos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonProdutos.FlatAppearance.BorderSize = 0;
             this.buttonProdutos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGoldenrod;
             this.buttonProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -215,6 +222,7 @@
             // buttonClientes
             // 
             this.buttonClientes.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonClientes.FlatAppearance.BorderSize = 0;
             this.buttonClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(175)))));
             this.buttonClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -233,6 +241,7 @@
             // buttonComandas
             // 
             this.buttonComandas.BackColor = System.Drawing.Color.Transparent;
+            this.buttonComandas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonComandas.FlatAppearance.BorderSize = 0;
             this.buttonComandas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Plum;
             this.buttonComandas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -251,6 +260,7 @@
             // buttonInicio
             // 
             this.buttonInicio.BackColor = System.Drawing.Color.Transparent;
+            this.buttonInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonInicio.FlatAppearance.BorderSize = 0;
             this.buttonInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.buttonInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

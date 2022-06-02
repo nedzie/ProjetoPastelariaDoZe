@@ -3,7 +3,7 @@
     /// <summary>
     /// Classe responsável pelo form Login
     /// </summary>
-    partial class Login
+    partial class FormLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panelFundoLogin = new System.Windows.Forms.Panel();
             this.labelNovoUsuario = new System.Windows.Forms.Label();
             this.buttonCadastrar = new System.Windows.Forms.Button();

@@ -11,20 +11,24 @@ using System.Windows.Forms;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
-    public partial class Sobre : Form
+    /// <summary>
+    /// Classe auxiliar Produtos
+    /// </summary>
+    public partial class FormProdutos : Form
     {
         /// <summary>
-        /// Construtor que inicializa o Form Sobre
+        /// Construtor da classe Produtos
         /// </summary>
-        public Sobre()
+        public FormProdutos()
         {
             InitializeComponent();
             Funcoes.AjustaResourcesForm(this);
+            Funcoes.EventoFocoCampos(this);
             this.KeyDown += new KeyEventHandler(Funcoes.FormEventoKeyDown!);
-            this.Text = Properties.Resources.ResourceManager.GetString("formSobre.Text");
+            this.Text = Properties.Resources.ResourceManager.GetString("formProdutos.Text");
             UserControlControleUsuarioGeral opcoes = new();
-            opcoes.Dock = DockStyle.Bottom;
             Size = new(Size.Width, Size.Height + opcoes.Size.Height);
+            opcoes.Dock = DockStyle.Bottom;
             this.Controls.Add(opcoes);
             opcoes.buttonSair.Click += ButtonSair_Click;
             MaximizeBox = false;
@@ -33,6 +37,11 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         private void ButtonSair_Click(object? sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBoxValorUnitario_Click(object sender, EventArgs e)
+        {
+            Funcoes.AplicaMascaraMoeda(textBoxValorUnitario);
         }
     }
 }
