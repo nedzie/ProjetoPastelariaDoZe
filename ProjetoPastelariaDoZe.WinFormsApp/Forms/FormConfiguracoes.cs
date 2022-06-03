@@ -49,8 +49,8 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             ConnectionStringSettings connectionStringSettings = ConfigurationManager.ConnectionStrings["BD"];
 
             comboBoxProvedores.Text = connectionStringSettings.ProviderName;
-
-            textBoxConnectionString.Text = connectionStringSettings.ConnectionString;
+            comboBoxConnectionStrings.Text = connectionStringSettings.ConnectionString;
+            //textBoxConnectionString.Text = connectionStringSettings.ConnectionString;
         }
 
         private void buttonSalvarIdioma_Click(object sender, EventArgs e)
@@ -75,10 +75,11 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         {
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
-            config.ConnectionStrings.ConnectionStrings["BD"].ProviderName = comboBoxProvedores.Text;
-            config.ConnectionStrings.ConnectionStrings["BD"].ConnectionString = textBoxConnectionString.Text;
-
-            //Funcoes.ValidaConexaoDB();
+            config.ConnectionStrings.ConnectionStrings["BD"].ProviderName = comboBoxProvedores.SelectedItem.ToString();
+            if (comboBoxConnectionStrings.SelectedItem != null)
+                config.ConnectionStrings.ConnectionStrings["BD"].ConnectionString = comboBoxConnectionStrings.SelectedItem.ToString();
+            else
+                config.ConnectionStrings.ConnectionStrings["BD"].ConnectionString = comboBoxConnectionStrings.Text;
 
             config.Save(ConfigurationSaveMode.Modified, true);
 
@@ -86,7 +87,10 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
             this.Close();
 
-            _ = MessageBox.Show("Alterou BD");
+            var deuCerto = Funcoes.ValidaConexaoDB();
+
+            if(deuCerto)
+                _ = MessageBox.Show("Alterou BD");
         }
     }
 }

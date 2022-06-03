@@ -45,6 +45,7 @@
             this.checkBoxReiniciar = new System.Windows.Forms.CheckBox();
             this.comboBoxIdiomas = new System.Windows.Forms.ComboBox();
             this.tabPageBancoDeDados = new System.Windows.Forms.TabPage();
+            this.comboBoxConnectionStrings = new System.Windows.Forms.ComboBox();
             this.buttonSalvarBD = new System.Windows.Forms.Button();
             this.textBoxConnectionString = new System.Windows.Forms.TextBox();
             this.comboBoxProvedores = new System.Windows.Forms.ComboBox();
@@ -196,6 +197,7 @@
             // tabPageBancoDeDados
             // 
             this.tabPageBancoDeDados.BackColor = System.Drawing.Color.Black;
+            this.tabPageBancoDeDados.Controls.Add(this.comboBoxConnectionStrings);
             this.tabPageBancoDeDados.Controls.Add(this.buttonSalvarBD);
             this.tabPageBancoDeDados.Controls.Add(this.textBoxConnectionString);
             this.tabPageBancoDeDados.Controls.Add(this.comboBoxProvedores);
@@ -206,6 +208,19 @@
             this.tabPageBancoDeDados.Size = new System.Drawing.Size(629, 228);
             this.tabPageBancoDeDados.TabIndex = 2;
             this.tabPageBancoDeDados.Text = "Banco de Dados";
+            // 
+            // comboBoxConnectionStrings
+            // 
+            this.comboBoxConnectionStrings.FormattingEnabled = true;
+            this.comboBoxConnectionStrings.Items.AddRange(new object[] {
+            "Data Source=MARCOS;Initial Catalog=pastelaria_db;Integrated Security=True;Connect" +
+                " Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWri" +
+                "te;MultiSubnetFailover=False",
+            "Server=localhost;Database=pastelaria_db;Uid=root;Pwd=rootadmin;"});
+            this.comboBoxConnectionStrings.Location = new System.Drawing.Point(18, 118);
+            this.comboBoxConnectionStrings.Name = "comboBoxConnectionStrings";
+            this.comboBoxConnectionStrings.Size = new System.Drawing.Size(595, 23);
+            this.comboBoxConnectionStrings.TabIndex = 6;
             // 
             // buttonSalvarBD
             // 
@@ -307,5 +322,6 @@
         private Button buttonSalvarTaxas;
         private Button buttonSalvarIdioma;
         private Button buttonSalvarBD;
+        private ComboBox comboBoxConnectionStrings;
     }
 }

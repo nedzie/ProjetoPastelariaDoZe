@@ -112,7 +112,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
             }
         }
         #endregion
-        #region Gambiarra
+        #region TODO: Melhorar essa parte
         private static void RetornarMascaraMoeda(object sender, EventArgs e)
         {
             TextBoxBase txt = (TextBoxBase)sender;
@@ -183,7 +183,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
         /// <summary>
         /// Médodo da classe funções para validar a conexão com Banco de Dados escolhido
         /// </summary>
-        public static void ValidaConexaoDB()
+        public static bool ValidaConexaoDB()
         {
             DbProviderFactory factory;
             try
@@ -194,12 +194,15 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
                 using var comando = factory.CreateCommand();
                 comando!.Connection = conexao;
                 conexao.Open();
+
+                return true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 new FormConfiguracoes().ShowDialog();
                 ValidaConexaoDB();
+                return false;
             }
         }
         #endregion

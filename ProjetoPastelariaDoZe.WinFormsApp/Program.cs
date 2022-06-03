@@ -23,9 +23,9 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(aux!); // var! > Pode ser null
             Thread.CurrentThread.CurrentCulture = new CultureInfo(aux!);
 
-            Funcoes.ValidaConexaoDB();
 
             ApplicationConfiguration.Initialize();
+            Funcoes.ValidaConexaoDB();
             Application.Run(new FormInicio());
         }
     }
