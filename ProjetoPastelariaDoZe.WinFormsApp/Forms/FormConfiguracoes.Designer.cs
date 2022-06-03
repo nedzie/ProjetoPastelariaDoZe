@@ -36,13 +36,16 @@
             this.panelFundoConfiguracoes = new System.Windows.Forms.Panel();
             this.tabControlParametrosParaCobranca = new System.Windows.Forms.TabControl();
             this.tabPageParametros = new System.Windows.Forms.TabPage();
+            this.buttonSalvarTaxas = new System.Windows.Forms.Button();
             this.textBoxMultaPorAtraso = new System.Windows.Forms.TextBox();
             this.labelMultaPorAtraso = new System.Windows.Forms.Label();
             this.textBoxTaxaJurosDiaria = new System.Windows.Forms.TextBox();
             this.tabPageIdiomaRegiao = new System.Windows.Forms.TabPage();
+            this.buttonSalvarIdioma = new System.Windows.Forms.Button();
             this.checkBoxReiniciar = new System.Windows.Forms.CheckBox();
             this.comboBoxIdiomas = new System.Windows.Forms.ComboBox();
             this.tabPageBancoDeDados = new System.Windows.Forms.TabPage();
+            this.buttonSalvarBD = new System.Windows.Forms.Button();
             this.textBoxConnectionString = new System.Windows.Forms.TextBox();
             this.comboBoxProvedores = new System.Windows.Forms.ComboBox();
             this.labelConnectionString = new System.Windows.Forms.Label();
@@ -89,6 +92,7 @@
             // tabPageParametros
             // 
             this.tabPageParametros.BackColor = System.Drawing.Color.Black;
+            this.tabPageParametros.Controls.Add(this.buttonSalvarTaxas);
             this.tabPageParametros.Controls.Add(this.textBoxMultaPorAtraso);
             this.tabPageParametros.Controls.Add(this.labelMultaPorAtraso);
             this.tabPageParametros.Controls.Add(this.textBoxTaxaJurosDiaria);
@@ -99,6 +103,18 @@
             this.tabPageParametros.Size = new System.Drawing.Size(629, 228);
             this.tabPageParametros.TabIndex = 0;
             this.tabPageParametros.Text = "Parâmetros para cobrança";
+            // 
+            // buttonSalvarTaxas
+            // 
+            this.buttonSalvarTaxas.BackColor = System.Drawing.Color.White;
+            this.buttonSalvarTaxas.FlatAppearance.BorderSize = 0;
+            this.buttonSalvarTaxas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSalvarTaxas.Location = new System.Drawing.Point(548, 199);
+            this.buttonSalvarTaxas.Name = "buttonSalvarTaxas";
+            this.buttonSalvarTaxas.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalvarTaxas.TabIndex = 4;
+            this.buttonSalvarTaxas.Text = "Salvar";
+            this.buttonSalvarTaxas.UseVisualStyleBackColor = false;
             // 
             // textBoxMultaPorAtraso
             // 
@@ -129,6 +145,7 @@
             // tabPageIdiomaRegiao
             // 
             this.tabPageIdiomaRegiao.BackColor = System.Drawing.Color.Black;
+            this.tabPageIdiomaRegiao.Controls.Add(this.buttonSalvarIdioma);
             this.tabPageIdiomaRegiao.Controls.Add(this.checkBoxReiniciar);
             this.tabPageIdiomaRegiao.Controls.Add(this.comboBoxIdiomas);
             this.tabPageIdiomaRegiao.Location = new System.Drawing.Point(4, 24);
@@ -137,6 +154,19 @@
             this.tabPageIdiomaRegiao.Size = new System.Drawing.Size(629, 228);
             this.tabPageIdiomaRegiao.TabIndex = 1;
             this.tabPageIdiomaRegiao.Text = "Idioma/Região";
+            // 
+            // buttonSalvarIdioma
+            // 
+            this.buttonSalvarIdioma.BackColor = System.Drawing.Color.White;
+            this.buttonSalvarIdioma.FlatAppearance.BorderSize = 0;
+            this.buttonSalvarIdioma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSalvarIdioma.Location = new System.Drawing.Point(548, 199);
+            this.buttonSalvarIdioma.Name = "buttonSalvarIdioma";
+            this.buttonSalvarIdioma.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalvarIdioma.TabIndex = 5;
+            this.buttonSalvarIdioma.Text = "Salvar";
+            this.buttonSalvarIdioma.UseVisualStyleBackColor = false;
+            this.buttonSalvarIdioma.Click += new System.EventHandler(this.buttonSalvarIdioma_Click);
             // 
             // checkBoxReiniciar
             // 
@@ -166,6 +196,7 @@
             // tabPageBancoDeDados
             // 
             this.tabPageBancoDeDados.BackColor = System.Drawing.Color.Black;
+            this.tabPageBancoDeDados.Controls.Add(this.buttonSalvarBD);
             this.tabPageBancoDeDados.Controls.Add(this.textBoxConnectionString);
             this.tabPageBancoDeDados.Controls.Add(this.comboBoxProvedores);
             this.tabPageBancoDeDados.Controls.Add(this.labelConnectionString);
@@ -175,6 +206,19 @@
             this.tabPageBancoDeDados.Size = new System.Drawing.Size(629, 228);
             this.tabPageBancoDeDados.TabIndex = 2;
             this.tabPageBancoDeDados.Text = "Banco de Dados";
+            // 
+            // buttonSalvarBD
+            // 
+            this.buttonSalvarBD.BackColor = System.Drawing.Color.White;
+            this.buttonSalvarBD.FlatAppearance.BorderSize = 0;
+            this.buttonSalvarBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSalvarBD.Location = new System.Drawing.Point(548, 199);
+            this.buttonSalvarBD.Name = "buttonSalvarBD";
+            this.buttonSalvarBD.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalvarBD.TabIndex = 5;
+            this.buttonSalvarBD.Text = "Salvar";
+            this.buttonSalvarBD.UseVisualStyleBackColor = false;
+            this.buttonSalvarBD.Click += new System.EventHandler(this.buttonSalvarBD_Click);
             // 
             // textBoxConnectionString
             // 
@@ -186,6 +230,9 @@
             // comboBoxProvedores
             // 
             this.comboBoxProvedores.FormattingEnabled = true;
+            this.comboBoxProvedores.Items.AddRange(new object[] {
+            "System.Data.SqlClient",
+            "MySql.Data.MySqlClient"});
             this.comboBoxProvedores.Location = new System.Drawing.Point(18, 36);
             this.comboBoxProvedores.Name = "comboBoxProvedores";
             this.comboBoxProvedores.Size = new System.Drawing.Size(121, 23);
@@ -257,5 +304,8 @@
         private ComboBox comboBoxProvedores;
         private Label labelConnectionString;
         private Label labelProvider;
+        private Button buttonSalvarTaxas;
+        private Button buttonSalvarIdioma;
+        private Button buttonSalvarBD;
     }
 }

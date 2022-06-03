@@ -1,3 +1,4 @@
+using ProjetoPastelariaDoZe.WinFormsApp.Compartilhado;
 using System.Configuration;
 using System.Data.Common;
 using System.Globalization;
@@ -21,6 +22,8 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(aux!); // var! > Pode ser null
             Thread.CurrentThread.CurrentCulture = new CultureInfo(aux!);
+
+            Funcoes.ValidaConexaoDB();
 
             ApplicationConfiguration.Initialize();
             Application.Run(new FormInicio());

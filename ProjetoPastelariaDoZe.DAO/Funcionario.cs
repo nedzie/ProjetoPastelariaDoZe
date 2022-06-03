@@ -124,7 +124,7 @@ namespace ProjetoPastelariaDoZe.DAO
                     MATRICULA AS Matricula,
                     GRUPO AS Grupo
                 FROM
-                    tb_funcionario";
+                    TB_FUNCIONARIO";
 
             var sdr = comando.ExecuteReader();
 

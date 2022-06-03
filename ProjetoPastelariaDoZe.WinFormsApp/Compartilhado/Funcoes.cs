@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Configuration;
+using System.Data.Common;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -111,7 +112,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
             }
         }
         #endregion
-        #region gambiarra
+        #region Gambiarra
         private static void RetornarMascaraMoeda(object sender, EventArgs e)
         {
             TextBoxBase txt = (TextBoxBase)sender;
@@ -176,6 +177,30 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
                 }
             }
             return hash.ToString();
+        }
+        #endregion
+        #region Validar conexão com o BD
+        /// <summary>
+        /// Médodo da classe funções para validar a conexão com Banco de Dados escolhido
+        /// </summary>
+        public static void ValidaConexaoDB()
+        {
+            DbProviderFactory factory;
+            try
+            {
+                factory = DbProviderFactories.GetFactory(ConfigurationManager.ConnectionStrings["BD"].ProviderName);
+                using var conexao = factory.CreateConnection();
+                conexao!.ConnectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+                using var comando = factory.CreateCommand();
+                comando!.Connection = conexao;
+                conexao.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                new FormConfiguracoes().ShowDialog();
+                ValidaConexaoDB();
+            }
         }
         #endregion
     }

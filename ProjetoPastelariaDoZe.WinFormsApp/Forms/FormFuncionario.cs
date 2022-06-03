@@ -49,7 +49,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private void buttonCadastrar_Click(object sender, EventArgs e)
         {
-            DAO.Funcionario funcionario = new();
+            Funcionario funcionario = new();
 
             ConfigurarAtributos(funcionario);
 
@@ -83,7 +83,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             funcionario.Matricula = textBoxMatricula.Text;
             funcionario.CPF = maskedTextBoxCPF.Text;
             funcionario.Telefone = maskedTextBoxTelefone.Text;
-            funcionario.Senha = textBoxSenha.Text;
+            funcionario.Senha = Funcoes.Sha256Hash(textBoxSenha.Text);
             funcionario.Grupo = (radioButtonAdmin.Checked) ? 1 : 2; // Se .Checked == true, Grupo=1, senão, Grupo=2;
         }
 

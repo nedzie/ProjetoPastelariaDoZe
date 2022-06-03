@@ -27,19 +27,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private void ButtonSalvar_Click(object? sender, EventArgs e)
         {
-            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            config.AppSettings.Settings.Remove("IdiomaRegiao");
-            config.AppSettings.Settings.Add("IdiomaRegiao", comboBoxIdiomas.Text);
-            config.Save(ConfigurationSaveMode.Modified);
-            ConfigurationManager.RefreshSection("appSettings");
-            Close();
-            _ = MessageBox.Show(Properties.Resources.ResourceManager.GetString("MessageBox.Text"));
-
-            if (checkBoxReiniciar.Checked)
-            {
-                System.Diagnostics.Process.Start(Application.ExecutablePath);
-                Environment.Exit(0);
-            }
+            
         }
         private void ButtonSair_Click(object? sender, EventArgs e)
         {
@@ -63,6 +51,42 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             comboBoxProvedores.Text = connectionStringSettings.ProviderName;
 
             textBoxConnectionString.Text = connectionStringSettings.ConnectionString;
+        }
+
+        private void buttonSalvarIdioma_Click(object sender, EventArgs e)
+        {
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings.Remove("IdiomaRegiao");
+            config.AppSettings.Settings.Add("IdiomaRegiao", comboBoxIdiomas.Text);
+            config.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("appSettings");
+            Close();
+
+            if (checkBoxReiniciar.Checked)
+            {
+                _ = MessageBox.Show(Properties.Resources.ResourceManager.GetString("MessageBox.Text"));
+
+                System.Diagnostics.Process.Start(Application.ExecutablePath);
+                Environment.Exit(0);
+            }
+        }
+
+        private void buttonSalvarBD_Click(object sender, EventArgs e)
+        {
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+
+            config.ConnectionStrings.ConnectionStrings["BD"].ProviderName = comboBoxProvedores.Text;
+            config.ConnectionStrings.ConnectionStrings["BD"].ConnectionString = textBoxConnectionString.Text;
+
+            //Funcoes.ValidaConexaoDB();
+
+            config.Save(ConfigurationSaveMode.Modified, true);
+
+            ConfigurationManager.RefreshSection("connectionStrings");
+
+            this.Close();
+
+            _ = MessageBox.Show("Alterou BD");
         }
     }
 }
