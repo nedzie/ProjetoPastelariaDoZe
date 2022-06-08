@@ -118,16 +118,31 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         }
 
+        private void buttonProdutos_Click(object sender, EventArgs e)
+        {
+            Opcao o = new();
+
+            var res = o.ShowDialog();
+
+            FormProdutos produtos = new FormProdutos
+            {
+                StartPosition = FormStartPosition.CenterScreen
+            };
+            if (res == DialogResult.OK)
+            {
+                produtos.ShowDialog();
+                AtualizarTela(produtos.dao!);
+            }
+            else if (res == DialogResult.Yes)
+                AtualizarTela(produtos.dao!);
+        }
+
         private void buttonComandas_Click(object sender, EventArgs e)
         {
             FormComandas comanda = new();
             comanda.Show();
         }
-        private void buttonProdutos_Click(object sender, EventArgs e)
-        {
-            FormProdutos produtos = new();
-            produtos.Show();
-        }
+
         private void buttonConfiguracoes_Click(object sender, EventArgs e)
         {
             FormConfiguracoes configuracoes = new();
@@ -180,6 +195,10 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
                 Numero = 0
             };
 
+            Produto produto = new Produto
+            {
+                Numero = 0
+            };
             var tipo = objetoDAO.GetType();
 
             switch (tipo.Name)
@@ -191,13 +210,25 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
                     dao = (ClienteDAO)objetoDAO;
                     break;
                 case "ProdutoDAO":
-                    //dao = (ProdutoDao)objetoDAO;
+                    dao = (ProdutoDAO)objetoDAO;
                     break;
             }
 
             try
             {
-                DataTable linhas = dao!.SelectDBProvider(cliente);
+                DataTable linhas = new();
+                switch (tipo.Name)
+                {
+                    case "FuncionarioDAO":
+                        linhas = dao!.SelectDBProvider(funcionario);
+                        break;
+                    case "ClienteDAO":
+                        linhas = dao!.SelectDBProvider(cliente);
+                        break;
+                    case "ProdutoDAO":
+                        linhas = dao!.SelectDBProvider(produto);
+                        break;
+                }
 
                 dataGridViewDados.Columns.Clear();
                 dataGridViewDados.AutoGenerateColumns = true;
@@ -208,6 +239,11 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void dataGridViewDados_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            
         }
     }
 }

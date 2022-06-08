@@ -11,7 +11,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
     /// </summary>
     public class Funcoes
     {
-        #region Ajustes visuais
         /// <summary>
         /// Ajusta automaticamente os textos/placeholders dos itens dos formulários
         /// </summary>
@@ -84,8 +83,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
             else if (sender is ButtonBase btn)
                 btn.BackColor = Color.LightGray;
         }
-        #endregion
-        #region Ajustes de teclado
+         
         /// <summary>
         /// Tratar eventos de teclado, no caso tecla ENTER funcionando como TAB e tecla ESC para fechar
         /// </summary>
@@ -111,8 +109,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
                 form.Close(); // Feche
             }
         }
-        #endregion
-        #region TODO: Melhorar essa parte
+         
         private static void RetornarMascaraMoeda(object sender, EventArgs e)
         {
             TextBoxBase txt = (TextBoxBase)sender;
@@ -158,8 +155,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
             txt.Leave += RetornarMascaraMoeda!;
             txt.KeyPress += ApenasValorNumericoMoeda!;
         }
-        #endregion
-        #region Criptografar Senha
+         
         /// <summary>
         /// Método da classe funções para criptografar a senha dos clientes
         /// </summary>
@@ -178,8 +174,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
             }
             return hash.ToString();
         }
-        #endregion
-        #region Validar conexão com o BD
+         
         /// <summary>
         /// Médodo da classe funções para validar a conexão com Banco de Dados escolhido
         /// </summary>
@@ -205,6 +200,17 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
                 return false;
             }
         }
-        #endregion
+        /// <summary>
+        /// Método responsável por converter as imagens dos produtos para byte arr, que serão salvos num banco de dados
+        /// </summary>
+        /// <param name="img">Imagem selecionada</param>
+        /// <returns></returns>
+        public static byte[] ConverterImagemParaByteArray(Image img)
+        {
+            MemoryStream ms = new();
+            if(img != null)
+                img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            return ms.ToArray();
+        }
     }
 }

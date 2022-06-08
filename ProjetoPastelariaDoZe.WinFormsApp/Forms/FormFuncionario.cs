@@ -33,8 +33,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             Size = new(Size.Width, Size.Height + opcoes.Size.Height);
             this.Controls.Add(opcoes);
             opcoes.buttonSair.Click += ButtonSair_Click;
-            MaximizeBox = false;
-
 
             string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
             string connectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;

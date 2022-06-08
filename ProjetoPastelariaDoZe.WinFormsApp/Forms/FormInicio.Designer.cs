@@ -294,13 +294,19 @@
             // 
             // dataGridViewDados
             // 
+            this.dataGridViewDados.AllowUserToAddRows = false;
+            this.dataGridViewDados.AllowUserToDeleteRows = false;
             this.dataGridViewDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewDados.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewDados.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewDados.MultiSelect = false;
             this.dataGridViewDados.Name = "dataGridViewDados";
             this.dataGridViewDados.RowTemplate.Height = 25;
+            this.dataGridViewDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewDados.Size = new System.Drawing.Size(1098, 576);
             this.dataGridViewDados.TabIndex = 1;
+            this.dataGridViewDados.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridViewDados_MouseDoubleClick);
             // 
             // contextMenuStripInicio
             // 
@@ -438,7 +444,7 @@
             this.toolStripMenuItemSystemTraySobre.Size = new System.Drawing.Size(104, 22);
             this.toolStripMenuItemSystemTraySobre.Text = "Sobre";
             // 
-            // Inicio
+            // FormInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -451,7 +457,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Name = "Inicio";
+            this.Name = "FormInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Teste";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inicio_FormClosing);

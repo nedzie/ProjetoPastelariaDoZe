@@ -11,6 +11,9 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
     /// </summary>
     public partial class FormCliente : Form
     {
+        /// <summary>
+        /// Atriburo DAO de Cliente para a tela de cadastro de cliente
+        /// </summary>
         public readonly ClienteDAO dao;
         /// <summary>
         /// Construtor da classe Clientes

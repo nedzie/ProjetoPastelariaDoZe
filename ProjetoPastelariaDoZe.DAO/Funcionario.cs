@@ -115,6 +115,13 @@ namespace ProjetoPastelariaDoZe.DAO
 
             conexao.Open();
 
+            Funcionario aux = (Funcionario)funcionario;
+
+            string auxSqlFiltro = "";
+
+            if (aux.Numero > 0)
+                auxSqlFiltro = " WHERE id_funcionario = " + aux.Numero;
+
             comando.CommandText =
                 @"SELECT
                     ID_FUNCIONARIO AS Id,
@@ -124,7 +131,7 @@ namespace ProjetoPastelariaDoZe.DAO
                     MATRICULA AS Matricula,
                     GRUPO AS Grupo
                 FROM
-                    TB_FUNCIONARIO";
+                    TB_FUNCIONARIO" + auxSqlFiltro + " ORDER BY ID";
 
             var sdr = comando.ExecuteReader();
 

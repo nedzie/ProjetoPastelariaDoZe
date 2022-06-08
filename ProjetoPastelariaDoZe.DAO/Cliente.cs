@@ -1,11 +1,6 @@
 ﻿using ProjetoPastelariaDoZe.DAO.Compartilhado;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjetoPastelariaDoZe.DAO
 {
@@ -131,6 +126,13 @@ namespace ProjetoPastelariaDoZe.DAO
 
             conexao.Open();
 
+            Cliente aux = (Cliente)cliente;
+
+            string auxSqlFiltro = "";
+
+            if (aux.Numero > 0)
+                auxSqlFiltro = " WHERE id_cliente = " + aux.Numero;
+
             comando.CommandText =
                 @"SELECT
                     ID_CLIENTE AS Id,
@@ -141,7 +143,7 @@ namespace ProjetoPastelariaDoZe.DAO
                     COMPRA_FIADO AS Fiado,
                     DIA_FIADO AS Dia
                 FROM
-                    TB_CLIENTE";
+                    TB_CLIENTE" + auxSqlFiltro + " ORDER BY ID";
 
             var sdr = comando.ExecuteReader();
 

@@ -63,9 +63,29 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _null {
+            get {
+                object obj = ResourceManager.GetObject("null", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addNew {
+            get {
+                object obj = ResourceManager.GetObject("addNew", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -581,6 +601,16 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Properties {
         internal static string MessageBox_Text {
             get {
                 return ResourceManager.GetString("MessageBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap null1 {
+            get {
+                object obj = ResourceManager.GetObject("null1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
