@@ -3,7 +3,7 @@ using ProjetoPastelariaDoZe.DAO.Compartilhado;
 using ProjetoPastelariaDoZe.WinFormsApp.Compartilhado;
 using System.ComponentModel;
 using System.Data;
-using System.Text;
+using System.Drawing;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
@@ -245,9 +245,10 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         private void dataGridViewDados_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             var id = 0;
-            if(dataGridViewDados.SelectedCells.Count > 0)
+            DataGridViewRow selectedRow = new();
+            if (dataGridViewDados.SelectedCells.Count > 0)
             {
-                DataGridViewRow selectedRow = dataGridViewDados.Rows[dataGridViewDados.SelectedCells[0].RowIndex];
+                selectedRow = dataGridViewDados.Rows[dataGridViewDados.SelectedCells[0].RowIndex];
                 id = Convert.ToInt32(selectedRow.Cells[0].Value);
             }
 
@@ -256,7 +257,16 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             switch (qtdeRows)
             {
                 case 5: // Produto
-                    EditarProduto(id);
+                    Produto p = new Produto
+                    {
+                        Numero = id,
+                        Nome = Convert.ToString(selectedRow.Cells[1].Value),
+                        Descricao = Convert.ToString(selectedRow.Cells[2].Value),
+                        ValorUn = Convert.ToDecimal(selectedRow.Cells[3].Value),
+                        Foto = (byte[])selectedRow.Cells[4].Value
+                    };
+
+                    EditarProduto(p);
                     break;
                 case 6: //Funcionário
                     EditarFuncionario(id);
@@ -267,15 +277,13 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             }
         }
 
-        private void EditarProduto(int id)
+        private void EditarProduto(Produto prod)
         {
+
             FormProdutos produtos = new FormProdutos
             {
                 StartPosition = FormStartPosition.CenterScreen,
-                Produto = new Produto
-                {
-                    Numero = id
-                }
+                Produto = prod
             };
 
             //produtos.Produto = new Produto
