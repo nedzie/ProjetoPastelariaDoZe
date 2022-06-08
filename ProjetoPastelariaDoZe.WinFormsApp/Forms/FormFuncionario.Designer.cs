@@ -33,7 +33,6 @@
             this.PanelFuncionarios = new System.Windows.Forms.Panel();
             this.maskedTextBoxTelefone = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxCPF = new System.Windows.Forms.MaskedTextBox();
-            this.buttonCadastrar = new System.Windows.Forms.Button();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.textBoxMatricula = new System.Windows.Forms.TextBox();
             this.radioButtonBalcao = new System.Windows.Forms.RadioButton();
@@ -62,7 +61,6 @@
             this.PanelFuncionarios.BackColor = System.Drawing.Color.Transparent;
             this.PanelFuncionarios.Controls.Add(this.maskedTextBoxTelefone);
             this.PanelFuncionarios.Controls.Add(this.maskedTextBoxCPF);
-            this.PanelFuncionarios.Controls.Add(this.buttonCadastrar);
             this.PanelFuncionarios.Controls.Add(this.textBoxSenha);
             this.PanelFuncionarios.Controls.Add(this.textBoxMatricula);
             this.PanelFuncionarios.Controls.Add(this.radioButtonBalcao);
@@ -76,7 +74,7 @@
             this.PanelFuncionarios.Controls.Add(this.labelNome);
             this.PanelFuncionarios.Location = new System.Drawing.Point(12, 12);
             this.PanelFuncionarios.Name = "PanelFuncionarios";
-            this.PanelFuncionarios.Size = new System.Drawing.Size(371, 371);
+            this.PanelFuncionarios.Size = new System.Drawing.Size(371, 334);
             this.PanelFuncionarios.TabIndex = 1;
             // 
             // maskedTextBoxTelefone
@@ -86,6 +84,7 @@
             this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
             this.maskedTextBoxTelefone.Size = new System.Drawing.Size(100, 23);
             this.maskedTextBoxTelefone.TabIndex = 3;
+            this.maskedTextBoxTelefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskedTextBoxCPF
             // 
@@ -94,19 +93,7 @@
             this.maskedTextBoxCPF.Name = "maskedTextBoxCPF";
             this.maskedTextBoxCPF.Size = new System.Drawing.Size(144, 23);
             this.maskedTextBoxCPF.TabIndex = 1;
-            // 
-            // buttonCadastrar
-            // 
-            this.buttonCadastrar.BackColor = System.Drawing.Color.White;
-            this.buttonCadastrar.FlatAppearance.BorderSize = 0;
-            this.buttonCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCadastrar.Location = new System.Drawing.Point(0, 331);
-            this.buttonCadastrar.Name = "buttonCadastrar";
-            this.buttonCadastrar.Size = new System.Drawing.Size(100, 30);
-            this.buttonCadastrar.TabIndex = 7;
-            this.buttonCadastrar.Text = "Cadastrar";
-            this.buttonCadastrar.UseVisualStyleBackColor = false;
-            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
+            this.maskedTextBoxCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // textBoxSenha
             // 
@@ -210,17 +197,17 @@
             this.labelCPF.TabIndex = 1;
             this.labelCPF.Text = "CPF:";
             // 
-            // Funcionarios
+            // FormFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(395, 389);
+            this.ClientSize = new System.Drawing.Size(395, 352);
             this.Controls.Add(this.PanelFuncionarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Name = "Funcionarios";
+            this.Name = "FormFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Funcionários";
             this.PanelFuncionarios.ResumeLayout(false);
@@ -241,7 +228,6 @@
         private Label labelTelefone;
         private Label labelMatricula;
         private Label labelCPF;
-        private Button buttonCadastrar;
         private TextBox textBoxSenha;
         private TextBox textBoxMatricula;
         private MaskedTextBox maskedTextBoxTelefone;

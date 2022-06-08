@@ -33,6 +33,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             Size = new(Size.Width, Size.Height + opcoes.Size.Height);
             this.Controls.Add(opcoes);
             opcoes.buttonSair.Click += ButtonSair_Click;
+            opcoes.buttonSalvar.Click += ButtonSalvar_Click;
 
             string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
             string connectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
@@ -40,12 +41,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             dao = new(provider, connectionString);
         }
 
-        private void ButtonSair_Click(object? sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void buttonCadastrar_Click(object sender, EventArgs e)
+        private void ButtonSalvar_Click(object? sender, EventArgs e)
         {
             Funcionario funcionario = new();
 
@@ -73,6 +69,11 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void ButtonSair_Click(object? sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void ConfigurarAtributos(Funcionario funcionario)

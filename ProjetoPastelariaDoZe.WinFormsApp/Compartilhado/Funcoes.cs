@@ -133,6 +133,9 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
         private static void ApenasValorNumericoMoeda(object sender, KeyPressEventArgs e)
         {
             TextBoxBase txt = (TextBoxBase)sender;
+
+            AplicaMascaraMoeda(txt);
+
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back))
             {
                 if (e.KeyChar == ',')
@@ -151,6 +154,9 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
         /// <param name="txt"></param>
         public static void AplicaMascaraMoeda(TextBoxBase txt)
         {
+            //txt.Enter +=
+            //txt.Leave += 
+            //txt.KeyPress +=
             txt.Enter += TirarMascaraMoeda!;
             txt.Leave += RetornarMascaraMoeda!;
             txt.KeyPress += ApenasValorNumericoMoeda!;

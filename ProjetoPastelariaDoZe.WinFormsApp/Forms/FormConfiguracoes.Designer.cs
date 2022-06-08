@@ -47,7 +47,6 @@
             this.tabPageBancoDeDados = new System.Windows.Forms.TabPage();
             this.comboBoxConnectionStrings = new System.Windows.Forms.ComboBox();
             this.buttonSalvarBD = new System.Windows.Forms.Button();
-            this.textBoxConnectionString = new System.Windows.Forms.TextBox();
             this.comboBoxProvedores = new System.Windows.Forms.ComboBox();
             this.labelConnectionString = new System.Windows.Forms.Label();
             this.labelProvider = new System.Windows.Forms.Label();
@@ -199,7 +198,6 @@
             this.tabPageBancoDeDados.BackColor = System.Drawing.Color.Black;
             this.tabPageBancoDeDados.Controls.Add(this.comboBoxConnectionStrings);
             this.tabPageBancoDeDados.Controls.Add(this.buttonSalvarBD);
-            this.tabPageBancoDeDados.Controls.Add(this.textBoxConnectionString);
             this.tabPageBancoDeDados.Controls.Add(this.comboBoxProvedores);
             this.tabPageBancoDeDados.Controls.Add(this.labelConnectionString);
             this.tabPageBancoDeDados.Controls.Add(this.labelProvider);
@@ -217,7 +215,7 @@
                 " Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWri" +
                 "te;MultiSubnetFailover=False",
             "Server=localhost;Database=pastelaria_db;Uid=root;Pwd=rootadmin;"});
-            this.comboBoxConnectionStrings.Location = new System.Drawing.Point(18, 118);
+            this.comboBoxConnectionStrings.Location = new System.Drawing.Point(18, 89);
             this.comboBoxConnectionStrings.Name = "comboBoxConnectionStrings";
             this.comboBoxConnectionStrings.Size = new System.Drawing.Size(595, 23);
             this.comboBoxConnectionStrings.TabIndex = 6;
@@ -234,13 +232,6 @@
             this.buttonSalvarBD.Text = "Salvar";
             this.buttonSalvarBD.UseVisualStyleBackColor = false;
             this.buttonSalvarBD.Click += new System.EventHandler(this.buttonSalvarBD_Click);
-            // 
-            // textBoxConnectionString
-            // 
-            this.textBoxConnectionString.Location = new System.Drawing.Point(18, 89);
-            this.textBoxConnectionString.Name = "textBoxConnectionString";
-            this.textBoxConnectionString.Size = new System.Drawing.Size(595, 23);
-            this.textBoxConnectionString.TabIndex = 3;
             // 
             // comboBoxProvedores
             // 
@@ -315,7 +306,6 @@
         private ComboBox comboBoxIdiomas;
         private CheckBox checkBoxReiniciar;
         private TabPage tabPageBancoDeDados;
-        private TextBox textBoxConnectionString;
         private ComboBox comboBoxProvedores;
         private Label labelConnectionString;
         private Label labelProvider;

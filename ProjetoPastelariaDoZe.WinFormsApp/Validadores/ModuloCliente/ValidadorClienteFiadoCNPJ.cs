@@ -8,7 +8,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloCliente
     /// </summary>
     public class ValidadorClienteFiadoCNPJ : AbstractValidator<DAO.Cliente>
     {
-        private const string padraoCNPJ = "^[0-9]{2}.[0-9]{3}.[0-9]{3}.[0-9]{4}.[0-9]{2}";
+        private const string padraoCNPJ = "^[0-9]{14}";
         /// <summary>
         /// Construtor da classe ValidadorFuncionario para quando o cliente não compra fiado e usa CNPJ
         /// </summary>
@@ -24,14 +24,14 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloCliente
                 .NotEmpty()
                 .Matches(padraoCNPJ)
                 .MinimumLength(14)
-                .MaximumLength(18);
+                .MaximumLength(14);
 
 
             RuleFor(x => x.Telefone)
                 .NotNull()
                 .NotEmpty()
-                .MinimumLength(14)
-                .MaximumLength(15);
+                .MinimumLength(10)
+                .MaximumLength(11);
 
             RuleFor(x => x.Senha)
                 .NotNull()

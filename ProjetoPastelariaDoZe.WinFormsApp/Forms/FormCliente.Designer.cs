@@ -85,6 +85,7 @@
             this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
             this.maskedTextBoxTelefone.Size = new System.Drawing.Size(100, 23);
             this.maskedTextBoxTelefone.TabIndex = 6;
+            this.maskedTextBoxTelefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // groupBoxTipoCliente
             // 
@@ -144,6 +145,7 @@
             this.maskedTextBoxCPF.Name = "maskedTextBoxCPF";
             this.maskedTextBoxCPF.Size = new System.Drawing.Size(144, 23);
             this.maskedTextBoxCPF.TabIndex = 4;
+            this.maskedTextBoxCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskedTextBoxCNPJ
             // 
@@ -153,6 +155,7 @@
             this.maskedTextBoxCNPJ.Name = "maskedTextBoxCNPJ";
             this.maskedTextBoxCNPJ.Size = new System.Drawing.Size(144, 23);
             this.maskedTextBoxCNPJ.TabIndex = 5;
+            this.maskedTextBoxCNPJ.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // labelCNPJ
             // 
@@ -177,6 +180,7 @@
             // numericUpDownDiaDoFiado
             // 
             this.numericUpDownDiaDoFiado.Enabled = false;
+            this.numericUpDownDiaDoFiado.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDownDiaDoFiado.Location = new System.Drawing.Point(227, 56);
             this.numericUpDownDiaDoFiado.Maximum = new decimal(new int[] {
             31,
@@ -185,7 +189,7 @@
             0});
             this.numericUpDownDiaDoFiado.Name = "numericUpDownDiaDoFiado";
             this.numericUpDownDiaDoFiado.ReadOnly = true;
-            this.numericUpDownDiaDoFiado.Size = new System.Drawing.Size(45, 23);
+            this.numericUpDownDiaDoFiado.Size = new System.Drawing.Size(62, 33);
             this.numericUpDownDiaDoFiado.TabIndex = 1;
             // 
             // textBoxSenha
@@ -204,7 +208,7 @@
             this.textBoxNome.Location = new System.Drawing.Point(9, 156);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.PlaceholderText = "Nome do cliente";
-            this.textBoxNome.Size = new System.Drawing.Size(257, 23);
+            this.textBoxNome.Size = new System.Drawing.Size(358, 23);
             this.textBoxNome.TabIndex = 2;
             // 
             // labelSenha
@@ -296,7 +300,7 @@
             this.radioButtonFiadoNao.UseVisualStyleBackColor = true;
             this.radioButtonFiadoNao.CheckedChanged += new System.EventHandler(this.radioButtonFiadoNao_CheckedChanged);
             // 
-            // Cliente
+            // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -306,7 +310,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Name = "Cliente";
+            this.Name = "FormCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
             this.panelClientes.ResumeLayout(false);

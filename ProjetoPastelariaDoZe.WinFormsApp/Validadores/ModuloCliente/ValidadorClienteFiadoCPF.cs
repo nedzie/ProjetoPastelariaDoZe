@@ -8,7 +8,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloCliente
     /// </summary>
     public class ValidadorClienteFiadoCPF : AbstractValidator<DAO.Cliente>
     {
-        private const string padraoCPF = "^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$";
+        private const string padraoCPF = "^[0-9]{11}$";
         /// <summary>
         /// Construtor da classe Cliente para quando o cliente compra fiado e usa CPF
         /// </summary>
@@ -23,14 +23,14 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloCliente
                 .NotNull()
                 .NotEmpty()
                 .Matches(padraoCPF)
-                .MinimumLength(14)
-                .MaximumLength(14);
+                .MinimumLength(11)
+                .MaximumLength(11);
 
             RuleFor(x => x.Telefone)
                 .NotNull()
                 .NotEmpty()
-                .MinimumLength(14)
-                .MaximumLength(15);
+                .MinimumLength(10)
+                .MaximumLength(11);
 
             RuleFor(x => x.Senha)
                 .NotNull()

@@ -58,8 +58,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             else
                 vr = validadorVista.Validate(cliente);
 
-            RemoverMascaras(cliente);
-
             if (!vr.IsValid)
                 MessageBox.Show(vr.ToString());
             else
@@ -81,7 +79,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         {
             this.Close();
         }
-
 
         private void radioButtonFiadoSim_CheckedChanged(object sender, EventArgs e)
         {
@@ -146,38 +143,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             }
             else
                 cliente.Nome = textBoxNome.Text;
-        }
-
-        private void RemoverMascaras(Cliente cliente)
-        {
-            if (!string.IsNullOrEmpty(cliente.CPF))
-                AjustarCPF(cliente);
-            if (!string.IsNullOrEmpty(cliente.CNPJ))
-                AjustarCNPJ(cliente);
-            if (!string.IsNullOrEmpty(cliente.Telefone))
-                AjustarTelefone(cliente);
-        }
-
-        private void AjustarCNPJ(Cliente cliente)
-        {
-            cliente.CNPJ = cliente.CNPJ!.Replace(".", "");
-            cliente.CNPJ = cliente.CNPJ.Replace("/", "");
-            cliente.CNPJ = cliente.CNPJ.Replace("-", "");
-        }
-
-        private static void AjustarTelefone(Cliente cliente)
-        {
-            cliente.Telefone = cliente.Telefone!.Replace('-', ' ');
-            cliente.Telefone = cliente.Telefone.Replace('(', ' ');
-            cliente.Telefone = cliente.Telefone.Replace(')', ' ');
-            cliente.Telefone = cliente.Telefone.Replace(" ", "");
-        }
-
-        private static void AjustarCPF(Cliente cliente)
-        {
-            FormCliente c = new();
-            cliente.CPF = cliente.CPF!.Replace(".", "");
-            cliente.CPF = cliente.CPF.Replace("-", "");
         }
     }
 }

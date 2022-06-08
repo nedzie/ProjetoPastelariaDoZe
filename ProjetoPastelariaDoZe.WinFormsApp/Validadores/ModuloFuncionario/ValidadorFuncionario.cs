@@ -8,7 +8,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloFuncionario
     /// </summary>
     public class ValidadorFuncionario : AbstractValidator<DAO.Funcionario>
     {
-        private const string padrao = "^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$";
+        private const string padrao = "^[0-9]{11}$";
         /// <summary>
         /// Construtor do validador de funcionário
         /// </summary>
@@ -23,8 +23,8 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloFuncionario
                 .NotNull()
                 .NotEmpty()
                 .Matches(padrao)
-                .MinimumLength(14)
-                .MaximumLength(14);
+                .MinimumLength(11)
+                .MaximumLength(11);
 
             RuleFor(x => x.Matricula)
                 .NotNull()
@@ -34,8 +34,8 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloFuncionario
             RuleFor(x => x.Telefone)
                 .NotNull()
                 .NotEmpty()
-                .MinimumLength(14)
-                .MaximumLength(15);
+                .MinimumLength(10)
+                .MaximumLength(11);
 
             RuleFor(x => x.Senha)
                 .NotNull()
