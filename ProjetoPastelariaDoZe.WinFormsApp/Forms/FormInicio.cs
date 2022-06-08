@@ -3,6 +3,7 @@ using ProjetoPastelariaDoZe.DAO.Compartilhado;
 using ProjetoPastelariaDoZe.WinFormsApp.Compartilhado;
 using System.ComponentModel;
 using System.Data;
+using System.Text;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
@@ -57,6 +58,12 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         private void ToolStripMenuItemSystemTrayAbrir_Click(object? sender, EventArgs e)
         {
             this.Show();
+        }
+        private void notifyIconSystemTray_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Normal;
+            notifyIconSystemTray.Visible = false;
         }
 
         private void Inicio_FormClosing(object sender, FormClosingEventArgs e)
@@ -117,7 +124,6 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
                 AtualizarTela(clientes.dao);
 
         }
-
         private void buttonProdutos_Click(object sender, EventArgs e)
         {
             Opcao o = new();
@@ -173,12 +179,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
                 notifyIconSystemTray.Visible = false;
             }
         }
-        private void notifyIconSystemTray_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            Show();
-            WindowState = FormWindowState.Normal;
-            notifyIconSystemTray.Visible = false;
-        }
+
         /// <summary>
         /// Código para povoar a tela principal com as informações escolhidas. <br></br>
         /// </summary>
@@ -243,7 +244,55 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
 
         private void dataGridViewDados_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            
+            var id = 0;
+            if(dataGridViewDados.SelectedCells.Count > 0)
+            {
+                DataGridViewRow selectedRow = dataGridViewDados.Rows[dataGridViewDados.SelectedCells[0].RowIndex];
+                id = Convert.ToInt32(selectedRow.Cells[0].Value);
+            }
+
+            var qtdeRows = dataGridViewDados.ColumnCount;
+
+            switch (qtdeRows)
+            {
+                case 5: // Produto
+                    EditarProduto(id);
+                    break;
+                case 6: //Funcionário
+                    EditarFuncionario(id);
+                    break;
+                case 7: // Cliente
+                    EditarCliente(id);
+                    break;
+            }
+        }
+
+        private void EditarProduto(int id)
+        {
+            FormProdutos produtos = new FormProdutos
+            {
+                StartPosition = FormStartPosition.CenterScreen,
+                Produto = new Produto
+                {
+                    Numero = id
+                }
+            };
+
+            //produtos.Produto = new Produto
+            //{
+            //    Numero = id
+            //};
+
+            produtos.ShowDialog();
+        }
+        private void EditarFuncionario(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void EditarCliente(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

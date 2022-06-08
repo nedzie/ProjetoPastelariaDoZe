@@ -218,5 +218,23 @@ namespace ProjetoPastelariaDoZe.WinFormsApp.Compartilhado
                 img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
             return ms.ToArray();
         }
+        /// <summary>
+        /// Blá blá blá
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public static Image? ConverterByteArrayParaImagem(byte[] data)
+        {
+            try
+            {
+                ImageConverter ic = new();
+
+                return ic.ConvertFrom(data) as Image;
+            }
+            catch
+            {
+                return null;
+            }
+        }
     }
 }
