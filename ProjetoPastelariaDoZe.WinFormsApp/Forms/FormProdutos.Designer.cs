@@ -97,7 +97,7 @@
             // textBoxValorUnitario
             // 
             this.textBoxValorUnitario.Location = new System.Drawing.Point(14, 140);
-            this.textBoxValorUnitario.MaxLength = 11;
+            this.textBoxValorUnitario.MaxLength = 6;
             this.textBoxValorUnitario.Name = "textBoxValorUnitario";
             this.textBoxValorUnitario.PlaceholderText = "R$";
             this.textBoxValorUnitario.Size = new System.Drawing.Size(100, 23);

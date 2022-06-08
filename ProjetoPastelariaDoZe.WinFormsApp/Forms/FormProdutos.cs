@@ -3,6 +3,7 @@ using ProjetoPastelariaDoZe.DAO;
 using ProjetoPastelariaDoZe.WinFormsApp.Compartilhado;
 using ProjetoPastelariaDoZe.WinFormsApp.Validadores.ModuloProduto;
 using System.Configuration;
+using System.Data;
 
 namespace ProjetoPastelariaDoZe.WinFormsApp
 {
@@ -15,6 +16,37 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
         /// Instância DAO dentro da classe FormProdutos
         /// </summary>
         public readonly ProdutoDAO? dao;
+
+        private Produto? _produto;
+        /// <summary>
+        /// Atributo "Produto" para povoar a tela de cadastro de produto
+        /// </summary>
+        public Produto? Produto
+        {
+            get { return _produto; }
+            set
+            {
+                try
+                {
+                    
+
+                    if (value != null)
+                    {
+                        _produto = value!;
+                        textBoxNome.Text = _produto!.Nome;
+                        textBoxDescricaoProduto.Text = _produto!.Descricao;
+                        textBoxValorUnitario.Text = _produto!.ValorUn.ToString();
+                        pictureBoxImagem.Image = Funcoes.ConverterByteArrayParaImagem((byte[])_produto.Foto!);
+                    }
+                    textBoxNome.Focus();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
         /// <summary>
         /// Construtor da classe Produtos
         /// </summary>
@@ -74,7 +106,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             produto.Nome = textBoxNome.Text;
             if (textBoxDescricaoProduto.Text != null)
                 produto.Descricao = textBoxDescricaoProduto.Text;
-            if(textBoxValorUnitario.Text != string.Empty)
+            if (textBoxValorUnitario.Text != string.Empty)
                 produto.ValorUn = Convert.ToDecimal(textBoxValorUnitario.Text);
             produto.Foto = Funcoes.ConverterImagemParaByteArray(pictureBoxImagem.Image);
         }
@@ -84,7 +116,7 @@ namespace ProjetoPastelariaDoZe.WinFormsApp
             openFileDialogImagem.Title = "Imagem do produto"; //Trocar para outras culturas
             openFileDialogImagem.Filter = "Images (*.JPEG;*.BMP;*.JPG;*.GIF;*.PNG;*.)|*.JPEG;*.BMP;*.JPG;*.GIF;*.PNG;*.icon;*.JFIF";
 
-            if(openFileDialogImagem.ShowDialog() == DialogResult.OK)
+            if (openFileDialogImagem.ShowDialog() == DialogResult.OK)
             {
                 pictureBoxImagem.Image = Image.FromFile(openFileDialogImagem.FileName);
 
